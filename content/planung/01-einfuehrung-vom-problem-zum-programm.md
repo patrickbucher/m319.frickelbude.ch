@@ -20,11 +20,11 @@ Sie wissen, was in diesem Semester auf sie zukommt, und können den Weg von eine
 
 ### Lektion 2
 
-- [45 min.] Einführung in das Thema
-    - TODO: Feinunterteilung der Einführung
-    - TODO: Lernziele festlegen
+- [20 min.] Lesen des Einführungstexts [Vom Problem zum Programm](/theorie/vom-problem-zum-programm).
+- [10 min.] Besprechen der Fragen in der Bankreihe
+- [15 min.] Besprechen der Fragen im Plenum
 
 ### Hausaufgaben
 
-Repetieren Sie das Gelernte auf nächste Woche.
+Überlegen Sie sich, wie Sie sich Notizen zu diesem Modul festhalten wollen.
 
