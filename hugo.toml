@@ -6,7 +6,7 @@ title = 'Modul 319: Applikationen entwerfen und implementieren'
 minifyOutput = true
 
 [params]
-math = false
+math.disabled = true
 openapi = false
 showVisitedLinks = true
 themeVariant = 'red'

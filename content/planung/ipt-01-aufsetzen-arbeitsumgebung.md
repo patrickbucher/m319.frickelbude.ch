@@ -1,6 +1,5 @@
 +++
 date = '2025-08-18T07:59:06+02:00'
-draft = true
 title = 'IPT 1.1 Block 1: Aufsetzen der Arbeitsumgebung'
 +++
 
