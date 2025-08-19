@@ -286,3 +286,14 @@ Hierbei sollte die folgende Ausgabe erscheinen:
 ## Zusatzaufgabe
 
 Falls du mit allem fertig bist, kannst du dich im [Wikibook über C-Programmierung](https://de.wikibooks.org/wiki/C-Programmierung:_Grundlagen) etwas in die Thematik einlesen.
+
+## Weitere Hinweise
+
+Wenn die Debian-Umgebung nicht mehr funktioniert, kann sie mit folgendem Befehl entfernt werden:
+
+> [!WARNING]
+> Vorher sollten aber alle Dateien gesichert werden!
+
+```powershell
+wsl --unregister Debian
+```
