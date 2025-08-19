@@ -31,6 +31,9 @@ Nach erfolgter Einrichtung siehst du diesen Bildschirm:
 
 ![Die Debian-Eingabeaufforderung](/img/wsl-initial-prompt.png)
 
+> [!NOTE]
+> Nach erfolgter Installation steht die Umgebung im Startmenü unter der Anwendung namens _Debian_ zur Verfügung.
+
 Mit dem `cd`-Befehl gelangt man in sein Heimverzeichnis.
 
 ### Dateiaustausch
