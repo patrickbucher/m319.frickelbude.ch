@@ -1,6 +1,7 @@
 +++
 date = '2025-08-18T07:59:06+02:00'
 title = 'IPT 1.1 Block 1: Aufsetzen der Arbeitsumgebung'
+weight = 2
 +++
 
 Im ersten IPT-Block wollen wir unsere Programmierumgebung einrichten. Hierzu verwenden wir Debian GNU/Linux unter WSL.
