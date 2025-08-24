@@ -17,4 +17,8 @@ Sie kennen den Aufbau eines C-Programms, können Variablen mit dem passenden Dat
 - [15 min.] Administratives
 - [15 min.] Aufbau eines C-Programms
 - [30 min.] Variablen, Datentypen, formatierte Ausgabe
-- [30 min.] Theorie-Übungen
+- [30 min.] Arbeit an den [Übungen](/uebungen/variablen-datentypen-formatierte-ausgabe/)
+
+### Hausaufgaben
+
+Schliessen Sie die [Übungen](/uebungen/variablen-datentypen-formatierte-ausgabe/) ab.
