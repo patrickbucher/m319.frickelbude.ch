@@ -6,6 +6,7 @@ title = 'Modul 319: Applikationen entwerfen und implementieren'
 minifyOutput = true
 
 [params]
+disableInlineCopyToClipBoard = true
 math.disabled = true
 openapi = false
 showVisitedLinks = true
