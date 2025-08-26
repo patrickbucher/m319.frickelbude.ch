@@ -4,6 +4,25 @@ title = 'Variablen, Datentypen und formatierte Ausgabe'
 weight = 2
 +++
 
+Lege für die folgenden Übungen ein neues Verzeichnis namens `vars-types-output` an:
+
+    mkdir vars-types-output
+
+Wechsle das aktuelle Arbeitsverzeichnis in den soeben erstellten Ordner:
+
+    cd vars-types-output
+
+Lege in diesem Ordner ein Git-Repository an:
+
+    git init
+
+Sichere für jede Aufgabe deine Lösung (z.B. `some-exercise.c`):
+
+    git add some-exercise.c
+    git commit -m "worked through some exercise"
+
+Bearbeite so die folgenden Aufgaben.
+
 ## Aufgabe 1: Uninitialisierte Werte
 
 Schreibe ein C-Programm `unitialized.c`, das Variablen _deklariert_ aber nicht _initialisiert_. Gib die Variablen aus. Was kommt heraus?
@@ -18,7 +37,7 @@ Für dieses Programm muss zusätzlich die Header-Datei `stdbool.h` inkludiert we
 
 ## Aufgabe 4: Grenzen
 
-Für dieses Programm wird die Header-Datei `limits.h` benötigt. Schreibe ein Programm namens `number-limits.c`. Zu jedem Datentyp (z.B. `int`) gibt es zwei Konstanten (z.B. `INT_MIN` und `INT_MAX`). Gib diese Konstanten für die Datentypen `char`, `int`, `long` und `short` (`SHRT`) aus und überprüfe damit die Aufgabe von gestern. Die Ausgabe soll in einzelnen Zeilen nach diesem Format erfolgen:
+Für dieses Programm wird die Header-Datei `limits.h` benötigt. Schreibe ein Programm namens `number-limits.c`. Zu jedem Datentyp (z.B. `int`) gibt es zwei Konstanten (z.B. `INT_MIN` und `INT_MAX`). Gib diese Konstanten für die Datentypen `char`, `int`, `long` und `short` (`SHRT`) aus und überprüfe damit die [Aufgabe von gestern](/uebungen/variablen-datentypen-formatierte-ausgabe/#aufgabe-2-grössenberechnung). Die Ausgabe soll in einzelnen Zeilen nach diesem Format erfolgen:
 
     int: UNTERGRENZE OBERGRENZE
 
@@ -53,3 +72,15 @@ Deklariere für die Werte 1, 10, 100 usw. bis eine Million Variablen von einem p
     1000000
 
 Tipp: Verwende die wissenschaftliche Schreibweise (z.B. `1e3` für 1*10^3 statt `1000`), damit du weniger Nullen eintippen musst.
+
+## Zusatzaufgabe: Der Texteditor Vim
+
+Der Texteditor Vim ist sehr mächtig und unter Programmierern sehr beliebt. Installiere ihn folgendermassen:
+
+    sudo apt install -y vim
+
+Anschliessend kannst du das interaktive Tutorial in einer bestimmten Sprache starten, z.B. auf Deutsch:
+
+    vimtutor -l de
+
+Arbeite das Tutorial durch und versuche die nächsten Programme mit `Vim` statt mit `nano` zu schreiben.
