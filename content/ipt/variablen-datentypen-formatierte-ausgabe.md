@@ -39,3 +39,17 @@ Gehe folgendermassen vor:
 
 1. Deklariere und initialisiere Variablen für Netto- und Bruttolohn sowie für alle Abzüge.
 2. Gib die einzelnen Zeilen in `printf`-Aufrufen an. Verwende einen passenden Formatkennzeichner zur rechtsbündigen Ausgabe auf zwei Nachkommastellen genau.
+
+## Aufgabe 6: Einer-Diagonale
+
+Deklariere für die Werte 1, 10, 100 usw. bis eine Million Variablen von einem passenden ganzzahligen Typ. Gib diese anschliessend mit `printf` und führenden Nullen aus, damit folgende Ausgabe entsteht:
+
+    0000001
+    0000010
+    0000100
+    0001000
+    0010000
+    0100000
+    1000000
+
+Tipp: Verwende die wissenschaftliche Schreibweise (z.B. `1e3` für 1*10^3 statt `1000`), damit du weniger Nullen eintippen musst.
