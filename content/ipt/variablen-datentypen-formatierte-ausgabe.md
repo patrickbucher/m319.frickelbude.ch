@@ -16,7 +16,7 @@ Lege in diesem Ordner ein Git-Repository an:
 
     git init
 
-Sichere für jede Aufgabe deine Lösung (z.B. `some-exercise.c`):
+Sichere nach jeder Aufgabe deine Lösung (z.B. `some-exercise.c`):
 
     git add some-exercise.c
     git commit -m "worked through some exercise"
@@ -25,7 +25,7 @@ Bearbeite so die folgenden Aufgaben.
 
 ## Aufgabe 1: Uninitialisierte Werte
 
-Schreibe ein C-Programm `unitialized.c`, das Variablen _deklariert_ aber nicht _initialisiert_. Gib die Variablen aus. Was kommt heraus?
+Schreibe ein C-Programm `uninitialized.c`, das Variablen _deklariert_ aber nicht _initialisiert_. Gib die Variablen aus. Was kommt heraus?
 
 ## Aufgabe 2: Zahlendarstellung: dezimal, hexadezimal und oktal
 
