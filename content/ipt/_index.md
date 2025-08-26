@@ -12,6 +12,8 @@ weight = 6
 |`mkdir DIR`|erstelle das Verzeichnis namens `DIR`|
 |`cd DIR`|wechsle ins Arbeitsverzeichnis `DIR`|
 |`cd ..`|wechsle ins übergeordnete Arbeitsverzeichnis|
+|**Bearbeitung**|Quellcodedateien bearbeiten|
+|`nano PROGRAM.c`|die Quellcodedatei `PROGRAM.c` im Texteditor Nano bearbeiten|
 |**Kompilierung**|Aus Quellcode ausführbare Programme erzeugen|
 |`cc PROGRAM.c -o PROGRAM`|aus der Quellcodedatei `PROGRAM.c` das ausführbare Programm `PROGRAM` kompilieren|
 |`make PROGRAM`|aus der Quellcodedatei `PROGRAM.c` das ausführbare Programm `PROGRAM` kompilieren|
