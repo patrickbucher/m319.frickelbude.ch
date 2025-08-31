@@ -15,10 +15,10 @@ Sie können die wichtigsten Operatoren der Programmiersprache C verwenden und da
 ### Lektionen 1 & 2
 
 - [5 min.] Administratives
-- [15 min.] Besprechung der Hausaufgaben
+- [15 min.] Besprechung der [Hausaufgaben](/uebungen/variablen-datentypen-formatierte-ausgabe/)
 - [30 min.] Operatoren
-- [30 min.] Arbeit an den [Übungen](/uebungen/operatoren-ausdruecke/)
+- [30 min.] Arbeit an den [Übungen](/uebungen/operatoren-und-ausdruecke/)
 
 ### Hausaufgaben
 
-Schliessen Sie die [Übungen](/uebungen/operatoren-ausdruecke/) ab.
+Schliessen Sie die [Übungen](/uebungen/operatoren-und-ausdruecke/) ab.
