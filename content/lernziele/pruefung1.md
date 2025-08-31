@@ -16,3 +16,10 @@ title = 'Prüfung 1'
 4. Sie können den Datentyp `char` für das Speichern von ASCII-Zeichen verwenden.
 5. Sie können den Datentyp für Wahrheitswerte `_Bool` mit dessen Werten `true` und `false` verwenden. 
 6. Sie können die genannten Datentypen mithilfe der `printf`-Funktion ausgeben und kennen die entsprechenden Formatkennzeichner (Dezimalzahlen, Zeichen, Fliesskommazahlen, Exponenzialschreibweise, oktale und hexadezimale Notation, Einrückung mit Leerzeichen und Nullen, Wahrheitswerte).
+
+## Operatoren und Ausdrücke
+
+- Sie können Literalen, Operatoren und Variablen zu Ausdrücken kombinieren.
+- Sie können die arithmetischen (`+`, `-`, `*`, `/`, `%`), logischen (`&&`, `||`, `!`), Vergleichs- (`==`, `!=`, `>`, `>=`, `<`, `<=`), Inkrement-, Dekrement- und Index- (`++`, `--`, `[]`) Operatoren sowie deren Kurzschreibweisen (`+=`, `*=` usw.) anwenden.
+- Sie können die Evaluationsreihenfolge von Operatoren mithilfe von Klammern beeinflussen und kennen die wichtigsten Grundregeln des Operatorvorrangs (Punkt vor Strich, Und vor Oder).
+
