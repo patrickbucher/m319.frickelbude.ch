@@ -13,7 +13,7 @@ Welche Werte ergeben die folgenden Ausdrücke? Welche Datentypen haben sie?
 1. `3 * 2 + 18 / 3 - 15 % 4`
 1. `true && false || false && true || true && !false`
 1. `13 > 30 / 2 || 12 >= 3 * 4 && !(3 <= 12 / 4)`
-1. `sizeof(int) <> sizeof(char) || sizeof(long) < sizeof(short)`
+1. `sizeof(int) <= sizeof(char) || sizeof(long) < sizeof(short)`
 
 ## Aufgabe 2: Operatoren auf Variablen
 
