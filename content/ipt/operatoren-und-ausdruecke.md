@@ -137,7 +137,7 @@ $$ A = \pi r^2 $$
 Das Programm soll folgendermassen funktionieren:
 
 ```bash
-$ ./circle
+$ ./circle 2.5
 U=15.71, A=19.63
 ```
 
