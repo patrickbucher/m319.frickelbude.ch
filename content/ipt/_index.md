@@ -13,6 +13,8 @@ weight = 6
 |`cd DIR`|wechsle ins Arbeitsverzeichnis `DIR`|
 |`cd ..`|wechsle ins übergeordnete Arbeitsverzeichnis|
 |`ls`|Inhalt des Arbeitsverzeichnisses anzeigen|
+|**Dateien**|Arbeit mit Dateien|
+|`cp SOURCE TARGET`|die Datei `SOURCE` nach `TARGET` kopieren|
 |**Bearbeitung**|Quellcodedateien bearbeiten|
 |`nano PROGRAM.c`|die Quellcodedatei `PROGRAM.c` im Texteditor Nano bearbeiten|
 |**Kompilierung**|Aus Quellcode ausführbare Programme erzeugen|
