@@ -20,6 +20,7 @@ weight = 6
 |**Kompilierung**|Aus Quellcode ausführbare Programme erzeugen|
 |`cc PROGRAM.c -o PROGRAM`|aus der Quellcodedatei `PROGRAM.c` das ausführbare Programm `PROGRAM` kompilieren|
 |`make PROGRAM`|aus der Quellcodedatei `PROGRAM.c` das ausführbare Programm `PROGRAM` kompilieren|
+|`cc PROGRAM.c -o PROGRAM -lm`|aus der Quellcodedatei `PROGRAM.c`, welches `math.h` verwendet, das ausführbare Programm `PROGRAM` kompilieren|
 |**Versionskontrolle**|Dateien per Git sichern|
 |`git init`|im Arbeitsverzeichnis ein Git-Repository erstellen|
 |`git add PROGRAM.c`|die Quellcodedatei `PROGRAM.c` für den nächsten Schreibvorgang vormerken|
