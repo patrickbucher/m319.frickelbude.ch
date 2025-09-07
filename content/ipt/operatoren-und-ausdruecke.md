@@ -87,7 +87,7 @@ Tipps:
 1. Kopiere das Programm vom Grundgerüst: `cp basic.c hypot.c`
 2. Verwende zusätzlich die Bibliothek `math.h`. Diese stellt die Funktion `sqrt` ("square root") für die Wurzelberechnung zur Verfügung.
 3. Verwende die Funktion `atof` anstelle von `atoi`. Diese konvertiert die Kommandozeilenargumente in eine Zahl vom Typ `double`.
-4. Kompiliere das Programm mit `cc -lm hypot.c hypot`. (Mit `-lm` wird die Mathematik-Library eingebunden.)
+4. Kompiliere das Programm mit `cc hypot.c -o hypot -lm`. (Mit `-lm` wird die Mathematik-Library eingebunden.)
 5. Das Quadrat einer Zahl `x` kannst du mit der Formel `x * x` oder mithilfe der Funktion `pow(x, 2)` berechnen.
 
 ## Aufgabe 2: Rabatt berechnen
@@ -137,7 +137,7 @@ $$ A = \pi r^2 $$
 Das Programm soll folgendermassen funktionieren:
 
 ```bash
-$ ./circle
+$ ./circle 2.5
 U=15.71, A=19.63
 ```
 
