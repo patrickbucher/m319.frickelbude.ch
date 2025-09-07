@@ -14,8 +14,8 @@ Sie können den ternären Operator verwenden und das Programmkonstrukte mit den 
 
 - [30 min.] Übung: "Active Recall"
 - [30 min.] Verzweigungen
-- [30 min.] Arbeit an den [Übungen]()
+- [30 min.] Arbeit an den [Übungen](/uebungen/verzweigungen)
 
 ### Hausaufgaben
 
-Schliessen Sie die [Übungen]() ab.
+Schliessen Sie die [Übungen](/uebungen/verzweigungen) ab.
