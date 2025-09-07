@@ -12,9 +12,10 @@ Sie können den ternären Operator verwenden und das Programmkonstrukte mit den 
 
 ### Lektionen 1 & 2
 
-- [30 min.] Übung: "Active Recall"
-- [30 min.] Verzweigungen
-- [30 min.] Arbeit an den [Übungen](/uebungen/verzweigungen)
+- [25 min.] Übung: "Active Recall"
+- [20 min.] Besprechung der Hausaufgaben
+- [25 min.] Verzweigungen
+- [20 min.] Arbeit an den [Übungen](/uebungen/verzweigungen)
 
 ### Hausaufgaben
 
