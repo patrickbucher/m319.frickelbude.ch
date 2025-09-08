@@ -13,11 +13,14 @@ weight = 6
 |`cd DIR`|wechsle ins Arbeitsverzeichnis `DIR`|
 |`cd ..`|wechsle ins übergeordnete Arbeitsverzeichnis|
 |`ls`|Inhalt des Arbeitsverzeichnisses anzeigen|
+|**Dateien**|Arbeit mit Dateien|
+|`cp SOURCE TARGET`|die Datei `SOURCE` nach `TARGET` kopieren|
 |**Bearbeitung**|Quellcodedateien bearbeiten|
 |`nano PROGRAM.c`|die Quellcodedatei `PROGRAM.c` im Texteditor Nano bearbeiten|
 |**Kompilierung**|Aus Quellcode ausführbare Programme erzeugen|
 |`cc PROGRAM.c -o PROGRAM`|aus der Quellcodedatei `PROGRAM.c` das ausführbare Programm `PROGRAM` kompilieren|
 |`make PROGRAM`|aus der Quellcodedatei `PROGRAM.c` das ausführbare Programm `PROGRAM` kompilieren|
+|`cc PROGRAM.c -o PROGRAM -lm`|aus der Quellcodedatei `PROGRAM.c`, welches `math.h` verwendet, das ausführbare Programm `PROGRAM` kompilieren|
 |**Versionskontrolle**|Dateien per Git sichern|
 |`git init`|im Arbeitsverzeichnis ein Git-Repository erstellen|
 |`git add PROGRAM.c`|die Quellcodedatei `PROGRAM.c` für den nächsten Schreibvorgang vormerken|

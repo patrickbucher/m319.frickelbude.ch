@@ -19,7 +19,14 @@ title = 'Prüfung 1'
 
 ## Operatoren und Ausdrücke
 
-- Sie können Literalen, Operatoren und Variablen zu Ausdrücken kombinieren.
-- Sie können die arithmetischen (`+`, `-`, `*`, `/`, `%`), logischen (`&&`, `||`, `!`), Vergleichs- (`==`, `!=`, `>`, `>=`, `<`, `<=`), Inkrement-, Dekrement- und Index- (`++`, `--`, `[]`) Operatoren sowie deren Kurzschreibweisen (`+=`, `*=` usw.) anwenden.
-- Sie können die Evaluationsreihenfolge von Operatoren mithilfe von Klammern beeinflussen und kennen die wichtigsten Grundregeln des Operatorvorrangs (Punkt vor Strich, Und vor Oder).
+1. Sie können Literalen, Operatoren und Variablen zu Ausdrücken kombinieren.
+1. Sie können die arithmetischen (`+`, `-`, `*`, `/`, `%`), logischen (`&&`, `||`, `!`), Vergleichs- (`==`, `!=`, `>`, `>=`, `<`, `<=`), Inkrement-, Dekrement- (`++`, `--`), Arrayindex- (`[]`) und Grössenbestimmungs- (`sizeof`) Operatoren sowie deren Kurzschreibweisen (`+=`, `*=` usw.) anwenden.
+1. Sie können die Evaluationsreihenfolge von Operatoren mithilfe von Klammern beeinflussen und kennen die wichtigsten Grundregeln des Operatorvorrangs (Punkt vor Strich, Und vor Oder).
 
+## Verzweigungen
+
+1. Sie können den ternären Operator `? :` anwenden.
+1. Sie können Codeblöcke bedingt mit `if` ausführen.
+1. Sie können alternative Codeblöcke mit `else` ausführen.
+1. Sie können Mehrfachverzweigungen mit `if`, `else if` und `else` formulieren.
+1. Sie können Bedingungen für den ternären Operator, `if` und `else` formulieren.
