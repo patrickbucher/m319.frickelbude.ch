@@ -14,7 +14,8 @@ Sie können den ternären Operator verwenden und das Programmkonstrukte mit den 
 
 - [25 min.] Übung: "Active Recall"
 - [20 min.] Besprechung der Hausaufgaben
-- [25 min.] Verzweigungen
+- [15 min.] Verzweigungen
+- [10 min.] Theorie [Flussdiagramme/Programmablaufplan](/theorie/darstellung)
 - [20 min.] Arbeit an den [Übungen](/uebungen/verzweigungen)
 
 ### Hausaufgaben
