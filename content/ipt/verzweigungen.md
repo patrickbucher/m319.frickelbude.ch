@@ -40,43 +40,51 @@ $ ./triplets 1 2 3
 
 ## Aufgabe 2: Temperaturumrechner
 
-Schreibe ein C-Programm `temp-conf.c`, welches zwischen Temperaturangaben in den Einheiten Celsius und Fahrenheit umrechnen kann. Das Programm nimmt zwei Angaben entgegen: Eine Fliesskommazahl (Grad) und einen Buchstaben `'c'` bzw. `'C'` oder `'f'` bzw. `'F'`. Die Temperaturangabe soll jeweils in die andere umgerechnet werden:
+Schreibe ein C-Programm `temp-conv.c`, welches zwischen Temperaturangaben in den Einheiten Celsius und Fahrenheit umrechnen kann. Das Programm nimmt zwei Angaben entgegen: Eine Fliesskommazahl (Grad) und einen Buchstaben `'c'` bzw. `'C'` oder `'f'` bzw. `'F'`. Die Temperaturangabe soll jeweils in die andere umgerechnet werden:
 
 ```bash
-$ ./temp-conf 56.3 F
+$ ./temp-conv 56.3 F
 56.3°F = 13.5°C
-$ ./temp-conf 100.0 f
+$ ./temp-conv 100.0 f
 100.0°F = 37.8°C
-$ ./temp-conf 35.0 C
+$ ./temp-conv 35.0 C
 35.0°C = 95.0°F
-$ ./temp-conf 21.0 c
+$ ./temp-conv 21.0 c
 21.0°C = 69.8°F
+```
+
+Verwende die folgenden Formeln:
+
+```math
+$$F=C \times \frac{9}{5} + 32$$
+```
+
+```math
+$$C=(F - 32) \times \frac{5}{9}$$
 ```
 
 Tipp: Den Buchstaben erhälst du über den Ausdruck `argv[2][0]` (Typ: `char`).
 
 ## Aufgabe 3: Währungsrechner
 
-Schreibe ein C-Programm `cur-conv.c`, welches von den Währungen US-Dollar (`$`), Euro (`€`) und Pfund (`₤`) nach Schweizer Franken umrechnen kann. Das Programm erwartet zwei Angaben: Einen Betrag als Fliesskommazahl und das Währungssymbol. Der umgerechnete Beitrag wird in Schweizer Franken ausgegeben:
+Schreibe ein C-Programm `cur-conv.c`, welches von den Währungen US-Dollar (`D`), Euro (`E`) und Pfund (`P`) nach Schweizer Franken umrechnen kann. Das Programm erwartet zwei Angaben: Einen Betrag als Fliesskommazahl und das Währungssymbol. Der umgerechnete Beitrag wird in Schweizer Franken ausgegeben:
 
 ```bash
-$ ./cur-conv 100.00 '$'
+$ ./cur-conv 100.00 D
 CHF 80.00
-$ ./cur-conv 100.00 €
+$ ./cur-conv 100.00 E
 CHF 93.00
-$ ./cur-conv 100.00 ₤
+$ ./cur-conv 100.00 P
 CHF 108.00
 ```
 
-Das `$`-Zeichen muss von `''` umgeben sein, da es in der Shell eine besondere Bedeutung hat.
-
 Du kannst die folgenden Wechselkurse verwenden:
 
-| Währung | Wechselkurs |
-|---------|------------:|
-| $       |        0.80 |
-| €       |        0.93 |
-| £       |        1.08 |
+| Währung | Zeichen | Wechselkurs |
+|---------|---------|------------:|
+| $       | D       |        0.80 |
+| €       | E       |        0.93 |
+| £       | P       |        1.08 |
 
 ## Aufgabe 4: Body-Mass-Index
 
@@ -102,7 +110,7 @@ BMI=18.56 Untergewicht
 $ ./bmi 1.88 76
 BMI=21.50 Normalgewicht
 $ ./bmi 1.68 95
-BMI=33.65 Übergewicht
+BMI=33.66 Übergewicht
 ```
 
 ## Aufgabe 5: Bereichsprüfung
