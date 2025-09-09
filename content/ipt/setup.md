@@ -116,6 +116,7 @@ Nun kannst du folgende Konfiguration eingeben:
 set autoindent
 set tabsize 4
 set linenumbers
+set softwrap
 include "/usr/share/nano/*.nanorc"
 ```
 
