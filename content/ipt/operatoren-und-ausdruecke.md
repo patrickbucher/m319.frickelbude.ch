@@ -137,8 +137,8 @@ $$ A = \pi r^2 $$
 Das Programm soll folgendermassen funktionieren:
 
 ```bash
-$ ./circle 2.5
-U=15.71, A=19.63
+$ ./circle 3.5
+U=18.85, A=28.27
 ```
 
 Tipps:
@@ -238,5 +238,5 @@ Das Programm soll folgendermassen funktionieren:
 ./grade 99 100
 5.95
 ./grade 42.75 55.5
-4.82
+4.85
 ```
