@@ -31,7 +31,7 @@ Schreibe ein C-Programm `pyth-triplets.c`, welches drei ganzzahlige Variablen `a
 
 Das Programm soll folgendermassen funktionieren:
 
-```bash
+```plain
 $ ./triplets 3 4 5
 3, 4 und 5 sind ein pythagoräisches Triplet!
 $ ./triplets 1 2 3
@@ -40,7 +40,7 @@ $ ./triplets 1 2 3
 
 ## Aufgabe 2: Temperaturumrechner
 
-Schreibe ein C-Programm `temp-conv.c`, welches zwischen Temperaturangaben in den Einheiten Celsius und Fahrenheit umrechnen kann. Das Programm nimmt zwei Angaben entgegen: Eine Fliesskommazahl (Grad) und einen Buchstaben `'c'` bzw. `'C'` oder `'f'` bzw. `'F'`. Die Temperaturangabe soll jeweils in die andere umgerechnet werden:
+Schreibe ein C-Programm `temp-conv.c`, welches zwischen Temperaturangaben in den Einheiten Celsius und Fahrenheit umrechnt. Das Programm nimmt zwei Angaben entgegen: Eine Fliesskommazahl (Grad) und einen Buchstaben `'c'` bzw. `'C'` oder `'f'` bzw. `'F'`. Die Temperaturangabe soll jeweils in die andere umgerechnet werden:
 
 ```bash
 $ ./temp-conv 56.3 F
@@ -67,9 +67,9 @@ Tipp: Den Buchstaben erhälst du über den Ausdruck `argv[2][0]` (Typ: `char`).
 
 ## Aufgabe 3: Währungsrechner
 
-Schreibe ein C-Programm `cur-conv.c`, welches von den Währungen US-Dollar (`D`), Euro (`E`) und Pfund (`P`) nach Schweizer Franken umrechnen kann. Das Programm erwartet zwei Angaben: Einen Betrag als Fliesskommazahl und das Währungssymbol. Der umgerechnete Beitrag wird in Schweizer Franken ausgegeben:
+Schreibe ein C-Programm `cur-conv.c`, welches von den Währungen US-Dollar (`D`), Euro (`E`) und Pfund (`P`) nach Schweizer Franken umrechnet. Das Programm erwartet zwei Angaben: Einen Betrag als Fliesskommazahl und das Währungssymbol. Der umgerechnete Beitrag wird in Schweizer Franken ausgegeben:
 
-```bash
+```plain
 $ ./cur-conv 100.00 D
 CHF 80.00
 $ ./cur-conv 100.00 E
@@ -104,7 +104,7 @@ Das Programm soll je nach errechneten Body-Mass-Index ein anderes Urteil fällen
 
 Das Programm soll folgendermassen funktionieren:
 
-```bash
+```plain
 $ ./bmi 2.01 75
 BMI=18.56 Untergewicht
 $ ./bmi 1.88 76
@@ -117,7 +117,7 @@ BMI=33.66 Übergewicht
 
 Schreibe ein C-Programm `range-check.c`, welches drei Ganzzahlen `x`, `a` und `b` entgegennimmt und ausgibt, ob `x` unterhalb, innerhalb oder überhalb des Bereiches zwischen `a` und `b` liegt:
 
-```bash
+```plain
 ./range-check 5 10 20
 5 ist unterhalb [10..20]
 ./range-check 15 10 20
@@ -153,7 +153,7 @@ Anschliessend gilt es, drei Fälle zu unterscheiden:
 Berechne die Lösungen nach der folgenden Formel:
 
 ```math
-$$ x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2a} $$
+$$ x_{1,2} = \frac{-b \pm \sqrt{D}}{2a} $$
 ```
 
 Beachte das Symbol $\pm$ über dem Bruchstrich: Im ersten Fall muss einmal plus und einmal minus gerechnet werden.
@@ -178,7 +178,7 @@ Berechne nichts und gib `keine Lösung` aus.
 
 Das Programm soll folgendermassen funktionieren:
 
-```bash
+```plain
 $ ./quadratic-equation 2 3 -5
 x1=1.0, x2=-2.5
 $ ./quadratic-equation 1 -2 1
@@ -199,7 +199,7 @@ Anschliessend soll der Sieger nach der folgenden Logik ermittelt werden:
 
 Das Programm soll folgendermassen funktionieren:
 
-```bash
+```plain
 $ ./rock-paper-scissors p
 Spieler: Paper
 Computer: Paper
@@ -224,7 +224,7 @@ char computer = rand() % 3;
 
 Schreibe ein Programm `zodiac-sign.c`, welches eine Tages- und eine Monatsangabe entgegennimmt und das Sternzeichen der Person ausgibt:
 
-```bash
+```plain
 $ ./zodiac-sign 25 3
 Widder
 $ ./zodiac-sign 24 6
