@@ -134,9 +134,9 @@ if (age > 18) {
 }
 ```
 
-### Mehrfachverzweigungen
+### Verzweigungen mit mehreren Alternativen
 
-Bei Mehrfachverzweigungen werden mehrere Rauten mit Bedingungen angegeben, z.B. verschachtelt bei "Unterfällen":
+Bei Verzweigungen mit mehreren Alternativen werden mehrere Rauten mit Bedingungen angegeben, z.B. verschachtelt bei "Unterfällen":
 
 ```mermaid
 flowchart TD
@@ -166,5 +166,61 @@ if (age > 18) {
     } else {
         print("Kind");
     }
+}
+```
+
+### Mehrfachverzweigungen
+
+Bei Mehrfachverzweigungen enthält die Raute keine Bedingung, sondern nur einen Ausdruck. Die ausgehenden Kanten werden dann mit dem dazu passenden konstanten Wert versehen:
+
+```mermaid
+flowchart TD
+    start([Start])
+    readGrade[Note einlesen]
+    switch{Note}
+    grade6[/'sehr gut' ausgeben/]
+    grade5[/'gut' ausgeben/]
+    grade4[/'gengügend' ausgeben/]
+    grade3[/'ungenügend' ausgeben/]
+    grade2[/'schlecht' ausgeben/]
+    grade1[/'sehr schlecht' ausgeben/]
+    gradeX[/'unbekannt' ausgeben/]
+    stop([Stop])
+
+    start --> readGrade --> switch;
+    switch -- "6" --> grade6 --> stop;
+    switch -- "5" --> grade5 --> stop;
+    switch -- "4" --> grade4 --> stop;
+    switch -- "3" --> grade3 --> stop;
+    switch -- "2" --> grade2 --> stop;
+    switch -- "1" --> grade1 --> stop;
+    switch -- "sonst" --> gradeX --> stop;
+```
+
+Pseudocode:
+
+```c
+grade = read();
+switch (grade) {
+    case 6:
+        print("sehr gut");
+        break;
+    case 5:
+        print("gut");
+        break;
+    case 4:
+        print("genügend");
+        break;
+    case 3:
+        print("ungenügend");
+        break;
+    case 2:
+        print("schlecht");
+        break;
+    case 1:
+        print("sehr schlecht");
+        break;
+    default:
+        print("unbekannt")
 }
 ```

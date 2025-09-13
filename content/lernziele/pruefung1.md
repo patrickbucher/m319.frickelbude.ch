@@ -30,3 +30,11 @@ title = 'Prüfung 1'
 1. Sie können alternative Codeblöcke mit `else` ausführen.
 1. Sie können Mehrfachverzweigungen mit `if`, `else if` und `else` formulieren.
 1. Sie können Bedingungen für den ternären Operator, `if` und `else` formulieren.
+
+## Mehrfachverzweigungen
+
+1. Sie können Mehrfachverzweigungen mit `switch`/`case` formulieren.
+2. Sie können dazu eine Standardbehandlung mit `default` formulieren.
+3. Sie können das Schlüsselwort `break` für die gegebene Aufgabenstellung korrekt einsetzen bzw. weglassen, um ein "Durchfallen" zu erreichen.
+4. Sie können beurteilen, ob für eine gegebene Aufgabenstellung der Einsatz von `switch`/`case` oder `if`/`else if`/`else` sinnvoller ist.
+5. Sie können bestehende (und dazu passende) `if`/`else if`/`else`-Konstrukte in `switch`/`case`-Konstrukte umschreiben und umgekehrt.
