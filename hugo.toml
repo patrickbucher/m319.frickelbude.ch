@@ -12,6 +12,7 @@ openapi = false
 showVisitedLinks = true
 themeVariant = 'red'
 hideAuthorDate = true
+enableEmoji = true
 
 [params.author]
 name = 'Patrick Bucher, BBZW Sursee'
