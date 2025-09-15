@@ -32,15 +32,15 @@ Schreibe ein C-Programm `pyth-triplets.c`, welches drei ganzzahlige Variablen `a
 Das Programm soll folgendermassen funktionieren:
 
 ```plain
-$ ./triplets 3 4 5
+$ ./pyth-triplets 3 4 5
 3, 4 und 5 sind ein pythagoräisches Triplet!
-$ ./triplets 1 2 3
+$ ./pyth-triplets 1 2 3
 1, 2, und 3 sind kein pythagoräisches Triplet!
 ```
 
 ## Aufgabe 2: Temperaturumrechner
 
-Schreibe ein C-Programm `temp-conv.c`, welches zwischen Temperaturangaben in den Einheiten Celsius und Fahrenheit umrechnt. Das Programm nimmt zwei Angaben entgegen: Eine Fliesskommazahl (Grad) und einen Buchstaben `'c'` bzw. `'C'` oder `'f'` bzw. `'F'`. Die Temperaturangabe soll jeweils in die andere umgerechnet werden:
+Schreibe ein C-Programm `temp-conv.c`, welches zwischen Temperaturangaben in den Einheiten Celsius und Fahrenheit umrechnet. Das Programm nimmt zwei Angaben entgegen: Eine Fliesskommazahl (Grad) und einen Buchstaben `'c'` bzw. `'C'` oder `'f'` bzw. `'F'`. Die Temperaturangabe soll jeweils in die andere umgerechnet werden:
 
 ```bash
 $ ./temp-conv 56.3 F
@@ -182,7 +182,7 @@ Das Programm soll folgendermassen funktionieren:
 $ ./quadratic-equation 2 3 -5
 x1=1.0, x2=-2.5
 $ ./quadratic-equation 1 -2 1
-x=1
+x=1.0
 $ ./quadratic-equation 3 4 5
 keine Lösung
 ```
