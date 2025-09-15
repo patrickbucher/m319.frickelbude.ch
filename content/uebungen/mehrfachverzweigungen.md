@@ -43,4 +43,4 @@ Die Benotung kann auch mittels Buchstaben erfolgen, was folgenden Schweizer Schu
 - E: 2
 - F: 1
 
-Gegeben ist eine Ganzzahl-Variable `g`, welche einen Grossbuchstaben von `'A'` bis `'F'` enthält und damit eine Schulnote repräsentiert. Schreibe eine Mehrfachverzweigung mit `switch`/`case`, welche für die genannten Buchstaben die dazu entsprechende Schweizer Note ausgibt und für alle anderen Werte `"ungültige Note"`.
+Gegeben ist eine Zeichen-Variable `g`, welche einen Grossbuchstaben von `'A'` bis `'F'` enthält und damit eine Schulnote repräsentiert. Schreibe eine Mehrfachverzweigung mit `switch`/`case`, welche für die genannten Buchstaben die dazu entsprechende Schweizer Note ausgibt und für alle anderen Werte `"ungültige Note"`.
