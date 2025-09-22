@@ -123,7 +123,7 @@ $ ./pos-null-neg 0
 null
 ```
 
-Tipp: Teile die Zahl `x` durch ihren Absolutwert, den du mittels `abs(x)` erhälst, um 1, 0 oder -1 zu erhalten. Formuliere anschliessend ein `switch`/`case`-Statement auf das Ergebnis.
+Tipp: Teile die Zahl `x` durch ihren Absolutwert, den du mittels `abs(x)` erhälst, um 1, 0 oder -1 zu erhalten. Formuliere anschliessend ein `switch`/`case`-Statement auf das Ergebnis. Vorsicht bei der Division durch 0!
 
 ## Aufgabe 6: Spielkarten
 
@@ -164,7 +164,7 @@ Spades Ace
 
 ## Aufgabe 7: Schachbrett-Koordinaten
 
-Bei Schachbrett werden die Spalten mit den Zeichen a-h und die Zeilen mit den Zahlen 1-8 bezeichnet. Ein bestimmtes Feld kann man dann mit Koordinaten wie z.B. "a4" oder "d7" benennen.
+Beim Schachbrett werden die Spalten mit den Zeichen a-h und die Zeilen mit den Zahlen 1-8 bezeichnet. Ein bestimmtes Feld kann man dann mit Koordinaten wie z.B. "a4" oder "d7" benennen.
 
 Schreibe ein C-Programm `chess-coords.c`, welches eine solche Koordinate entgegennimmt und zurückgibt, welche Farbe das Spielfeld hat.
 
