@@ -2,7 +2,6 @@
 date = '2025-09-14T19:02:11+02:00'
 title = 'Mehrfachverzweigungen'
 weight = 5
-draft = true
 +++
 
 Lege für die folgenden Übungen ein neues Verzeichnis namens `multibranches` an:
