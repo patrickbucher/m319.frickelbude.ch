@@ -165,7 +165,7 @@ Spades Ace
 
 ## Aufgabe 7: Schachbrett-Koordinaten
 
-Bei Schachbrett werden die Spalten mit den Zeichen a-h und die Zeilen mit den Zahlen 1-8 bezeichnet. Ein bestimmtes Feld kann man dann mit Koordinaten wie z.B. "a4" oder "d7" benennen.
+Beim Schachbrett werden die Spalten mit den Zeichen a-h und die Zeilen mit den Zahlen 1-8 bezeichnet. Ein bestimmtes Feld kann man dann mit Koordinaten wie z.B. "a4" oder "d7" benennen.
 
 Schreibe ein C-Programm `chess-coords.c`, welches eine solche Koordinate entgegennimmt und zurückgibt, welche Farbe das Spielfeld hat.
 
