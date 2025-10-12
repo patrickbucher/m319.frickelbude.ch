@@ -2,6 +2,7 @@
 date = '2025-10-12T17:59:38+02:00'
 title = 'Kombinierte Übungen'
 weight = 6
+draft = true
 +++
 
 Lege für die folgenden Übungen ein neues Verzeichnis namens `combined` an:
