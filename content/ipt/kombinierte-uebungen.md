@@ -30,32 +30,38 @@ Tipp: Du kannst wieder das [Grunderüst](/ipt/operatoren-und-ausdruecke/#aufgabe
 
 TODO: Trumpf und zwei Karten angeben, welche Karte macht den Stich?
 
-## Aufgabe 2: Repetitionen
+## Aufgabe 2: Trainingsvergleich
 
 TODO: welches Training (a Repetitionen mal b Gewicht, bzw. x y) ist intensiver bezogen auf die verwendete Kraft?
 
-## Aufgabe 4: Pit Stop Delta Time
-
-gegeben: Länge Boxengasse, Tempolimit Boxengasse, Stoppzeit, Anfangs- und Endgeschwindigkeit Zielgerade, Abstand zum Hintermann
-
-gesucht: reicht es um vorne zu bleiben? bzw. Delta Time
-
-## Aufgabe 5: Reifenstrategie
-
-gegeben: Rundenzeit in Sekunden, Reifenverschleiss (Faktor), Reifenperformance (Faktor), Pit Stop Delta Time
-
-## Aufgabe 6: Punktzahl für Rennen
-
-Sprint und Rennregeln für Punktevergabe (switch/case)
-
-## Aufgabe 7: Zielgeschwindigkeit beim Rudern
+## Aufgabe 3: Zielgeschwindigkeit beim Rudern
 
 gegeben: Distanz, Zeit (min.), Pausen (Anzahl und Länge in sec.)
 
 gesucht: nötige 500m-Zeit
 
-## Aufgabe 8: Bremsweg
+## Aufgabe 4: Bremsweg
 
 gegeben: Geschwindigkeit im km/h, Bremsverzögerung in m/s, Reaktionszeit in sec.
 
 gesucht: Weg bis zum Stillstand
+
+## Aufgabe 5: Einschlagsgeschwindigkeit und g-Kräfte
+
+gegeben: Bremsweg, Bremsverzögerung (Asphalt, Kiesbett, Rasen), Anfangsgeschwindigkeit
+
+gesucht: Einschlaggeschwindigkeit und g-Kräfte bei gegebener Aufschlagverzögerung (z.B. Reifenstapel, tech-pro-Barrier)
+
+## Aufgabe 6: Pit Stop Delta Time
+
+gegeben: Länge Boxengasse, Tempolimit Boxengasse, Stoppzeit, Anfangs- und Endgeschwindigkeit Zielgerade, Abstand zum Hintermann
+
+gesucht: reicht es um vorne zu bleiben? bzw. Delta Time
+
+## Aufgabe 7: Reifenstrategie
+
+gegeben: Rundenzeit in Sekunden, Reifenverschleiss (Faktor), Reifenperformance (Faktor), Pit Stop Delta Time
+
+## Aufgabe 8: Punktzahl für Rennen
+
+Sprint und Rennregeln für Punktevergabe (switch/case)
