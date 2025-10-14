@@ -38,7 +38,7 @@ Schreibe ein Programm `heavier-exercise.c`, welche vier Zahlen entgegenmimmt:
 3. das Gewicht der zweiten Übung in kg
 4. die Anzahl Repetitionen der zweiten Übung
 
-Das Programm soll einen _Arbeisfaktor_ (`w*r`) berechnen und ausgeben:
+Das Programm soll die beiden _Arbeisfaktoren_ (`w*r`) berechnen und vergleichend ausgeben:
 
 ```plain
 ./heavier-exercise 25 13 40 8
@@ -100,7 +100,7 @@ Das Schweizer Kartenspiel _Jassen_ kann mit den bereits bekannten französischen
 
 Zwei Karten können nach den folgenden Regeln miteinander verglichen werden:
 
-1. **Farbregel**: Die zuerst ausgespielte Karte gibt die Farbe für die jeweilige Runde vor. Verfügt der Gegenspieler nicht über eine Karte der gleichen Farbe, muss er eine Karte einer anderen Farbe geben. Diese hat wegen der Verletzung der Farbregel einen tieferen Wert als die zuerst ausgespielte Karte.
+1. **Farbregel**: Die zuerst ausgespielte Karte gibt die Farbe für die jeweilige Runde vor. Verfügt der Gegenspieler nicht über eine Karte der gleichen Farbe, muss er eine Karte einer anderen Farbe spielen. Diese hat wegen der Verletzung der Farbregel einen tieferen Wert als die zuerst ausgespielte Karte.
     - Beispiel: Wird _Schaufel_ ausgespielt, gilt `S6 > HA` (_Schaufel 6_ schlägt _Herz Ass_).
 1. **Trumpffarbe**: Eine Karte der jeweiligen Trumpffarbe schlägt die Karten der anderen Farbe. Die Farbregel wird dadurch ausser Kraft gesetzt.
     - Beispiel: Ist _Herz_ Trumpf, gilt `H6 > SK` (_Herz 6_ schlägt _Schaufel König_).
@@ -138,7 +138,7 @@ Stösst man im Strassenverkehr auf ein Hindernis und bremst, um eine Kollision z
 Dabei ist folgendes zu beachten:
 
 - Der Reaktionsweg ist abhängig von der Reaktionsgeschwindigkeit und der Fahrzeuggeschwindigkeit.
-- Der Bremsweg ist abhängig von der Fahrzeuggeschwindigkeit und von der Bremsleistung (Verzögerung).
+- Der Bremsweg ist abhängig von der Fahrzeuggeschwindigkeit und von der Bremsleistung (Verzögerung). Der Bremsweg wird mit der durchschnittlichen Geschwindigkeit von Anfangsgeschwindigkeit und Stillstand gerechnet, sprich die Hälfte der Anfangsgeschwindigkeit.
 
 Schreibe ein Programm `stop-distance.c`, welches folgende Angaben entgegennimmt:
 
@@ -159,7 +159,7 @@ Das Programm soll den Weg bis zum Stillstand berechnen und auf zwei Nachkommaste
 
 Tipps:
 
-- Rechne zuerst die Geschwindigkeit von km/h in m/s um, indem du sie mit 3.6 dividierst.
+- Rechne zuerst die Geschwindigkeit von km/h in m/s um, indem du sie durch 3.6 dividierst.
 - Der Reaktionsweg ist die Reaktionszeit multipliziert mit der Geschwindigkeit (in m/s).
 - Der Bremsdauer ist die Geschwindigkeit (in m/s) dividiert durch die Bremsleistung (in m/s²).
 - Der Bremsweg ist die Bremsdauer multipliziert mit der Durchschnittsgeschwindigkeit.
@@ -235,7 +235,7 @@ Bei einem Formel-1-Rennen verliert man bei einem Boxenstopp Zeit gegenüber den 
 
 Die verlorene Zeit beim Boxenstopp gegenüber einer normalen Runde bezeichnet man als _Pit Stop Delta Time_. Diese ist von folgenden Einflussfaktoren abhängig:
 
-1. Länge der Boxengasse (in m)
+1. Länge der Boxengasse bzw. Zielgerade (in m)
 2. Tempolimit in der Boxengasse (in km/h)
 3. Standzeit beim Boxenstopp (in s)
 4. Durchschnittsgeschwindigkeit auf der Zielgeraden (in km/h)
@@ -253,9 +253,11 @@ Schreibe ein Programm `pit-stop-delta-time.c`, welches die obenstehenden Angaben
 
 Mit den Formeln der Aufgaben 4 und 6 sollte sich die Aufgabe lösen lassen.
 
+Die Länge der Boxengasse und Zielgeraden können der Einfachheit halber als gleich angesehen werden.
+
 ## Aufgabe 8: Reifenverschleiss
 
-In der Formel 1 gibt es verschiedene Reifenmischungen ("Compounds"). Je weicher ein Reifen ist, desto schnellere Runden lässt er zu Beginn zu, doch desto schneller baut er auch ab. Jede Reifenmischung hat zwei Kennwerte: Die Leistungseinbusse gegenüber der schnellsten Reifenmischung und der Abbau der Leistung pro Runde:
+In der Formel 1 gibt es verschiedene Reifenmischungen ("Compounds"). Je weicher ein Reifen ist, desto schnellere Runden lässt er zu Beginn zu, doch desto schneller baut er auch ab und wird so langsamer. Jede Reifenmischung hat zwei Kennwerte: Die Leistungseinbusse gegenüber der schnellsten Reifenmischung und der Abbau der Leistung pro Runde:
 
 | Mischung | Leistungseinbusse $p_{\alpha} $ | Leistungsabbau $ p_{\beta} $ |
 | -------- | -----------------:| --------------:|
@@ -274,7 +276,7 @@ Schreibe ein C-Programm `tyre-degradation.c`, welches die folgenden Angaben entg
 Das Programm soll berechnen, wie schnell die letzte Runde mit der Reifenmischung in Sekunden $t$ absolviert wird.
 
 ```math
-$$ t = t_0 * p_{\alpha} * + p_{\beta}^{n} $$
+$$ t = t_0 \times p_{\alpha} \times + p_{\beta}^{n} $$
 ```
 
 Tipps:
