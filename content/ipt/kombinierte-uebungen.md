@@ -252,3 +252,44 @@ Schreibe ein Programm `pit-stop-delta-time.c`, welches die obenstehenden Angaben
 ```
 
 Mit den Formeln der Aufgaben 4 und 6 sollte sich die Aufgabe lösen lassen.
+
+## Aufgabe 8: Reifenverschleiss
+
+In der Formel 1 gibt es verschiedene Reifenmischungen ("Compounds"). Je weicher ein Reifen ist, desto schnellere Runden lässt er zu Beginn zu, doch desto schneller baut er auch ab. Jede Reifenmischung hat zwei Kennwerte: Die Leistungseinbusse gegenüber der schnellsten Reifenmischung und der Abbau der Leistung pro Runde:
+
+| Mischung | Leistungseinbusse $p_{\alpha} $ | Leistungsabbau $ p_{\beta} $ |
+| -------- | -----------------:| --------------:|
+| C5       | 0%                | 0.93%          |
+| C4       | 1%                | 0.85%          |
+| C3       | 2%                | 0.72%          |
+| C2       | 3%                | 0.58%          |
+| C1       | 4%                | 0.49%          |
+
+Schreibe ein C-Programm `tyre-degradation.c`, welches die folgenden Angaben entgegennimmt:
+
+1. Die Reifenmischung (z.B. `C5`, `C4` usw.)
+2. Eine Referenz-Rundenzeit $t_0$ in Sekunden (z.B. `90`)
+3. Die Anzahl geplanter Runden $n$ mit einer Reifenmischung
+
+Das Programm soll berechnen, wie schnell die letzte Runde mit der Reifenmischung in Sekunden $t$ absolviert wird.
+
+```math
+$$ t = t_0 * p_{\alpha} * + p_{\beta}^{n} $$
+```
+
+Tipps:
+
+- Rechne die Leistungseinbussen von Prozent in Faktoren um (z.B. 8% = 1.08)
+- Verwende die Funktion `pow` aus `math.h` für Potenzrechnungen. (Beim Kompilieren wird das Flag `-lm` benötigt.)
+- Setze die Faktoren $p_{\alpha}$ und $p_{\beta}$ mithilfe von `switch`/`case` abhängig von der Reifenmischung.
+
+```plain
+./tyre-degradation C5 90 3 
+92.53
+./tyre-degradation C1 90 3
+94.98
+./tyre-degradation C5 90 20
+108.30
+./tyre-degradation C1 90 20
+103.21
+```
