@@ -23,7 +23,7 @@ Sichere nach jeder Aufgabe deine Lösung (z.B. `some-exercise.c`):
 
 Bearbeite so die folgenden Aufgaben. **Es sollen überall `switch`/`case`-Konstrukte zum Einsatz kommen!**
 
-Tipp: Du kannst wieder das [Grunderüst](/ipt/operatoren-und-ausdruecke/#aufgabe-0-grundgerüst) von vorletzter Woche als Grundlage für jede Aufgabe verwenden.
+Tipp: Du kannst wieder das [Grundgerüst](/ipt/operatoren-und-ausdruecke/#aufgabe-0-grundgerüst) von vorletzter Woche als Grundlage für jede Aufgabe verwenden.
 
 ## Aufgabe 1: Vokal oder Konsonant?
 

@@ -23,7 +23,7 @@ Sichere nach jeder Aufgabe deine Lösung (z.B. `some-exercise.c`):
 
 Bearbeite so die folgenden Aufgaben. Es können alle bisher behandelten Konstrukte zum Einsatz kommen.
 
-Tipp: Du kannst wieder das [Grunderüst](/ipt/operatoren-und-ausdruecke/#aufgabe-0-grundgerüst) von früher als Grundlage für jede Aufgabe verwenden.
+Tipp: Du kannst wieder das [Grundgerüst](/ipt/operatoren-und-ausdruecke/#aufgabe-0-grundgerüst) von früher als Grundlage für jede Aufgabe verwenden.
 
 ## Aufgabe 1: Trainingsvergleich
 
