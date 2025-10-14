@@ -13,7 +13,7 @@ Sie können noch einmal die bisher kennengelernten Programmierkonstrukte üben.
 ## Ablauf
 
 1. Administratives
-2. Arbeit an praktischen Übungen
+2. Arbeit an praktischen [Übungen](/ipt/kombinierte-uebungen/)
     - gleichzeitig (Lektionen 3 & 4): Einzelgespräche zum Fortschritt
 
 ## Hausaufgaben
