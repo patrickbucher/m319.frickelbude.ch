@@ -202,3 +202,29 @@ unknown race type 'X'
 ./f1-points G 17
 0
 ```
+
+## Aufgabe 6: g-Kräfte bei Aufprall
+
+Die auf einen Rennfahrer wirkenden Kräfte bei einem Aufprall werden in _g-Kräften_ angegeben, wobei ein g der Erdbeschleunigung von 9.81 m/s² beträgt.
+
+Schreibe ein Programm `g-force.c`, welches folgende Angaben entgegennimmt:
+
+- Einschlaggeschwindigkeit in km/h
+- Bremsdistanz in m (bei einem Aufschlag oft nur wenige Zentimeter!)
+
+Das Programm soll die Bremsverzögerung in g angeben:
+
+```plain
+./g-force 100 1
+39.33
+./g-force 200 0.5
+314.62
+```
+
+Tipp:
+
+- Rechne die Anfangsgeschwindigkeit von km/h nach m/s um, indem du sie durch 3.6 teilst.
+- Die Bremsdauer (in s) erhälst du, indem du den Bremsweg durch die Durchschnittsgeschwindigkeit dividierst.
+- Die Durchschnittsgeschwindigkeit beim Aufprall ist die Hälfte der Einschlaggeschwindigkeit.
+- Die Bremsbeschleunigung erhälst du, indem du die Einschlaggeschwindigkeit durch die Bremsdauer dividierst.
+- Die g-Kräfte erhälst du, indem du die Bremsbeschleunigung durch 9.81 dividierst.
