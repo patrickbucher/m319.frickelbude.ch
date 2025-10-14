@@ -25,7 +25,31 @@ Bearbeite so die folgenden Aufgaben. Es können alle bisher behandelten Konstruk
 
 Tipp: Du kannst wieder das [Grunderüst](/ipt/operatoren-und-ausdruecke/#aufgabe-0-grundgerüst) von früher als Grundlage für jede Aufgabe verwenden.
 
-## Aufgabe 1: Jass-Stiche
+## Aufgabe 1: Trainingsvergleich
+
+Ein Sportler fragt sich, bei welcher Übung er mehr Arbeit (im physikalischen Sinn) verrichtet. Bei jedem Satz einer Übung hebt er ein bestimmtes Gewicht `w` zu einer bestimmten Anzahl Repetitionen `r`. Die Arbeit kann dann als Gewicht multipliziert mit der Anzahl Repetitionen (`w*r`) berechnet werden.
+
+Der Sportler möchte nun wissen, welche von zwei Übungen die anstrengendere ist.
+
+Schreibe ein Programm `heavier-exercise.c`, welche vier Zahlen entgegenmimmt:
+
+1. das Gewicht der ersten Übung in kg
+2. die Anzahl Repetitionen der ersten Übung
+3. das Gewicht der zweiten Übung in kg
+4. die Anzahl Repetitionen der zweiten Übung
+
+Das Programm soll einen _Arbeisfaktor_ (`w*r`) berechnen und ausgeben:
+
+```plain
+./heavier-exercise 25 13 40 8
+325 > 320
+./heavier-exercise 20 10 45 7
+200 < 315
+./heavier-exercise 20 10 40 5
+200 = 200
+```
+
+## Aufgabe 2: Jass-Stiche
 
 Das Schweizer Kartenspiel _Jassen_ kann mit den bereits bekannten französischen Karten gespielt werden, welche sich durch zwei Zeichen identifizieren lassen:
 
