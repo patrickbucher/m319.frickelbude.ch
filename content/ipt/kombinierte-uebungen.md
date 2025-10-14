@@ -228,3 +228,27 @@ Tipp:
 - Die Durchschnittsgeschwindigkeit beim Aufprall ist die Hälfte der Einschlaggeschwindigkeit.
 - Die Bremsbeschleunigung erhälst du, indem du die Einschlaggeschwindigkeit durch die Bremsdauer dividierst.
 - Die g-Kräfte erhälst du, indem du die Bremsbeschleunigung durch 9.81 dividierst.
+
+## Aufgabe 7: Pit Stop Delta Time
+
+Bei einem Formel-1-Rennen verliert man bei einem Boxenstopp Zeit gegenüber den anderen Fahrern, welche die Start-Ziel-Gerade mit voller Geschwindigkeit passieren.
+
+Die verlorene Zeit beim Boxenstopp gegenüber einer normalen Runde bezeichnet man als _Pit Stop Delta Time_. Diese ist von folgenden Einflussfaktoren abhängig:
+
+1. Länge der Boxengasse (in m)
+2. Tempolimit in der Boxengasse (in km/h)
+3. Standzeit beim Boxenstopp (in s)
+4. Durchschnittsgeschwindigkeit auf der Zielgeraden (in km/h)
+
+Schreibe ein Programm `pit-stop-delta-time.c`, welches die obenstehenden Angaben entgegennimmt und daraus die verlorene Zeit beim Boxenstopp berechnet:
+
+```plain
+./pit-stop-delta-time 500 80 3.1 200
+16.60s
+./pit-stop-delta-time 400 60 2.9 180
+18.90s
+./pit-stop-delta-time 900 80 3.5 275
+32.22s
+```
+
+Mit den Formeln der Aufgaben 4 und 6 sollte sich die Aufgabe lösen lassen.
