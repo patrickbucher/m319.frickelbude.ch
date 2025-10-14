@@ -164,3 +164,41 @@ Tipps:
 - Der Bremsdauer ist die Geschwindigkeit (in m/s) dividiert durch die Bremsleistung (in m/s²).
 - Der Bremsweg ist die Bremsdauer multipliziert mit der Durchschnittsgeschwindigkeit.
 - Die Durchschnittsgeschwindigkeit des Bremsvorgangs ist die Hälfte der Startgeschwindigkeit.
+
+## Aufgabe 5: Punktezahl für Rennen
+
+In der Formel 1 gibt es _Sprint-Rennen_ über 100 Kilometer und _Grand Prix_ über eine volle Renndistanz. Je nach Position am Ende des Rennens erhält man eine andere Punktzahl:
+
+- Sprint-Rennen
+    1. 8
+    2. 7
+    3. 6
+    4. 5
+    5. 4
+    6. 3
+    7. 2
+    8. 1
+- Grand Prix
+    1. 25
+    2. 18
+    3. 15
+    4. 12
+    5. 10
+    6. 8
+    7. 6
+    8. 4
+    9. 2
+    10. 1
+
+Schreibe ein Programm `f1-points.c`, welches die Art des Rennens (`S` für Sprint, `G` für Grand Prix) und die Position entgegennimmt und ausgibt, wie viele Punkte der Fahrer gewinnt:
+
+```plain
+./f1-points S 7
+2
+./f1-points G 3
+15
+./f1-points X 1
+unknown race type 'X'
+./f1-points G 17
+0
+```
