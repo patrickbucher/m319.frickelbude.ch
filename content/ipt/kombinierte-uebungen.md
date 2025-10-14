@@ -49,7 +49,36 @@ Das Programm soll einen _Arbeisfaktor_ (`w*r`) berechnen und ausgeben:
 200 = 200
 ```
 
-## Aufgabe 2: Jass-Stiche
+## Aufgabe 2: 500-Meter-Split-Zeit beim Rudern
+
+Ein Ruderer möchte sein Training planen. Dazu möchte er folgende Angaben machen:
+
+1. zurückzulegende Distanz in Kilometern (z.B. 10)
+2. Trainingszeit in Minuten (z.B. 45)
+3. Anzahl der Pausen während des Trainings (z.B. 3)
+4. Dauer dieser Pausen in Sekunden (z.B. 30)
+
+Das Display des Ergometers zeigt immer die Zeit an, die der Ruderer mit seiner derzeitigen Leistung für 500 Meter benötigt (_500 meter split time_).
+
+Schreibe ein Programm `split-time.c`, welches diese Angabe anhand der vier bekannten Informationen berechnet:
+
+```plain
+./split-time 10 45 3 45
+2m8s
+./split-time 14 60 4 30
+2m4s
+```
+
+Gehe bei der Berechnung folgendermassen vor:
+
+1. Berechne die gesamte Pausenzeit (in Sekunden)
+2. Berechne die reine Ruderzeit (in Sekunden) als Gesamtzeit minus Pausenzeit
+3. Berechne die Anzahl 500-Meter-Abschnitte als Distanz in Metern durch 500 dividiert
+4. Berechne die 500-Meter-Splitzeit als Ruderzeit dividiert durch Anzahl 500-Meter-Abschnitte
+
+Tipp: Mit den Funktionen `floor`, `ceil` und `round` kannst du ab-, auf- und arithmetisch runden.
+
+## Aufgabe 3: Jass-Stiche
 
 Das Schweizer Kartenspiel _Jassen_ kann mit den bereits bekannten französischen Karten gespielt werden, welche sich durch zwei Zeichen identifizieren lassen:
 
@@ -98,3 +127,40 @@ SK > SQ
 ./stronger-card S SQ SJ
 SQ < SJ
 ```
+
+## Aufgabe 4: Weg bis zum Stillstand
+
+Stösst man im Strassenverkehr auf ein Hindernis und bremst, um eine Kollision zu vermeiden, legt man noch eine Distanz zurück, bis das Fahrzeug schliesslich anhält. Diese Distanz setzt sich aus zwei Komponenten zusammen:
+
+1. Reaktionsweg: den Weg den man mit voller Geschwindigkeit zurücklegt, bis man den Bremsvorgang einleitet.
+2. Bremsweg: den Weg den das Fahrzeug mit verzögerter Geschwindigkeit zurücklegt, bis es schliesslich stillsteht.
+
+Dabei ist folgendes zu beachten:
+
+- Der Reaktionsweg ist abhängig von der Reaktionsgeschwindigkeit und der Fahrzeuggeschwindigkeit.
+- Der Bremsweg ist abhängig von der Fahrzeuggeschwindigkeit und von der Bremsleistung (Verzögerung).
+
+Schreibe ein Programm `stop-distance.c`, welches folgende Angaben entgegennimmt:
+
+1. die Fahrzeuggeschwindigkeit in km/h
+2. die Reaktionszeit in Sekunden
+3. die Bremsleistung in m/s²
+
+Das Programm soll den Weg bis zum Stillstand berechnen und auf zwei Nachkommastellen genau ausgeben:
+
+```plain
+./stop-distance 50 1 5
+83.33m
+./stop-distance 30 1 5
+33.33m
+./stop-distance 100 0.5 7
+212.30m
+```
+
+Tipps:
+
+- Rechne zuerst die Geschwindigkeit von km/h in m/s um, indem du sie mit 3.6 dividierst.
+- Der Reaktionsweg ist die Reaktionszeit multipliziert mit der Geschwindigkeit (in m/s).
+- Der Bremsdauer ist die Geschwindigkeit (in m/s) dividiert durch die Bremsleistung (in m/s²).
+- Der Bremsweg ist die Bremsdauer multipliziert mit der Durchschnittsgeschwindigkeit.
+- Die Durchschnittsgeschwindigkeit des Bremsvorgangs ist die Hälfte der Startgeschwindigkeit.
