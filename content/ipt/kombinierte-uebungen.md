@@ -146,15 +146,15 @@ Schreibe ein Programm `stop-distance.c`, welches folgende Angaben entgegennimmt:
 2. die Reaktionszeit in Sekunden
 3. die Bremsleistung in m/s²
 
-Das Programm soll den Weg bis zum Stillstand berechnen und auf zwei Nachkommastellen genau ausgeben:
+Das Programm soll den Weg bis zum Stillstand (d.h. die Summe von Rekations- und Bremsweg) berechnen und auf zwei Nachkommastellen genau ausgeben:
 
 ```plain
 ./stop-distance 50 1 5
-83.33m
+33.18m
 ./stop-distance 30 1 5
-33.33m
+15.28m
 ./stop-distance 100 0.5 7
-212.30m
+69.00m
 ```
 
 Tipps:
