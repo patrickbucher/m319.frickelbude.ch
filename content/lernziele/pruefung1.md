@@ -1,6 +1,7 @@
 +++
 date = '2025-08-24T19:44:03+02:00'
 title = 'Prüfung 1'
+weight = 1
 +++
 
 ## Hallo, Welt!
