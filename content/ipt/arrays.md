@@ -1,6 +1,7 @@
 +++
 date = '2025-10-20T20:51:10+02:00'
 title = 'Arrays'
+weight = 7
 +++
 
 ## Morsealphabet
