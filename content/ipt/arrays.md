@@ -4,7 +4,7 @@ title = 'Arrays'
 weight = 7
 +++
 
-## Morsealphabet
+## Aufgabe 1: Morsealphabet
 
 Schreibe ein Programm `morse.c`. Bilde darin den Morsecode für die Vokale `A`, `E`, `I`, `O` und `U` ab, indem du für jeden dieser Buchstaben ein null-terminiertes Array definierst und folgendermassen mit den Zeichen `.` und `-` (Punkt und Bindestrich) initialisierst:
 
@@ -25,7 +25,7 @@ $ ./morse X
 ?
 ```
 
-## Schiffe versenken (in einem engen Kanal)
+## Aufgabe 2: Schiffe versenken (in einem engen Kanal)
 
 Verwende für das folgende Programm dieses Grundgerüst namens `ship.c`:
 
@@ -65,7 +65,7 @@ $ ./ship 8
 error
 ```
 
-## Palindrome
+## Aufgabe 3: Palindrome
 
 Schreibe ein C-Programm `palindrome.c`, welches vom Benutzer Wörter der Länge 5 entgegennimmt und prüft, ob es sich dabei um ein Palindrom handelt (d.h. ob das Wort vorwärts und rückwärts gelesen gleich ist):
 
@@ -84,7 +84,7 @@ unsupported length 4
 
 Die Länge findest du über die Funktion `strlen` aus `string.h` heraus.
 
-## Strings kürzen
+## Aufgabe 4: Strings kürzen
 
 Schreibe ein Programm namens `trim.c`, welches zwei Argumente entgegennimmt:
 
