@@ -224,3 +224,40 @@ switch (grade) {
         print("unbekannt")
 }
 ```
+
+### Schleifen
+
+Bei Schleifen kann der Programmablauf weiter oben im Programm fortgesetzt werden.
+
+Bei einer fussgesteuerten Schleife ist die Prüfung unterhalb der zu wiederholenden Anweisung(en):
+
+```mermaid
+flowchart TD
+    start([Start])
+    random[Zufallszahl bestimmen]
+    read[/Benutzereingabe einlesen/]
+    comparison{Eingabe}
+    win[/'gewonnen' ausgeben/]
+    loose[/'falsch' ausgeben/]
+    stop([Stop])
+
+    start --> random --> read --> comparison;
+    comparison -- "Eingabe = Zufallszahl" --> win --> stop;
+    comparison -- "Eingabe ≠ Zufallszahl" --> loose --> read;
+```
+
+Bei einer kopfgesteuerten Schleife ist die Prüfung oberhalb der zu wiederholenden Anweisung(en).
+
+```mermaid
+flowchart TD
+    start([Start])
+    random[Zufallszahl bestimmen]
+    comparison{Zufallszahl}
+    write[/Zufallszahl ausgeben/]
+    halve[Zufallszahl halbieren]
+    stop([Stop])
+
+    start --> random --> comparison;
+    comparison -- "Zufallszahl > 10" --> halve --> comparison;
+    comparison -- "Zufallszahl ≤ 10" --> write --> stop;
+```
