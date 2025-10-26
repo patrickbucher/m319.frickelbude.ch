@@ -1,6 +1,7 @@
 +++
 date = '2025-10-21T08:07:31+02:00'
 title = 'IPT 1.1, Block 7: Prüfung & Arrays'
+weight = 14
 +++
 
 Im siebten IPT-Block findet die erste Modulprüfung statt. Anschliessend gibt es einige Übungen zum Thema Arrays.
