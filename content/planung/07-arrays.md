@@ -4,7 +4,7 @@ title = 'Block 7: Arrays'
 weight = 13
 +++
 
-Im sechsten Block schauen wir uns systematisch an, was wir schon länger verwendet haben: Arrays, somit sich mehrere Werte unter einem Namen abspeichern lassen.
+Im siebten Block schauen wir uns systematisch an, was wir schon länger verwendet haben: Arrays, somit sich mehrere Werte unter einem Namen abspeichern lassen.
 
 ## Ziel
 
