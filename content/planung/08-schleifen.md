@@ -4,7 +4,7 @@ title = 'Block 8: Schleifen'
 weight = 15
 +++
 
-Im achten Block schauen wir uns an, wie man Codeabschnitte wiederholt ausführ: mithilfe von Schleifen. 
+Im achten Block schauen wir uns an, wie man Codeabschnitte wiederholt ausführt: mithilfe von Schleifen. 
 
 ## Ziel
 
@@ -18,7 +18,7 @@ Sie können Schleifen mit `while`, `do`/`while` und `for` formulieren und den Sc
 - [5 min.] Betrachtung der [Lernziele](/lernziele/pruefung2/#schleifen)
 - [20 min.] Theorie zu Schleifen
 - [5 min.] Erweitertes [Flussdiagramm](/theorie/darstellung/#schleifen)
-- [10 min.] Arbeit an den Übungen(/uebungen/schleifen/)
+- [10 min.] Arbeit an den [Übungen](/uebungen/schleifen/)
 
 ### Lektion 2
 
