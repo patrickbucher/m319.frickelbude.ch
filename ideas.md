@@ -1,0 +1,32 @@
+- Morsealphabet auf ganze Wörter anwenden
+- Palindrome beliebiger Länge erkennen
+- Minimum und Maximum ermitteln
+- mean berechnen
+- Notenberechnung
+    - grade 100 Alois 72 Susi 95 Therese 55 Uschi 99
+- Grundoperationen mit beliebiger Anzahl Operanden
+- Fortschrittsbalken anzeigen
+- Jasskarten ausgeben
+- gleichseitiges Dreieck per ASCII-Zeichen darstellen
+- Sortierung überprüfen
+- Zeitspannen addieren
+- Binärzahlen in Dezimalzahlen konvertieren (und umgekehrt)
+- Hexadezimalzahlen in Dezimalzahlen konvertieren (und umgekehrt)
+- Zahlenratespiel (1 bis 100) mit Hinweisen (zu tief, zu hoch)
+    - scanf einführen
+- evtl. Sortierung mit Bubble Sort
+- römische Zahlen parsen und schreiben
+
+Idee: Taschenrechner für Zeiten
+
+- Addition
+    - Zeitpunkt + Zeitspanne = Zeitpunkt
+    - Zeitspanne + Zeitspanne = Zeitspanne
+- Subtraktion
+    - Zeitpunkt - Zeitpunkt = Zeitspanne
+    - Zeitspanne - Zeitspanne = Zeitspanne
+    - Zeitpunkt - Zeitspanne = Zeitpunkt
+- Multiplikation
+    - Zeitspanne * Konstante = Zeitspanne
+- Division
+    - Zeitspanne / Konstante = Zeitspanne
