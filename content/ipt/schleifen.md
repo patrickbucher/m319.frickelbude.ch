@@ -4,7 +4,7 @@ title = 'Schleifen'
 weight = 8
 +++
 
-# Aufgabe 1: Zahlenreihe generieren
+## Aufgabe 1: Zahlenreihe generieren
 
 Schreibe ein Programm namens `series.c`, welches Zahlenreihen berechnet und ausgibt. Das Programm soll zwei Argumente entgegennehmen:
 
@@ -22,7 +22,7 @@ $ ./series 9 3
 9 18 27
 ```
 
-# Aufgabe 2: Grundoperationen mit beliebig vielen Operanden
+## Aufgabe 2: Rechner mit beliebig vielen Operanden
 
 Schreibe ein Programm namens `calculator.c`, welches neben den vier Grundrechenarten Addition, Subtraktion, Multiplikation und Division auch die Potenzierung unterstützt. Das Programm nimmt als erstes Argument die Rechenoperation (`+`, `-`, `x`, `:`, `^`) und als beliebig viele weitere Argumente die Operanden. Das Programm soll die ausgewählte Berechnung durchführen und das Resultat ausgeben:
 
@@ -39,7 +39,7 @@ $ ./calculator ^ 2 3 2
 64
 ```
 
-# Aufgabe 3: Gleichseitiges Dreieck zeichnen
+## Aufgabe 3: Gleichseitiges Dreieck zeichnen
 
 Schreibe ein Programm namens `triangle.c`, welches eine positive Ganzzahl als Argument entgegennimmt und ein gleichseitiges Dreieck der entsprechenden Seitenlänge ausgibt:
 
@@ -64,7 +64,7 @@ $ ./triangle 8
 
 Tipp: Das Programm benötigt zwei ineinander verschachtelte Schleifen!
 
-# Aufgabe 4: Text mit Banner umfassen
+## Aufgabe 4: Text mit Banner umfassen
 
 Schreibe ein Programm namens `banner.c`, welches ein Wort als Argument entgegennimmt und es mit einem Rahmen umfasst:
 
@@ -85,7 +85,7 @@ $ ./banner whatever
 
 Tipp: Verwende die Funktion `strlen` aus `string.h`, um die Länge des einzurahmenden Wortes zu ermitteln.
 
-# Aufgabe 5: Zahlenratespiel
+## Aufgabe 5: Zahlenratespiel
 
 Schreibe ein Programm namens `guess.c`, welches eine Zufallszahl zwischen 1 und 100 generiert, die dann der Benutzer erraten muss. Der Benutzer gibt der Reihe nach seine Tipps ein, und das Programm gibt Tipps, ob der Benutzer höher oder tiefer raten soll, bis der Benutzer die richtige Zahl errät:
 
@@ -111,7 +111,7 @@ Tipps:
 - Initialisiere den Zufallszahlengenerator mit `srand(time(NULL))`, wozu die Header-Dateien `stdlib.h` und `time.h` benötigt werden.
 - Eine Zufallszahl zwischen 1 und 100 erhälst du mit dem Ausdruck `rand() % 100 + 1`.
 
-# Aufgabe 6: Notenblatt generieren
+## Aufgabe 6: Notenblatt generieren
 
 Schreibe ein Programm namens `grades.c`, welches folgende Argumente entgegennimmt:
 
@@ -135,7 +135,7 @@ Bob     42/60   4.2
 Mallory 39/60   3.9
 ```
 
-# Aufgabe 7: Sortierung überprüfen
+## Aufgabe 7: Sortierung überprüfen
 
 Schreibe ein Programm namens `sorted.c`, welches eine Reihe von Zahlen entgegennimmt und überprüft, ob diese aufsteigend sortiert ist:
 
@@ -146,7 +146,7 @@ $ ./sorted 1 2 9 5 6 7
 unsorted
 ```
 
-# Aufgabe 8: Palindrome
+## Aufgabe 8: Palindrome
 
 Schreibe ein Programm namens `palindrome.c`, welches ein Wort als Argument entgegennimmt und überprüft, ob es sich dabei um ein Palindrom handelt:
 
