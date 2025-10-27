@@ -15,12 +15,12 @@ Sie können Schleifen mithilfe von `while`, `do`/`while` und `for` für gegebene
 ### Lektionen 1-4
 
 1. [5 min.] Administratives
-1. Rest: Arbeit an den Übungen
+1. Rest: Arbeit an den [Übungen](/ipt/schleifen)
     - währenddessen: persönliche Besprechung
         1. Hausaufgaben
         2. Prüfungen Modul 319 und IPT 1.1
-        3. Stand der Übungen
+        3. Stand der [Übungen](/ipt/schleifen)
 
 ### Hausaufgaben
 
-Bearbeite die Übungen gemäss Teams-Auftrag.
+Bearbeite die [Übungen](/ipt/schleifen) gemäss Teams-Auftrag.
