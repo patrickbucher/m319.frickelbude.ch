@@ -41,12 +41,123 @@ $ ./calculator ^ 2 3 2
 
 # Aufgabe 3: Gleichseitiges Dreieck zeichnen
 
+Schreibe ein Programm namens `triangle.c`, welches eine positive Ganzzahl als Argument entgegennimmt und ein gleichseitiges Dreieck der entsprechenden Seitenlänge ausgibt:
+
+```plain
+$ ./triangle 4
+*
+**
+***
+****
+$ ./triangle 1
+*
+$ ./triangle 8
+*
+**
+***
+****
+*****
+******
+*******
+********
+```
+
+Tipp: Das Programm benötigt zwei ineinander verschachtelte Schleifen!
+
 # Aufgabe 4: Text mit Banner umfassen
+
+Schreibe ein Programm namens `banner.c`, welches ein Wort als Argument entgegennimmt und es mit einem Rahmen umfasst:
+
+```plain
+$ ./banner boom
+########
+# boom #
+########
+$ ./banner X
+#####
+# X #
+#####
+$ ./banner whatever
+############
+# whatever #
+############
+```
+
+Tipp: Verwende die Funktion `strlen` aus `string.h`, um die Länge des einzurahmenden Wortes zu ermitteln.
 
 # Aufgabe 5: Zahlenratespiel
 
+Schreibe ein Programm namens `guess.c`, welches eine Zufallszahl zwischen 1 und 100 generiert, die dann der Benutzer erraten muss. Der Benutzer gibt der Reihe nach seine Tipps ein, und das Programm gibt Tipps, ob der Benutzer höher oder tiefer raten soll, bis der Benutzer die richtige Zahl errät:
+
+```plain
+$ ./guess
+Guess the number: 50
+too low
+Guess the number: 75
+too high
+Guess the number: 66
+too low
+Guess the number: 70
+too high
+Guess the number: 68
+You guessed the right number after 5 tries!
+```
+
+Das Programm soll sich merken, wie viele Versuche der Benutzer zum Erraten der Zahl benötigt und dies auch ausgeben.
+
+Tipps:
+
+- Verwende die Funktion `scanf("%d", &x)` (mit dem Adressoperator `&`), um die interaktive Benutzereingabe in der Variablen `x` zu speichern.
+- Initialisiere den Zufallszahlengenerator mit `srand(time(NULL))`, wozu die Header-Dateien `stdlib.h` und `time.h` benötigt werden.
+- Eine Zufallszahl zwischen 1 und 100 erhälst du mit dem Ausdruck `rand() % 100 + 1`.
+
 # Aufgabe 6: Notenblatt generieren
+
+Schreibe ein Programm namens `grades.c`, welches folgende Argumente entgegennimmt:
+
+- Eine Maximalpunktzahl als Fliesskommazahl.
+- Abwechselnd:
+    - ein Name als Zeichenkette
+    - die erreichte Punktzahl dieser Person als Fliesskommazahl
+
+Das Programm errechnet aus den erreichten Punktzahlen die Note gemäss der folgenden Formel:
+
+```math
+$$ N = \frac{P}{P_{max}} \times 5 + 1 $$
+```
+
+Anschliessend wird ein Notenblatt ausgegeben:
+
+```plain
+$ ./grades 60 Alice 53 Bob 42 Mallory 39
+Alice   53/60   5.3
+Bob     42/60   4.2
+Mallory 39/60   3.9
+```
 
 # Aufgabe 7: Sortierung überprüfen
 
-# Aufgabe 8: Wörter morsen
+Schreibe ein Programm namens `sorted.c`, welches eine Reihe von Zahlen entgegennimmt und überprüft, ob diese aufsteigend sortiert ist:
+
+```plain
+$ ./sorted 1 2 3 4 5 6
+sorted
+$ ./sorted 1 2 9 5 6 7
+unsorted
+```
+
+# Aufgabe 8: Palindrome
+
+Schreibe ein Programm namens `palindrome.c`, welches ein Wort als Argument entgegennimmt und überprüft, ob es sich dabei um ein Palindrom handelt:
+
+```plain
+$ ./palindrome sugus
+true
+$ ./palindrome maoam
+true
+$ ./palindrome anna
+true
+$ ./palindrome schorsch
+false
+```
+
