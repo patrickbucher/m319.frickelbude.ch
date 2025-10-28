@@ -4,7 +4,7 @@ title = 'Schleifen'
 weight = 8
 +++
 
-Erstelle ein neues Verzeichnis `loop`, initialisiere darin ein Git-Repository und halte die C-Quellcodedateien mittels `git add` und `git commit` im Repository fest.
+Erstelle ein neues Verzeichnis `loops`, initialisiere darin ein Git-Repository und halte die C-Quellcodedateien mittels `git add` und `git commit` im Repository fest.
 
 ## Aufgabe 1: Zahlenreihe generieren
 
