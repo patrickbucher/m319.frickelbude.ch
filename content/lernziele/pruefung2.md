@@ -13,7 +13,7 @@ weight = 2
 
 ## Schleifen
 
-1. Sie können Schleifen mit `while`, `do`/`while` und `for` für eine gestellte Problemstellung formulieren.
+1. Sie können Schleifen mit `while`, `do`/`while` und `for` für eine gegebene Problemstellung formulieren.
 2. Sie können Schleifen mit `break` vorzeitig beenden.
 3. Sie können einen Schleifendurchlauf mit `continue` vorzeitig beenden.
 4. Sie können mithilfe von Schleifen über die Elemente von Arrays iterieren.

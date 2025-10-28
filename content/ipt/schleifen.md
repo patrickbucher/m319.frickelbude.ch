@@ -4,6 +4,8 @@ title = 'Schleifen'
 weight = 8
 +++
 
+Erstelle ein neues Verzeichnis `loop`, initialisiere darin ein Git-Repository und halte die C-Quellcodedateien mittels `git add` und `git commit` im Repository fest.
+
 ## Aufgabe 1: Zahlenreihe generieren
 
 Schreibe ein Programm namens `series.c`, welches Zahlenreihen berechnet und ausgibt. Das Programm soll zwei Argumente entgegennehmen:
@@ -14,7 +16,7 @@ Schreibe ein Programm namens `series.c`, welches Zahlenreihen berechnet und ausg
 Das Programm soll anschliessend die Zahlenreihe berechnen und ausgeben.
 
 ```plain
-# ./series 2 5
+$ ./series 2 5
 2 4 6 8 10
 $ ./series 6 10
 6 12 18 24 30 36 42 48 54 60
@@ -24,7 +26,7 @@ $ ./series 9 3
 
 ## Aufgabe 2: Rechner mit beliebig vielen Operanden
 
-Schreibe ein Programm namens `calculator.c`, welches neben den vier Grundrechenarten Addition, Subtraktion, Multiplikation und Division auch die Potenzierung unterstützt. Das Programm nimmt als erstes Argument die Rechenoperation (`+`, `-`, `x`, `:`, `^`) und als beliebig viele weitere Argumente die Operanden. Das Programm soll die ausgewählte Berechnung durchführen und das Resultat ausgeben:
+Schreibe ein Programm namens `calculator.c`, welches neben den vier Grundrechenarten Addition, Subtraktion, Multiplikation und Division auch die Potenzierung unterstützt. Das Programm nimmt als erstes Argument die Rechenoperation (`+`, `-`, `x`, `:`, `^`) und als beliebig viele weitere Argumente die Operanden entgegen. Das Programm soll die ausgewählte Berechnung durchführen und das Resultat ausgeben:
 
 ```plain
 $ ./calculator + 3 4 8
@@ -87,7 +89,7 @@ Tipp: Verwende die Funktion `strlen` aus `string.h`, um die Länge des einzurahm
 
 ## Aufgabe 5: Zahlenratespiel
 
-Schreibe ein Programm namens `guess.c`, welches eine Zufallszahl zwischen 1 und 100 generiert, die dann der Benutzer erraten muss. Der Benutzer gibt der Reihe nach seine Tipps ein, und das Programm gibt Tipps, ob der Benutzer höher oder tiefer raten soll, bis der Benutzer die richtige Zahl errät:
+Schreibe ein Programm namens `guess.c`, welches eine Zufallszahl zwischen 1 und 100 generiert, die dann der Benutzer erraten muss. Der Benutzer gibt der Reihe nach seine Versuche ein, und das Programm gibt Tipps, ob der Benutzer höher oder tiefer raten soll, bis der Benutzer die richtige Zahl errät:
 
 ```plain
 $ ./guess
@@ -115,12 +117,12 @@ Tipps:
 
 Schreibe ein Programm namens `grades.c`, welches folgende Argumente entgegennimmt:
 
-- Eine Maximalpunktzahl als Fliesskommazahl.
-- Abwechselnd:
+- eine Maximalpunktzahl als Ganzzahl
+- abwechselnd
     - ein Name als Zeichenkette
-    - die erreichte Punktzahl dieser Person als Fliesskommazahl
+    - die erreichte Punktzahl dieser Person als Ganzzahl
 
-Das Programm errechnet aus den erreichten Punktzahlen die Note gemäss der folgenden Formel:
+Das Programm errechnet aus den erreichten Punktzahlen die Note gemäss folgender Formel:
 
 ```math
 $$ N = \frac{P}{P_{max}} \times 5 + 1 $$
@@ -129,10 +131,10 @@ $$ N = \frac{P}{P_{max}} \times 5 + 1 $$
 Anschliessend wird ein Notenblatt ausgegeben:
 
 ```plain
-$ ./grades 60 Alice 53 Bob 42 Mallory 39
-Alice   53/60   5.3
-Bob     42/60   4.2
-Mallory 39/60   3.9
+$ ./grades 50 Alice 49 Bob 42 Mallory 39
+Alice   49/50   5.9
+Bob     42/50   5.2
+Mallory 39/50   4.9
 ```
 
 ## Aufgabe 7: Sortierung überprüfen
@@ -140,24 +142,33 @@ Mallory 39/60   3.9
 Schreibe ein Programm namens `sorted.c`, welches eine Reihe von Zahlen entgegennimmt und überprüft, ob diese aufsteigend sortiert ist:
 
 ```plain
+$ ./sorted 7
+sorted
 $ ./sorted 1 2 3 4 5 6
 sorted
 $ ./sorted 1 2 9 5 6 7
 unsorted
 ```
 
+Tipp: Du brauchst dir jeweils die Zahl des letzten Schleifendurchlaufs zu merken.
+
 ## Aufgabe 8: Palindrome
 
 Schreibe ein Programm namens `palindrome.c`, welches ein Wort als Argument entgegennimmt und überprüft, ob es sich dabei um ein Palindrom handelt:
 
 ```plain
-$ ./palindrome sugus
-true
-$ ./palindrome maoam
-true
 $ ./palindrome anna
+true
+$ ./palindrome sugus
 true
 $ ./palindrome schorsch
 false
+$ ./palindrome tattarrattat
+true
+$ ./palindrome redivider
+true
+$ ./palindrome whatever
+false
 ```
 
+Tipp: Verwende zwei Variablen, welche den jeweils oberen und unteren Index speichern.

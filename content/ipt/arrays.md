@@ -4,6 +4,8 @@ title = 'Arrays'
 weight = 7
 +++
 
+Erstelle ein neues Verzeichnis `arrays`, initialisiere darin ein Git-Repository und halte die C-Quellcodedateien mittels `git add` und `git commit` im Repository fest.
+
 ## Aufgabe 1: Morsealphabet
 
 Schreibe ein Programm `morse.c`. Bilde darin den Morsecode für die Vokale `A`, `E`, `I`, `O` und `U` ab, indem du für jeden dieser Buchstaben ein null-terminiertes Array definierst und folgendermassen mit den Zeichen `.` und `-` (Punkt und Bindestrich) initialisierst:
