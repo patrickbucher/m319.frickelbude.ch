@@ -50,7 +50,7 @@ int main(int argv, char *argv[])
 
 Definiere ein Array namens `river` der Länge 8 und initialisiere es mit Leerzeichen. Ersetze im Array auf den Positionen `i` und `j` das Leerzeichen durch ein Gleichheitszeichen `=`, was das Schiff darstellen soll.
 
-Der Benutzer startet nun das Programm, indem er einen Arrayindex zwischen 0 und 7 eingibt, womit das Schiff beschossen werden soll. Trifft er das Schiff, ersetze das `=` an der betroffenen Stelle durch ein `x`. Verfehlt er das Schiff, ersetze das Leerzeichen durch ein `o`. Gibt das Array am Schluss als String aus.
+Der Benutzer startet nun das Programm, indem er einen Arrayindex zwischen 0 und 7 eingibt, womit das Schiff beschossen werden soll. Trifft er das Schiff, ersetze das `=` an der betroffenen Stelle durch ein `x`. Verfehlt er das Schiff, ersetze das Leerzeichen durch ein `o`. Gib das Array am Schluss als String aus.
 
 Das Spiel könnte etwa so aussehen:
 
@@ -97,7 +97,7 @@ Deklariere ein Array namens `word` der Grösse 1024. Verwende nun die Funktion `
 
 1. das Array, wo die Daten hinkopiert werden sollen: `word`
 2. das Array, aus dem die Daten herauskopiert werden sollen: `argv[1]`
-3. die Anzahl der Bytes, die maximal werden sollen: `1024`
+3. die Anzahl der Bytes, die maximal kopiert werden sollen: `1024`
 
 Verwende nun die Funktion `strnlen` aus `string.h`, um die tatsächliche Länge des kopierten Wortes zu ermitteln. Diese verwendet zwei Parameter:
 
