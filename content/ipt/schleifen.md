@@ -172,3 +172,43 @@ false
 ```
 
 Tipp: Verwende zwei Variablen, welche den jeweils oberen und unteren Index speichern.
+
+## TODO Aufgabe 9: Punkte zählen
+
+gegeben: String mit X, V, I bzw. x, v, i
+gesucht: Punktsumme für x=10,v=5,i=1
+
+## TODO Aufgabe 10: Jasskartenset ausgeben
+
+gegeben: 4 Farben mit je 9 Werten
+gesucht: Ausgabe aller 36 Karten mit je zwei Zeichen in einem 9x4-Grid
+
+## TODO Aufgabe 11: TicTacToe
+
+gegeben: 9er-Array
+gesucht: interaktives Spiel
+
+## TODO Aufgabe 12: Rechentrainer
+
+gegeben: Array mit Operatoren (+, -, *, /, %), Zahlen von 2..9
+gesucht: interaktiver Rechentrainer, der bei der ersten falschen Antwort abbricht und die Länge des Streaks messt
+
+## TODO Aufgabe 13: Bubble Sort
+
+gegeben: Array mit zufälligen Zahlen vorgegebener Länge
+gesucht: Sortierung des Arrays mithilfe von Bubble Sort
+
+## TODO Aufgabe 14: Binärzahlen zu Dezimalzahlen umrechnen
+
+gegeben: eine Binärzahl als String
+gesucht: eine Dezimalzahl als Integer
+
+## TODO Aufgabe 15: Dezimalzahlen in Binärzahlen umrechnen
+
+gegeben: Dezimalzahl als Integer
+gesucht: Binärzahl als String
+
+## TODO Aufgabe 16: Statistik
+
+gegeben: Array von Zahlen
+gesucht: min, mean, max
