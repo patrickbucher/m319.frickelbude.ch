@@ -1,3 +1,11 @@
++++
+date = '2025-11-03T08:26:41+01:00'
+title = 'Verschachtelte Schleifen'
++++
+
+Beispiel (`mystery.c`):
+
+```c
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -34,3 +42,7 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
+
+```
+
+Was macht dieses Programm? Betrachte nur den mit Kommentaren markierten relevanten Teil.
