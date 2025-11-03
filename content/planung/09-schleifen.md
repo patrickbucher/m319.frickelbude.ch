@@ -14,7 +14,8 @@ Sie haben Gelegenheit weiter an den Übungen zu arbeiten – und alle haben die 
 ### Lektionen 1 & 2
 
 - [5 min.] Administratives
-- [85 min.] Selbständige Weiterarbeit an den [IPT-Übungen](/ipt/schleifen)
+- [15 min.] Beispielprogramm: Verschachtelte Schleifen
+- [70 min.] Selbständige Weiterarbeit an den [IPT-Übungen](/ipt/schleifen)
     - währenddessen: persönliche Besprechung
         1. Hausaufgaben
         2. Prüfungen Modul 319 und IPT 1.1
