@@ -1,6 +1,7 @@
 +++
 date = '2025-11-02T20:16:01+01:00'
 title = 'Block 9: Schleifen (2/2)'
+weight = 17
 +++
 
 Im neuten Block arbeiten wir weiter mit Schleifen.

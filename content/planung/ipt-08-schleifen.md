@@ -1,6 +1,6 @@
 +++
 date = '2025-10-27T22:34:05+01:00'
-title = 'IPT 1.1, Block 8: Schleifen'
+title = 'IPT 1.1, Block 8: Schleifen (1/2)'
 weight = 16
 +++
 
