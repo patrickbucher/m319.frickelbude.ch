@@ -1,33 +1,6 @@
-- Statistiken
-    - Minimum und Maximum ermitteln
-    - mean berechnen
-- Arithmetik
-    - [x] Zahlenreihe mit bestimmter Anzahl generieren
-    - [x] Grundoperationen mit beliebiger Anzahl Operanden
-- Optik
-    - [x] gleichseitiges Dreieck per ASCII-Zeichen darstellen
-    - [x] Text mit Banner umfassen
-    - Jasskarten ausgeben
-- Spiele
-    - [x] Zahlenratespiel (1 bis 100) mit Hinweisen (zu tief, zu hoch)
-        - scanf einführen
-    - Trainer für Grundrechenarten
-        - Variante: mit Zeitmessung
-        - Variante: Abbruch nach erstem Fehler
-- Notenberechnung
-    - [x] grade 100 Alois 72 Susi 95 Therese 55 Uschi 99
-- Zahlenreihen
-    - [x] Sortierung überprüfen
-    - evtl. Sortierung mit Bubble Sort durchführen
-- Zahlensysteme
-    - Binärzahlen in Dezimalzahlen konvertieren (und umgekehrt)
-    - Hexadezimalzahlen in Dezimalzahlen konvertieren (und umgekehrt)
 - spezielle Zahlen
     - römische Zahlen parsen und schreiben
     - Zeitspannen addieren
-- Zeichenketten
-    - [x] Morsealphabet auf ganze Wörter anwenden
-    - Palindrome beliebiger Länge erkennen
 
 Idee: Taschenrechner für Zeiten
 
