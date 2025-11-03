@@ -1,6 +1,7 @@
 baseURL = 'https://m319.frickelbude.ch'
 languageCode = 'de-ch'
 title = 'Modul 319: Applikationen entwerfen und implementieren'
+enableEmoji = true
 
 [minify]
 minifyOutput = true
@@ -12,7 +13,6 @@ openapi = false
 showVisitedLinks = true
 themeVariant = 'red'
 hideAuthorDate = true
-enableEmoji = true
 
 [params.author]
 name = 'Patrick Bucher, BBZW Sursee'
