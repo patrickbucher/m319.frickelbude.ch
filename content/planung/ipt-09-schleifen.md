@@ -4,11 +4,11 @@ title = 'IPT 1.1, Block 9: Schleifen (2/2)'
 weight = 18
 +++
 
-Im neuten IPT-Block bearbeiten wir weiter Übungen zu Schleifen.
+Im neunten IPT-Block bearbeiten wir weiter Übungen zu Schleifen.
 
 ## Ziel
 
-Sie können weitere Übungen zum Thema Schleifen bearbeiten.
+Sie haben Gelegenheit weitere Übungen zum Thema Schleifen zu bearbeiten.
 
 ## Ablauf
 
@@ -19,7 +19,8 @@ Sie können weitere Übungen zum Thema Schleifen bearbeiten.
     - währenddessen: persönliche Besprechung
         1. Hausaufgaben
         1. Stand der [Übungen](/ipt/schleifen)
+    - bei Bedarf: Erklärungen zu einzelnen Übungen
 
 ### Hausaufgaben
 
-Bearbeite die [Übungen](/ipt/schleifen) weiter gemäss Teams-Auftrag.
+Bearbeiten Sie die [Übungen](/ipt/schleifen) weiter gemäss Teams-Auftrag.

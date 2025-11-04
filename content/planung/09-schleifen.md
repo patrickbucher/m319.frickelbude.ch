@@ -4,7 +4,7 @@ title = 'Block 9: Schleifen (2/2)'
 weight = 17
 +++
 
-Im neuten Block arbeiten wir weiter mit Schleifen.
+Im neunten Block arbeiten wir weiter mit Schleifen.
 
 ## Ziel
 
