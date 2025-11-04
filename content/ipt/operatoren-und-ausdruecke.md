@@ -45,7 +45,7 @@ Hinweise:
 
 - `stdlib.h` enthält verschiedene Funktionen, u.a. `atoi`.
 - Die Funktion `atoi` ("Array to Integer") konvertiert ein textuelles Argument in eine Ganzzahl und gibt diese zurück.
-- Mit der Notation `argv[1]` erhälst du Zugriff auf das erste Kommandozeilenargument.
+- Mit der Notation `argv[1]` erhältst du Zugriff auf das erste Kommandozeilenargument.
 
 Kompiliere es mithilfe von `make`:
 

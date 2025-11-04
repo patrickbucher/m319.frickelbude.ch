@@ -224,10 +224,10 @@ Das Programm soll die Bremsverzögerung in g angeben:
 Tipp:
 
 - Rechne die Anfangsgeschwindigkeit von km/h nach m/s um, indem du sie durch 3.6 teilst.
-- Die Bremsdauer (in s) erhälst du, indem du den Bremsweg durch die Durchschnittsgeschwindigkeit dividierst.
+- Die Bremsdauer (in s) erhältst du, indem du den Bremsweg durch die Durchschnittsgeschwindigkeit dividierst.
 - Die Durchschnittsgeschwindigkeit beim Aufprall ist die Hälfte der Einschlaggeschwindigkeit.
-- Die Bremsbeschleunigung erhälst du, indem du die Einschlaggeschwindigkeit durch die Bremsdauer dividierst.
-- Die g-Kräfte erhälst du, indem du die Bremsbeschleunigung durch 9.81 dividierst.
+- Die Bremsbeschleunigung erhältst du, indem du die Einschlaggeschwindigkeit durch die Bremsdauer dividierst.
+- Die g-Kräfte erhältst du, indem du die Bremsbeschleunigung durch 9.81 dividierst.
 
 ## Aufgabe 7: Pit Stop Delta Time
 

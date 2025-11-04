@@ -63,7 +63,7 @@ $$F=C \times \frac{9}{5} + 32$$
 $$C=(F - 32) \times \frac{5}{9}$$
 ```
 
-Tipp: Den Buchstaben erhälst du über den Ausdruck `argv[2][0]` (Typ: `char`).
+Tipp: Den Buchstaben erhältst du über den Ausdruck `argv[2][0]` (Typ: `char`).
 
 ## Aufgabe 3: Währungsrechner
 
@@ -210,7 +210,7 @@ Computer: Scissors
 Der Spieler gewinnt!
 ```
 
-Tipp: Eine Zufallszahl zwischen 0 und 2 erhälst du folgendermassen:
+Tipp: Eine Zufallszahl zwischen 0 und 2 erhältst du folgendermassen:
 
 ```c
 #include <time.h>

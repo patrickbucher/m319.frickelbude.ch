@@ -111,7 +111,7 @@ Tipps:
 
 - Verwende die Funktion `scanf("%d", &x)` (mit dem Adressoperator `&`), um die interaktive Benutzereingabe in der Variablen `x` zu speichern.
 - Initialisiere den Zufallszahlengenerator mit `srand(time(NULL))`, wozu die Header-Dateien `stdlib.h` und `time.h` benötigt werden.
-- Eine Zufallszahl zwischen 1 und 100 erhälst du mit dem Ausdruck `rand() % 100 + 1`.
+- Eine Zufallszahl zwischen 1 und 100 erhältst du mit dem Ausdruck `rand() % 100 + 1`.
 
 ## :yellow_circle: Aufgabe 6: Notenblatt generieren
 
@@ -232,11 +232,13 @@ X|-|-
 Tipps:
 
 - Verwende ein Array der Länge 9 als Spielfeld und gib es in einer `for`-Schleife aus. Ein Zeilenumbruch erfolgt immer, wenn der Schleifenindex um eins erhöht restlos durch drei teilbar ist (`(i + 1) % 3 == 0`).
-- Interaktive Eingaben können mit `scanf` eingelesen werden.
+- Interaktive Eingaben können mit `scanf` eingelesen werden (siehe weiter oben).
 
 ## :red_circle: Aufgabe 12: Rechentrainer
 
-Schreibe ein interaktives Rechentrainingsprogramm zum Üben des Modulo-Operators namens `practice-modulo.c`. Das Programm soll in einer Schleife zwei Zufallszahlen in den Bereichen 10-50 bzw. 2-9 generiert und deren Rest mithilfe des Modulo-Operators `%` berechnen. (Die grössere der beiden Zahlen soll immer der erste Operand sein.) Dem Benutzer wird die Rechenaufgabe nun zur Lösung angezeigt. Gibt der Benutzer die richtige Antwort ab, darf er weiterspielen. Liegt er falsch, ist das Spiel zu Ende. Am Schluss soll dem Benutzer angezeigt werden, wie viele Rechnungen er korrekt gelöst hat.
+Schreibe ein interaktives Rechentrainingsprogramm zum Üben des Modulo-Operators namens `practice-modulo.c`. Das Programm soll in einer Schleife zwei Zufallszahlen in den Bereichen 10-50 bzw. 2-9 generieren und deren Rest mithilfe des Modulo-Operators `%` berechnen. (Die grössere der beiden Zahlen soll immer der erste Operand sein.)
+
+Dem Benutzer wird die Rechenaufgabe nun zur Lösung angezeigt. Gibt der Benutzer die richtige Antwort ein, darf er weiterspielen. Liegt er falsch, ist das Spiel zu Ende. Am Schluss soll dem Benutzer angezeigt werden, wie viele Rechnungen er korrekt gelöst hat.
 
 ```plain
 $ ./practice-modulo
@@ -253,14 +255,14 @@ $ ./practice-modulo
 wrong; you got 4 right
 ```
 
-Tipp: 
+Tipps:
 
-- Interaktive Eingaben können mit `scanf` eingelesen werden.
-- Zufallszahlen können mit `srand` und `rand` generiert werden.
+- Interaktive Eingaben können mit `scanf` eingelesen werden (siehe weiter oben).
+- Zufallszahlen können mit `srand` und `rand` generiert werden (siehe weiter oben).
 
 ## :black_circle: Aufgabe 13: Bubble Sort
 
-Schreibe ein Programm namens `bubblesort.c`, welches ein Array von Zufallszahlen aufsteigend sortiert und ausgibt. Implementiere hierzu den Bubble-Sort-Algorithmus. Dieser besteht aus zwei verschachtelten `for`-Schleifen, welche benachbarte Arrayelemente miteinander vergleichen und austauschen.
+Schreibe ein Programm namens `bubblesort.c`, welches ein Array von Zufallszahlen aufsteigend sortiert und ausgibt. Implementiere hierzu den Bubble-Sort-Algorithmus. Dieser besteht aus zwei verschachtelten `for`-Schleifen, welche benachbarte Arrayelemente miteinander vergleichen und austauschen: Ist das linke Element grösser als das rechte Element, werden die beiden Elemente miteinander vertauscht. Hierzu muss jedes Array-Element mit jedem anderen Array-Element verglichen werden.
 
 Dem Programm soll angegeben werden können, wie viele Zufallszahlen es (im Bereich von 0-99) generieren soll. Das Programm soll zuerst die Zufallszahlen in der erstellten Reihenfolge ausgeben, dann die Zahlen sortieren und in sortierter Reihenfolge ausgeben:
 
@@ -319,4 +321,4 @@ $ ./dec-to-bin 26
 
 Teile die Zahl durch 2 und ermittle den Rest. Der Rest ist die Binärziffer; das Ergebnis der Division wird für den nächsten Schritt verwendet.
 
-Tipp: Die Anzahl der benötigten Binärziffern erfärst du mithilfe der Berechnung `ceil(log2(x))`, wobei `x` die eingegebene Dezimalzahl ist und `ceil` und `log2` Funktionen aus `math.h` sind. (Das Programm muss mit `-lm` kompiliert werden.)
+Tipp: Die Anzahl der benötigten Binärziffern erfährst du mithilfe der Berechnung `ceil(log2(x))`, wobei `x` die eingegebene Dezimalzahl ist und `ceil` und `log2` Funktionen aus `math.h` sind. (Das Programm muss mit `-lm` kompiliert werden.)

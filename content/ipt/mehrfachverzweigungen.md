@@ -43,7 +43,7 @@ $ ./letters 3
 Tipps:
 
 - Verwende ein `switch`/`case`-Konstrukt, das für mehrere `case`-Fälle den gleichen Code ausführt.
-- Zugriff auf den Kommandozeilenparameter erhälst du über `argv[1][0]`.
+- Zugriff auf den Kommandozeilenparameter erhältst du über `argv[1][0]`.
 
 ## Aufgabe 2: Römische Zahlen ausgeben
 
@@ -108,7 +108,7 @@ $ ./hex-to-dec ff
 255
 ```
 
-Tipp: Das linke Zeichen erhälst du per `argv[1][0]`, das rechte Zeichen per `argv[1][1]`.
+Tipp: Das linke Zeichen erhältst du per `argv[1][0]`, das rechte Zeichen per `argv[1][1]`.
 
 ## Aufgabe 5: Positiv, Null, Negativ
 
@@ -123,7 +123,7 @@ $ ./pos-null-neg 0
 null
 ```
 
-Tipp: Teile die Zahl `x` durch ihren Absolutwert, den du mittels `abs(x)` erhälst, um 1, 0 oder -1 zu erhalten. Formuliere anschliessend ein `switch`/`case`-Statement auf das Ergebnis. Vorsicht bei der Division durch 0!
+Tipp: Teile die Zahl `x` durch ihren Absolutwert, den du mittels `abs(x)` erhältst, um 1, 0 oder -1 zu erhalten. Formuliere anschliessend ein `switch`/`case`-Statement auf das Ergebnis. Vorsicht bei der Division durch 0!
 
 ## Aufgabe 6: Spielkarten
 
