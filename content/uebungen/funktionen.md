@@ -45,3 +45,25 @@ Die zweite Funktion berechnet die Kreisfläche anhand dessen Radius:
 ```math
 $$ A = \pi r^2 $$
 ```
+
+## Aufgabe 5: Notenberechnung
+
+Schreibe eine Funktion `grade` mit der Signatur `double (int, int)`, welche eine erreichte und eine maximale Punktzahl entgegennimmt und die daraus resultierende Schulnote gemäss folgender Formel zurückgibt:
+
+```math
+$$ N = \frac{P}{P_{max}} \times 5 + 1 $$
+```
+
+## Aufgabe 6: Rechteck zeichnen
+
+Schreibe eine Funktion `draw_rectangle` mit der Signatur `void (short, short, char)`, welche zwei Seitenlängen (Breite und Höhe) entgegennimmt und ein ausgefülltes Rechteck bestehend aus dem übergebenen Zeichen mit `putchar` auf den Bildschirm ausgibt:
+
+Der Beispielaufruf `draw_rectangle(3, 5, '*')` soll folgendes ausgeben:
+
+```plain
+***
+***
+***
+***
+***
+```
