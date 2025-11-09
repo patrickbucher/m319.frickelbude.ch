@@ -6,6 +6,10 @@ weight = 19
 
 Im neuten Block betrachten wir das Thema Funktionen, womit sich Programmcode strukturieren und wiederverwendbar ausgestalten lässt.
 
+## Ziel
+
+Sie können bestehenden Code in Funktionen auslagern und diese aufrufen.
+
 ## Ablauf
 
 ### Lektionen 1 & 2
