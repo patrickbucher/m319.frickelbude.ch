@@ -1,6 +1,7 @@
 +++
 date = '2025-11-03T08:26:41+01:00'
 title = 'Verschachtelte Schleifen'
+weight = 1
 +++
 
 Beispiel (`mystery.c`):

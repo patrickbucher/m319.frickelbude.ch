@@ -11,9 +11,9 @@ Im neuten Block betrachten wir das Thema Funktionen, womit sich Programmcode str
 ### Lektionen 1 & 2
 
 - [5 min.] Administratives
-- [25 min.] Theorie: TODO
-- [15 min.] Beispielprogramm: Banner ausgeben
-- [45 min.] Arbeit an den Übungen: TODO
+- [25 min.] Theorie zu Funktionen
+- [15 min.] Beispielprogramm: [Banner ausgeben](/examples/banner-zeichnen/)
+- [45 min.] Arbeit an den [Übungen](/uebungen/funktionen)
 
 ### Hausaufgaben
 
