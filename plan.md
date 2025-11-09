@@ -1,0 +1,7 @@
+- Funktionen
+    - Parameter und Argumente
+    - Deklaration und Definition
+    - Seiteneffekt und Rückgabe
+    - bestehende und eigene
+    - Reihenfolge und Funktionsprototyp
+    - Wiederverwendbarkeit und Strukturierung

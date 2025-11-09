@@ -20,3 +20,11 @@ Das Erreichen der [Lernziele zur ersten Prüfung](/lernziele/pruefung1) wird fü
 3. Sie können einen Schleifendurchlauf mit `continue` vorzeitig beenden.
 4. Sie können mithilfe von Schleifen über die Elemente von Arrays iterieren.
 5. Sie können verschachtelte Schleifen für eine gegebene Problemstellung formulieren und bei Bedarf vorzeitig zum Abbruch bringen.
+
+## Funktionen
+
+1. Sie können den Nutzen von Funktionen zur Strukturierung und Wiederverwendung von Code erklären.
+2. Sie können eine _Funktionsdeklaration_ formulieren, den Begriff _Funktionssignatur_ erklären und verstehen den Zusammenhang zwichen Funktionsdeklaration und Definitionsreihenfolge.
+3. Sie können die Begriffe _formale Parameter_, _tatsächliche Parameter_ und _Argumente_ definieren und voneinander unterscheiden.
+4. Sie können Funktionen für eine gegebene Problemstellung als reine Funktion (zur Verwendung als Ausdruck), als Prozedur (mit Nebeneffekten) oder als eine Mischung davon (Rückgabewert und Seiteneffekt) umsetzen.
+5. Sie können vordefinierte Funktionen anhand deren Signatur und Dokumentation zum Lösen vorgegebener Probleme korrekt aufrufen und sinvoll verwenden.
