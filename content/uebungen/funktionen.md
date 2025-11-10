@@ -32,7 +32,7 @@ $$ c = \sqrt{a^2 + b^2} $$
 Schreibe zwei Funktionen zu Berechnungen am Kreis:
 
 1. `circle_circumference`: `double (double)`
-2. `circle_area`: `double (double, double)`
+2. `circle_area`: `double (double)`
 
 Die erste Funktion berechnet den Kreisumfang anhand dessen Radius:
 
