@@ -91,7 +91,7 @@ Du kannst die folgenden Wechselkurse verwenden:
 Schreibe ein C-Programm `bmi.c`, welches zwei Angaben entgegennimmt: Die Körpergrösse einer Person in Meter und das Körpergewicht in Kilogramm. Berechne anschliessend den Body-Mass-Index nach folgender Formel:
 
 ```math
-$$\text{BMI}=\frac{\text{Gewicht}}{\text{Grösse}^2}$$
+$$ \text{BMI}=\frac{\text{Gewicht}}{\text{Grösse}^2} $$
 ```
 
 Das Programm soll je nach errechneten Body-Mass-Index ein anderes Urteil fällen:
