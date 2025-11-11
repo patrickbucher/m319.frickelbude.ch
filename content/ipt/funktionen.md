@@ -10,7 +10,7 @@ Schreibe zu jeder Funktion auch ein Hauptprogramm, welches die Funktion aufruft.
 
 ## Aufgabe 1: Stunden, Minuten, Sekunden
 
-Schreibe eine Funktion `void dhms(short seconds)`, welche eine Anzahl Sekunden erwartet, diese in Tage, Stunden, Minuten und Sekunden umrechnet und als eine Zeichenkette der folgenden Form ausgibt:
+Schreibe eine Funktion `void dhms(int seconds)`, welche eine Anzahl Sekunden erwartet, diese in Tage, Stunden, Minuten und Sekunden umrechnet und als eine Zeichenkette der folgenden Form ausgibt:
 
 ```plain
 $ ./dhms 3600
