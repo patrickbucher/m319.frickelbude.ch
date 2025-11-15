@@ -8,7 +8,7 @@ Erstelle ein neues Verzeichnis `functions`, initialisiere darin ein Git-Reposito
 
 Schreibe zu jeder Funktion auch ein Hauptprogramm, welches die Funktion aufruft. Die Benutzereingaben des Programms sollen an die Funktion weitergegeben werden:
 
-## Aufgabe 1: Stunden, Minuten, Sekunden
+## Aufgabe 1: Tage, Stunden, Minuten, Sekunden
 
 Schreibe eine Funktion `void dhms(int seconds)`, welche eine Anzahl Sekunden erwartet, diese in Tage, Stunden, Minuten und Sekunden umrechnet und als eine Zeichenkette der folgenden Form ausgibt:
 
@@ -36,15 +36,15 @@ Schreibe eine Funktion `int rock_paper_scissors(char a, char b)`, welche die Zei
 - `+2`, wenn `b` einen ungültigen Spielzug macht
 
 ```plain
-$ ./rock-paper-scissors R P
+$ ./rock_paper_scissors R P
 1
-$ ./rock-paper-scissors S P
+$ ./rock_paper_scissors S P
 -1
-$ ./rock-paper-scissors R R
+$ ./rock_paper_scissors R R
 0
-$ ./rock-paper-scissors x P
+$ ./rock_paper_scissors x P
 -2
-$ ./rock-paper-scissors P y
+$ ./rock_paper_scissors P y
 2
 ```
 
