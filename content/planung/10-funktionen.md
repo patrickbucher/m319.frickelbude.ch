@@ -1,10 +1,10 @@
 +++
 date = '2025-11-09T14:59:13+01:00'
-title = 'Block 10: Funktionen (1/3)'
+title = 'Block 10: Funktionen (1/2)'
 weight = 19
 +++
 
-Im neuten Block betrachten wir das Thema Funktionen, womit sich Programmcode strukturieren und wiederverwendbar ausgestalten lässt.
+Im zehnten Block betrachten wir das Thema Funktionen, womit sich Programmcode strukturieren und wiederverwendbar ausgestalten lässt.
 
 ## Ziel
 
