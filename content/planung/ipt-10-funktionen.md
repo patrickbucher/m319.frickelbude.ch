@@ -1,6 +1,7 @@
 +++
 date = '2025-11-11T08:30:18+01:00'
-title = 'IPT 1.1, Block 10: Funktionen (1/3)'
+title = 'IPT 1.1, Block 10: Funktionen (1/2)'
+weight = 20
 +++
 
 Im zehnten IPT-Block bearbeiten wir Übungen zu Funktionen.
