@@ -21,8 +21,12 @@ weight = 6
 |`cc PROGRAM.c -o PROGRAM`|aus der Quellcodedatei `PROGRAM.c` das ausführbare Programm `PROGRAM` kompilieren|
 |`make PROGRAM`|aus der Quellcodedatei `PROGRAM.c` das ausführbare Programm `PROGRAM` kompilieren|
 |`cc PROGRAM.c -o PROGRAM -lm`|aus der Quellcodedatei `PROGRAM.c`, welches `math.h` verwendet, das ausführbare Programm `PROGRAM` kompilieren|
+|**Formatierung**|Quellcode automatisch formatieren|
+|`clang-format -i PROGRAM.c`|die Quellcodedatei `PROGRAM.c` automatisch formatieren|
 |**Versionskontrolle**|Dateien per Git sichern|
 |`git init`|im Arbeitsverzeichnis ein Git-Repository erstellen|
 |`git add PROGRAM.c`|die Quellcodedatei `PROGRAM.c` für den nächsten Schreibvorgang vormerken|
 |`git commit -m "KOMMENTAR"`|die vorgemerkten Änderungen im Repository festschreiben|
-
+|**Paketverwaltung**|Software installieren|
+|`sudo apt install -y build-essential`|Programmierwerkzeuge (`gcc`, `make`) installieren|
+|`sudo apt install -y clang-format`|Das Formatierungswerkzeug `clang-format` installieren|
