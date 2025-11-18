@@ -91,11 +91,14 @@ Die Funktion erwartet jeweils ein Array an `float`-Werten und eine Zahl `n`, wel
 Die Funktion `mean` soll den Durchschnitt mithilfe der Funktion `sum` berechnen.
 
 ```plain
-./min-max-mean 1 2 3 4 5 6 7
-min:    1
-max:    7
-mean:   4
+./min-max-mean 4 6 12 9 3
+min:    3
+max:    12 
+sum:    34
+mean:   6.8
 ```
+
+Tipp: Lege zuerst in `main` ein genügend grosses Zahlenarray an, z.B. `float numbers[1000]`. Konvertiere die Kommandozeilenargumente in `argv` nacheinander mit `atof` zu Fliesskommazahlen und lege sie in `numbers` ab.
 
 ## Aufgabe 5: Zahlenreihen
 
