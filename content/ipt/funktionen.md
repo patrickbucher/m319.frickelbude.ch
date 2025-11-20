@@ -75,7 +75,7 @@ $ ./before foo foo
 0
 ```
 
-Tipp: Die Länge einer Zeichenkette erfährst du über `strlen` aus `strings.h`.
+Tipp: Die Länge einer Zeichenkette erfährst du über `strlen` aus `string.h`.
 
 ## Aufgabe 4: Minimum, Maximum, Mean
 
