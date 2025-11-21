@@ -5,3 +5,6 @@
     - bestehende und eigene
     - Reihenfolge und Funktionsprototyp
     - Wiederverwendbarkeit und Strukturierung
+    - spezielle Themen
+        - Übergabe und Rückgabe von Arrays (mit möglichst wenig Zeiger-Theorie)
+        - Rekursion
