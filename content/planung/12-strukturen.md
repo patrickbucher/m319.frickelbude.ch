@@ -24,3 +24,5 @@ Sie können Strukturen definieren, Variablen mit Strukturtypen instanziieren und
 ### Hausaufgaben
 
 Siehe Teams-Auftrag.
+
+Optional: Lesen Sie den Artikel über [Structure Packing](https://www.catb.org/esr/structure-packing/) als Erklärung für das Beispiel der [Strukturgrössen](/examples/struct-sizes/).
