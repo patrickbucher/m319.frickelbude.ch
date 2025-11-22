@@ -28,3 +28,11 @@ Das Erreichen der [Lernziele zur ersten Prüfung](/lernziele/pruefung1) wird fü
 3. Sie können die Begriffe _formale Parameter_, _tatsächliche Parameter_ und _Argumente_ definieren und voneinander unterscheiden.
 4. Sie können Funktionen für eine gegebene Problemstellung als reine Funktion (zur Verwendung als Ausdruck), als Prozedur (mit Nebeneffekten) oder als eine Mischung davon (Rückgabewert und Seiteneffekt) umsetzen.
 5. Sie können vordefinierte Funktionen anhand deren Signatur und Dokumentation zum Lösen vorgegebener Probleme korrekt aufrufen und sinvoll verwenden.
+
+## Strukturen
+
+1. Sie können Strukturen mit dem `struct`-Schlüsselwort und Attributen bereits bekannter Datentypen definieren.
+2. Sie können verschachtelte Strukturen mit anderen Strukturen als Attribute definieren.
+3. Sie können Struktur-Variablen deklarieren und mit Werten initialisieren.
+4. Sie können auf die Attribute von Struktur-Variablen zugreifen.
+5. Sie können neue Datentypen mithilfe von `typedef` und Variablen dieser Typen definieren.
