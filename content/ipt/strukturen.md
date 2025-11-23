@@ -1,6 +1,7 @@
 +++
 date = '2025-11-21T09:17:35+01:00'
 title = 'Strukturen'
+draft = true
 +++
 
 ## Teil 1: Geometrie im Koordinatensystem
