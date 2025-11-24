@@ -2,7 +2,6 @@
 date = '2025-11-21T09:17:35+01:00'
 title = 'Strukturen'
 weight = 10
-draft = true
 +++
 
 Erstelle ein neues Verzeichnis `structs`, initialisiere darin ein Git-Repository und halte die C-Quellcodedateien mittels `git add` und `git commit` im Repository fest.
@@ -11,7 +10,9 @@ Die Übungen sind in drei Teile aufgeteilt, welche unabhängig voneinander bearb
 
 ## Teil 1: Geometrie im Koordinatensystem
 
-Im ersten Teil geht es um geometrische Figuren im zweidimensionalen karthesischen Koordinatensystem. Schreibe dazu ein C-Programm `geometry.c`.
+Im ersten Teil geht es um geometrische Figuren im zweidimensionalen karthesischen Koordinatensystem. Schreibe dazu ein C-Programm `geometry.c`. Dieses soll geometrische Objekte wie in der folgenden Abbildung verwalten können:
+
+![Rechteck, Kreis und Dreieck im Koordinatensystem](/img/geometry.svg)
 
 ### :green_circle: Aufgabe 1: Strukturen definieren
 
@@ -99,40 +100,18 @@ triangle A=(1.0, 1.0), B=(4,0, 3.0), C=(2.0, 8.0), U=TODO
 
 Schreibe eine Funktion `split_rectangle`, welche ein Rechteck als Parameter erwartet und ein Array von zwei (rechtwinkligen) Dreiecken zurückgibt. Diese Dreiecke entstehen durch eine Teilung des Rechtecks vom Punkt unten links zum Punkt oben rechts.
 
-Erweitere die `main`-Funktion, sodass sie für 
+Erweitere die `main`-Funktion, sodass sie für...
+
+TODO: Abbildung?
 
 ### :red_circle: Aufgabe 5: Umschliessende Objekte
 
-- umfasst ein Rechteck ein Dreieck komplett?
+- TODO umfasst ein Rechteck ein Dreieck komplett?
 
 ## Teil 2: Datum und Uhrzeit
 
-### :green_circle: Aufgabe 6: Strukturen definieren
-
-- Datum
-- Uhrzeit
-
-### :green_circle: Aufgabe 7: Vorher/Nachher
-
-### :green_circle: Aufgabe 8: Formatierung
-
-- Datum
-    - de: 24.06.1987
-    - en: 1987-06-24
-- Zeit: 08:25:00
-
-### :yellow_circle: Aufgabe 9: Validierungsfunktionen
-
-### :red_circle: Aufgabe 10: Zeitdifferenz in Sekunden
-
-### :black_circle: Aufgabe 11: Datumsdifferenz in Tagen
-
-### :black_circle: Aufgabe 12: Parsen von Datum und Uhrzeit
+_Aufgaben folgen_
 
 ## Teil 3: URLs
 
-### :yellow_circle: Aufgabe 13: Strukturen definieren
-
-### :red_circle: Aufgabe 14: URL ausgeben
-
-### :black_circle: Aufgabe 15: Query-String parsen
+_Aufgaben folgen_
