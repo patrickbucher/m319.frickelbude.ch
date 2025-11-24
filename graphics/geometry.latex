@@ -1,0 +1,52 @@
+\documentclass{standalone}
+\usepackage{fontspec}
+    \setmainfont{Lato}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\renewcommand{\baselinestretch}{1.5}
+\begin{document}
+\begin{tikzpicture}[]
+
+	\coordinate (null) at (0,0);
+	\coordinate (xmax) at (12,0);
+	\coordinate (ymax) at (0,10);
+	\fill (null) circle (2pt);
+	\node (Z) at (null) [below left] {(0,0)};
+	\node (X) at (xmax) [right] {x};
+	\node (Y) at (ymax) [above] {y};
+	\draw[->, line width=1pt] (null) -- (xmax);
+	\draw[->, line width=1pt] (null) -- (ymax);
+
+	\coordinate (p) at (1,1);
+	\coordinate (pq) at (5,1);
+	\coordinate (q) at (5,4);
+	\coordinate (qp) at (1,4);
+	\fill (p) circle (2pt);
+	\fill (pq) circle (2pt);
+	\fill (q) circle (2pt);
+	\fill (qp) circle (2pt);
+	\node (P) at (p) [above right] {P=(1,1)};
+	\node (Q) at (q) [below left] {Q=(5,4)};
+	\path [draw=black, line width=1pt] (p) -- (pq) -- (q) -- (qp) -- cycle;
+
+	\coordinate (a) at (4,6);
+	\coordinate (b) at (9,8);
+	\coordinate (c) at (5,9);
+	\fill (a) circle (2pt);
+	\fill (b) circle (2pt);
+	\fill (c) circle (2pt);
+	\node (A) at (a) [below] {A=(4,6)};
+	\node (B) at (b) [right] {B=(9,8)};
+	\node (C) at (c) [above] {C=(5,9)};
+	\path [draw=black, line width=1pt] (a) -- (b) -- (c) -- cycle;
+
+	\coordinate (m) at (9,4);
+	\fill (m) circle (2pt);
+	\node (M) at (m) [above right] {M=(9,4)};
+	\node (circle) [draw=black, circle, minimum size=5cm, line width=1pt] at (m) {};
+	\draw [->, line width=1pt] (m) -- (circle.north west);
+	\node (r) at (8,4.5) [above left] {r=2.5};
+
+\end{tikzpicture}
+\end{document}
+
