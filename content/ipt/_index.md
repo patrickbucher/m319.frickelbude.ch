@@ -23,6 +23,7 @@ weight = 6
 |`cc PROGRAM.c -o PROGRAM -lm`|aus der Quellcodedatei `PROGRAM.c`, welches `math.h` verwendet, das ausführbare Programm `PROGRAM` kompilieren|
 |**Formatierung**|Quellcode automatisch formatieren|
 |`clang-format -i PROGRAM.c`|die Quellcodedatei `PROGRAM.c` automatisch formatieren|
+|`indent -kr -nut PROGRAM.c`|die Quellcodedatei `PROGRAM.c` gemäss K&R-Stil und ohne Tabs formatieren|
 |**Versionskontrolle**|Dateien per Git sichern|
 |`git init`|im Arbeitsverzeichnis ein Git-Repository erstellen|
 |`git add PROGRAM.c`|die Quellcodedatei `PROGRAM.c` für den nächsten Schreibvorgang vormerken|
@@ -30,3 +31,4 @@ weight = 6
 |**Paketverwaltung**|Software installieren|
 |`sudo apt install -y build-essential`|Programmierwerkzeuge (`gcc`, `make`) installieren|
 |`sudo apt install -y clang-format`|Das Formatierungswerkzeug `clang-format` installieren|
+|`sudo apt install -y indent`|Das Formatierungswerkzeug `indent` installieren|
