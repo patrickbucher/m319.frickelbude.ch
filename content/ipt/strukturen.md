@@ -6,7 +6,7 @@ weight = 10
 
 Erstelle ein neues Verzeichnis `structs`, initialisiere darin ein Git-Repository und halte die C-Quellcodedateien mittels `git add` und `git commit` im Repository fest.
 
-Die Übungen sind in drei Teile aufgeteilt, welche unabhängig voneinander bearbeitet werden können. Die einzelnen Teile bestehen aus zusammenhängenden Aufgaben, die in der gegebenen Reihenfolge bearbeitet werden müssen.
+Die Übungen sind in drei Teile aufgeteilt, welche unabhängig voneinander bearbeitet werden können. Die einzelnen Teile bestehen aus zusammenhängenden Aufgaben, die in der gegebenen Reihenfolge bearbeitet werden sollen.
 
 ## Teil 1: Geometrie im Koordinatensystem
 
@@ -39,7 +39,7 @@ Erstelle in der `main`-Funktion je eine Instanz für jede Struktur und gib diese
 $ ./geometry
 point (1.0, 3.5)
 circle M=(4.0, 2.5), r=4.5
-rectangle bl=(1.0, 2.0), tr=(4.0, 5.0)
+rectangle bl=(1.0, 2.0), tr=(4.0, 6.0)
 triangle A=(1.0, 1.0), B=(4,0, 3.0), C=(2.0, 8.0)
 ```
 
@@ -52,7 +52,7 @@ Berechne für das **Rechteck** zuerst die beiden Seitenlängen aus den Differenz
 Berechne den Flächeninhalt für den **Kreis** nach folgender Formel:
 
 ```math
-$$ A = \pi \times r^2 $$
+$$ A = \pi r^2 $$
 ```
 
 Rufe die Flächenberechnung mit den Beispieldaten aus Aufgabe 1 auf und ergänze die Ausgabe entsprechend:
@@ -61,7 +61,7 @@ Rufe die Flächenberechnung mit den Beispieldaten aus Aufgabe 1 auf und ergänze
 $ ./geometry
 [...]
 circle M=(4.0, 2.5), r=4.5, A=63.62
-rectangle bl=(1.0, 2.0), tr=(4.0, 5.0), A=9.0
+rectangle bl=(1.0, 2.0), tr=(4.0, 6.0), A=12.00
 [...]
 ```
 
@@ -72,7 +72,7 @@ Schreibe drei Funktionen `circle_circumference`, `rectangle_circumference` und `
 Berechne den Umfang für den **Kreis** nach folgender Formel:
 
 ```math
-$$ U = 2 \pi \times r $$
+$$ U = 2 \pi r $$
 ```
 
 Berechne für das **Rechteck** wieder die beiden Seitenlängen aus den Differenzen der beiden x- bzw. y-Koordinaten. Die doppelte Summe der beiden Seitenlängen ergibt den Umfang.
@@ -90,9 +90,9 @@ Rufe die Umfangsberechnung mit den Beispieldaten aus Aufgabe 1 auf und ergänze 
 ```plain
 $ ./geometry
 [...]
-circle M=(4.0, 2.5), r=4.5, A=63.62, U=TODO
-rectangle bl=(1.0, 2.0), tr=(4.0, 5.0), A=9.0, U=TODO
-triangle A=(1.0, 1.0), B=(4,0, 3.0), C=(2.0, 8.0), U=TODO
+circle M=(4.0, 2.5), r=4.5, A=63.62, U=28.27
+rectangle bl=(1.0, 2.0), tr=(4.0, 6.0), A=12.0, U=14.00
+triangle A=(1.0, 1.0), B=(4,0, 3.0), C=(2.0, 8.0), U=16.06
 [...]
 ```
 
@@ -100,13 +100,40 @@ triangle A=(1.0, 1.0), B=(4,0, 3.0), C=(2.0, 8.0), U=TODO
 
 Schreibe eine Funktion `split_rectangle`, welche ein Rechteck als Parameter erwartet und ein Array von zwei (rechtwinkligen) Dreiecken zurückgibt. Diese Dreiecke entstehen durch eine Teilung des Rechtecks vom Punkt unten links zum Punkt oben rechts.
 
-Erweitere die `main`-Funktion, sodass sie für...
+![Das Rechteck wird von unten links nach oben rechts in zwei Dreiecke geteilt](/img/rect-split.svg)
 
-TODO: Abbildung?
+Erweitere die `main`-Funktion, sodass sie ein gegebenes Rechteck in zwei Dreiecke aufteilt und auch ausgibt:
+
+```plain
+$ ./geometry
+[...]
+rectangle bl=(1.0, 2.0), tr=(4.0, 6.0), A=12.0, U=14.00
+[...]
+split triangle 1 A=(1.0, 2.0), B=(4.0, 2.0), C=(4.0, 6.0)
+split triangle 2 A=(1.0, 2.0), B=(4.0, 6.0), C=(1.0, 6.0)
+```
 
 ### :red_circle: Aufgabe 5: Umschliessende Objekte
 
-- TODO umfasst ein Rechteck ein Dreieck komplett?
+Schreibe eine Funktion `is_enclosing`, welche ein Rechteck und ein Dreieck als Parameter erwartet und einen Wahrheitswert zurückgibt, ob das Rechteck das Dreieck komplett umschliesst.
+
+![Das Rechteck umschliesst das linke aber nicht das rote Dreieck](/img/enclosing.svg)
+
+Dies kann mit folgenden Regeln geprüft werden, die alle erfüllt sein müssen, damit das Dreieck komplett umschlossen ist:
+
+- Der Rechteckpunkt unten links muss eine kleinere X- und Y-Komponente als alle Punkte des Dreiecks haben.
+- Der Rechteckpunkt unten rechts muss eine grössere X- und kleinere Y-Komponente als alle Punkte des Dreiecks haben.
+- Der Rechteckpunkt oben rechts muss eine grössere X- und Y-Komponente als alle Punkte des Dreiecks haben.
+- Der Rechteckpunkt oen links muss eine kleinere X- und grössere Y-Komonente als alle Punkte des Dreiecks haben.
+
+Erweitere die `main`-Funktion anschliessend um das Rechteck und die beiden Dreiecke aus der Grafik:
+
+```plain
+$ ./geometry
+[...]
+encloses rectangle [(2,2),(12,2),(12,8),(2,8)] the triangle [(3,3),(7,6),(4,7)]? yes
+encloses rectangle [(2,2),(12,2),(12,8),(2,8)] the triangle [(8,4),(13,3),(10,7)]? no
+```
 
 ## Teil 2: Datum und Uhrzeit
 

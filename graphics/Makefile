@@ -1,6 +1,6 @@
 .PHONY: all clean
 
-all: geometry.svg
+all: geometry.svg rect-split.svg enclosing.svg
 
 .SUFFIXES: .pdf .svg
 .pdf.svg:

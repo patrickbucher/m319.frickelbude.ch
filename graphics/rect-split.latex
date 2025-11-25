@@ -1,0 +1,40 @@
+\documentclass{standalone}
+\usepackage{fontspec}
+    \setmainfont{Lato}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\renewcommand{\baselinestretch}{1.5}
+\begin{document}
+\begin{tikzpicture}[]
+
+	\coordinate (null) at (0,0);
+	\coordinate (xmax) at (9,0);
+	\coordinate (ymax) at (0,8);
+	\fill (null) circle (2pt);
+	\node (Z) at (null) [below left] {(0,0)};
+	\node (X) at (xmax) [right] {x};
+	\node (Y) at (ymax) [above] {y};
+	\draw[->, line width=1pt] (null) -- (xmax);
+	\draw[->, line width=1pt] (null) -- (ymax);
+
+	\coordinate (a) at (2,2);
+	\coordinate (b) at (7,2);
+	\coordinate (c) at (7,6);
+	\coordinate (d) at (2,6);
+	\fill (a) circle (2pt);
+	\fill (b) circle (2pt);
+	\fill (c) circle (2pt);
+	\fill (d) circle (2pt);
+	\node (A) at (a) [below left] {A=(2,2)};
+	\node (B) at (b) [below right] {B=(7,2)};
+	\node (C) at (c) [above right] {C=(7,6)};
+	\node (D) at (d) [above left] {D=(2,6)};
+	\path [draw=black, line width=1pt] (a) -- (b) -- (c) -- (d) -- cycle;
+
+	\path [draw=green!20, line width=1pt, fill=green!10] (a) -- (b) -- (c) -- cycle;
+	\path [draw=blue!20, line width=1pt, fill=blue!10] (a) -- (c) -- (d) -- cycle;
+
+
+\end{tikzpicture}
+\end{document}
+

@@ -1,0 +1,58 @@
+\documentclass{standalone}
+\usepackage{fontspec}
+    \setmainfont{Lato}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\renewcommand{\baselinestretch}{1.5}
+\begin{document}
+\begin{tikzpicture}[]
+
+	\coordinate (null) at (0,0);
+	\coordinate (xmax) at (15,0);
+	\coordinate (ymax) at (0,9);
+	\fill (null) circle (2pt);
+	\node (Z) at (null) [below left] {(0,0)};
+	\node (X) at (xmax) [right] {x};
+	\node (Y) at (ymax) [above] {y};
+	\draw[->, line width=1pt] (null) -- (xmax);
+	\draw[->, line width=1pt] (null) -- (ymax);
+
+	\coordinate (ar) at (2,2);
+	\coordinate (br) at (12,2);
+	\coordinate (cr) at (12,8);
+	\coordinate (dr) at (2,8);
+	\fill (ar) circle (2pt);
+	\fill (br) circle (2pt);
+	\fill (cr) circle (2pt);
+	\fill (dr) circle (2pt);
+	\node (A) at (ar) [below left] {A=(2,2)};
+	\node (B) at (br) [below right] {B=(12,2)};
+	\node (C) at (cr) [above right] {C=(12,8)};
+	\node (D) at (dr) [above left] {D=(2,8)};
+	\path [draw=black, line width=1pt] (ar) -- (br) -- (cr) -- (dr) -- cycle;
+
+	\coordinate (ai) at (3,3);
+	\coordinate (bi) at (7,6);
+	\coordinate (ci) at (4,7);
+	\fill (ai) circle (2pt);
+	\fill (bi) circle (2pt);
+	\fill (ci) circle (2pt);
+	\node (M) at (ai) [below] {M=(3,3)};
+	\node (N) at (bi) [right] {N=(7,6)};
+	\node (O) at (ci) [above] {O=(4,7)};
+	\path [draw=green!30, line width=1pt, fill=green!10] (ai) -- (bi) -- (ci) -- cycle;
+
+	\coordinate (ao) at (8,4);
+	\coordinate (bo) at (13,3);
+	\coordinate (co) at (10,7);
+	\fill (ao) circle (2pt);
+	\fill (bo) circle (2pt);
+	\fill (co) circle (2pt);
+	\node (X) at (ao) [below] {X=(8,4)};
+	\node (Y) at (bo) [right] {Y=(13,3)};
+	\node (Z) at (co) [above] {Z=(10,7)};
+	\path [draw=red!30, line width=1pt, fill=red!10] (ao) -- (bo) -- (co) -- cycle;
+
+\end{tikzpicture}
+\end{document}
+
