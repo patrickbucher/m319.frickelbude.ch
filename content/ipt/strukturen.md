@@ -28,8 +28,8 @@ Definiere die folgenden Strukturen mit den dazugehörigen Attributen und passend
     - Mittelpunkt
     - Radius (z.B. 4.5)
 - Rechteck (`rectangle`)
-    - Punkt unten links
-    - Punkt oben rechts
+    - Punkt unten links ("bottom left")
+    - Punkt oben rechts ("top right")
 - Dreieck (`triangle`)
     - Punkt A
     - Punkt B
@@ -126,7 +126,7 @@ Dies kann mit folgenden Regeln geprüft werden, die alle erfüllt sein müssen, 
 - Der Rechteckpunkt unten links muss eine kleinere X- und Y-Komponente als alle Punkte des Dreiecks haben.
 - Der Rechteckpunkt unten rechts muss eine grössere X- und kleinere Y-Komponente als alle Punkte des Dreiecks haben.
 - Der Rechteckpunkt oben rechts muss eine grössere X- und Y-Komponente als alle Punkte des Dreiecks haben.
-- Der Rechteckpunkt oen links muss eine kleinere X- und grössere Y-Komonente als alle Punkte des Dreiecks haben.
+- Der Rechteckpunkt oben links muss eine kleinere X- und grössere Y-Komonente als alle Punkte des Dreiecks haben.
 
 Erweitere die `main`-Funktion anschliessend um das Rechteck und die beiden Dreiecke aus der Grafik:
 
