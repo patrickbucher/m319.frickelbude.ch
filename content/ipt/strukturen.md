@@ -121,12 +121,14 @@ Schreibe eine Funktion `is_enclosing`, welche ein Rechteck und ein Dreieck als P
 
 ![Das Rechteck umschliesst das linke aber nicht das rote Dreieck](/img/enclosing.svg)
 
+In der obigen Abbildung wird das grüne Dreieck komplett umschlossen, das rote Dreieck jedoch nicht, da der Punkt `Y` mit den Koordinaten `(13,3)` ausserhalb des Rechtecks liegt.
+
 Dies kann mit folgenden Regeln geprüft werden, die alle erfüllt sein müssen, damit das Dreieck komplett umschlossen ist:
 
 - Der Rechteckpunkt unten links muss eine kleinere X- und Y-Komponente als alle Punkte des Dreiecks haben.
 - Der Rechteckpunkt unten rechts muss eine grössere X- und kleinere Y-Komponente als alle Punkte des Dreiecks haben.
 - Der Rechteckpunkt oben rechts muss eine grössere X- und Y-Komponente als alle Punkte des Dreiecks haben.
-- Der Rechteckpunkt oben links muss eine kleinere X- und grössere Y-Komonente als alle Punkte des Dreiecks haben.
+- Der Rechteckpunkt oben links muss eine kleinere X- und grössere Y-Komponente als alle Punkte des Dreiecks haben.
 
 Erweitere die `main`-Funktion anschliessend um das Rechteck und die beiden Dreiecke aus der Grafik:
 
