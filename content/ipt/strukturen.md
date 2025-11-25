@@ -14,7 +14,7 @@ Im ersten Teil geht es um geometrische Figuren im zweidimensionalen karthesische
 
 ![Rechteck, Kreis und Dreieck im Koordinatensystem](/img/geometry.svg)
 
-**Tipp**: Zeichne das Koordinatensystem und die geometrischen Objekte auf, um die Situation besser verstehen zu können.
+**Tipp**: Bei Unklarheiten in den folgenden Aufgaben hilft es, das Koordinatensystem und die geometrischen Objekte auf ein Blatt Papier zu zeichnen.
 
 ### :green_circle: Aufgabe 1: Strukturen definieren
 
@@ -145,7 +145,7 @@ Im zweiten Teil geht es um Datums- und Zeitangaben sowie um Berechnungen damit. 
 
 ### :green_circle: Aufgabe 6: Strukturen definieren
 
-Definiere die folgenden STrukturen mit den dazugehörigen Attributen und passenden Datentypen. Beispielwerte sind jedem Attribut in Klammern angegeben.
+Definiere die folgenden Strukturen mit den dazugehörigen Attributen und passenden Datentypen. Beispielwerte sind jedem Attribut in Klammern angegeben.
 
 - Datum (`date`)
     - Jahr (-742, 1291, 1987)
@@ -249,3 +249,70 @@ Schreibe die folgenden Funktionen zum Parsen von Datum und Uhrzeit:
 Die Funktionen sollen eine Zeichenkette wie `"2025-11-25"` bzw. `"11:24:59"` entgegennehmen und eine entsprechende Struktur zurückgeben.
 
 Demonstriere die Verwendung dieser Funktionen in der `main`-Funktion.
+
+## Teil 3: URLs
+
+Im dritten Teil geht es um URLs. Eine URL ist eine Zeichenkette, die aus verschiedenen Teilen besteht, die alle ihre Eigenheiten haben:
+
+- Protokoll, z.B. `http` oder `https`
+- Hostname, z.B. `m319.frickelbude.ch`
+- Dokument, z.B. `/ipt/strukturen/index.html`
+- Query-String, z.B. `part=3&exercise=5&solution=true`
+
+Schreibe ein C-Programm `urls.c` für die folgenden Aufgaben. Ergänze die Hauptfunktion `main` jeweils bei jeder Aufgabe, um die neu entwickelte Funktionalität sinnvoll zu demonstrieren.
+
+### :yellow_circle: Aufgabe 13: Strukturen definieren
+
+Definiere eine Struktur namens `url`, welche aus folgenden Teilen besteht mit der vorgegebenen maximalen Anzahl Zeichen besteht:
+
+- Protokoll (max. 16 Zeichen)
+- Hostname (max. 128 Zeichen)
+- Dokument (max. 128 Zeichen)
+- Query-String (Array von max. 16 Schlüssel-Wort-Paaren)
+
+Erstelle für die Schlüssel-Wort-Paare des Query-Strings eine Struktur namens `key_value`, welche aus folgenden Attributen besteht:
+
+- `key` (max. 32 Zeichen)
+- `value` (max. 32 Zeichen)
+
+Erstelle anschliessend eine Struktur mit folgenden Angaben:
+
+- Protokoll: `"https"`
+- Hostname: `"m319.frickelbude.ch"`
+- Dokument: `"/ipt/strukturen/index.html"`
+- Query-String: Array
+    - `0`
+        - `"part"`
+        - `"3"`
+    - `2`
+        - `"exercise"`
+        - `"5"`
+    - `0`
+        - `"solution"`
+        - `"true"`
+
+### :yellow_circle: Aufgabe 14: URL ausgeben
+
+Schreibe eine Funktion namens `output_url`, welche eine URL als Parameter erwartet und diese folgendermassen ausgibt:
+
+```plain
+https://m319.frickelbude.ch/ipt/strukturen/index.html?part=3&exercise=5&solution=true
+```
+
+Der Query-String beginnt immer mit dem Zeichen `?`. Die Schlüssel-Wert-Paare werden immer mit einem Gleichheitszeichen ausgegeben und sind mit einem `&`-Zeichen voneinander getrennt.
+
+### :red_circle: Aufgabe 15: URL zurückgeben
+
+Schreibe eine Funktion namens `format_url`, welche eine URL und ein für die Ausgabe genügend grosses Zeichen-Array als Parameter erwartet, in welches  diese die Zeichenkette (analog zur vorherigen Aufgabe) schreibt. Verwende hierzu die `sprintf`-Funktion, welche als ersten Parameter das bereitgestellte Array von Zeichen benötigt, in welches die URL ausgegeben wird.
+
+### :black_circle: Aufgabe 16: URL parsen
+
+Schreibe eine Funktion `parse_url`, welche eine URL als Zeichenkette (`char[]`) entgegennimmt, diese in ihre einzelnen Bestandteile aufteilt und als Struktur zurückgibt.
+
+Tipp: Gehe die URL Zeichen für Zeichen durch und lege die bisher betrachteten Zeichen jeweils in einem sogenannten Buffer-Array ab. Zwischen den einzelnen URL-Bestandteilen gibt es folgende Separatoren:
+
+- `://` zwischen Protokoll und Hostname
+- `/` zwischen Hostname und Dokument
+- `?` zwischen Dokument und Query-String
+- `&` zwischen den einzelnen Query-String-Paaren
+- `=` zwischen Schlüssel und Wert eines Query-String-Paares
