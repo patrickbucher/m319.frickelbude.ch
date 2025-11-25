@@ -6,13 +6,15 @@ weight = 10
 
 Erstelle ein neues Verzeichnis `structs`, initialisiere darin ein Git-Repository und halte die C-Quellcodedateien mittels `git add` und `git commit` im Repository fest.
 
-Die Übungen sind in drei Teile aufgeteilt, welche unabhängig voneinander bearbeitet werden können. Die einzelnen Teile bestehen aus zusammenhängenden Aufgaben, die in der gegebenen Reihenfolge bearbeitet werden sollen.
+Die Übungen sind in mehrere Teile aufgeteilt, welche unabhängig voneinander bearbeitet werden können. Die einzelnen Teile bestehen aus zusammenhängenden Aufgaben, die in der gegebenen Reihenfolge bearbeitet werden sollen.
 
 ## Teil 1: Geometrie im Koordinatensystem
 
 Im ersten Teil geht es um geometrische Figuren im zweidimensionalen karthesischen Koordinatensystem. Schreibe dazu ein C-Programm `geometry.c`. Dieses soll geometrische Objekte wie in der folgenden Abbildung verwalten können:
 
 ![Rechteck, Kreis und Dreieck im Koordinatensystem](/img/geometry.svg)
+
+**Tipp**: Zeichne das Koordinatensystem und die geometrischen Objekte auf, um die Situation besser verstehen zu können.
 
 ### :green_circle: Aufgabe 1: Strukturen definieren
 
@@ -137,8 +139,113 @@ encloses rectangle [(2,2),(12,2),(12,8),(2,8)] the triangle [(8,4),(13,3),(10,7)
 
 ## Teil 2: Datum und Uhrzeit
 
-_Aufgaben folgen_
+Im zweiten Teil geht es um Datums- und Zeitangaben sowie um Berechnungen damit. Schreibe hierzu ein C-Programm `datetime.c`.
 
-## Teil 3: URLs
+**Tipp**: Für einige Aufgaben lohnt sich das Aufzeichnen eines Zeitstrahls auf Papier.
 
-_Aufgaben folgen_
+### :green_circle: Aufgabe 6: Strukturen definieren
+
+Definiere die folgenden STrukturen mit den dazugehörigen Attributen und passenden Datentypen. Beispielwerte sind jedem Attribut in Klammern angegeben.
+
+- Datum (`date`)
+    - Jahr (-742, 1291, 1987)
+    - Monat (1, 2, …, 12)
+    - Tag (1, 2, …, 31)
+- Uhrzeit (`time`)
+    - Stunde (1, 2, …, 24)
+    - Minute (1, 2, …, 60)
+    - Sekunde (1, 2, …, 60)
+- Datum und Uhrzeit (`date_time`)
+    - Datum
+    - Uhrzeit
+
+Erstelle in der `main`-Funktion je eine Instanz für jede Struktur und gib diese folgendermassen aus:
+
+```plain
+$ ./datetime
+Date (Y=2025,M=11,D=25)
+Time (h=11,m=24,s=59)
+```
+
+### :green_circle: Aufgabe 7: Formatierung
+
+Schreibe drei Funktionen, welche ein Datum bzw. eine Uhrzeit formatiert ausgeben:
+
+1. `format_date_en`: Formatiert das Datum gemäss amerikanischer Schreibweise (YYYY-MM-DD), z.B. 2025-11-25
+2. `format_date_ch`: Formatiert das Datum gemäss schweizerischer Schreibweise (DD.MM.YYYY), z.B. 25.11.2025
+3. `format_time`: Formatiert die Zeit mit dem Doppelpunkt als Trennsymbol (hh:mm:ss), z.B. 11:24:59
+
+Erweitere die `main`-Funktion, sodass alle Funktionen einmal demonstriert werden:
+
+```
+$ ./datetime
+[...]
+date (US): 2025-11-25
+date (CH): 25.11.2025
+time: 11:24:59
+```
+
+### :yellow_circle: Aufgabe 8: Vorher/Nachher
+
+Schreibe drei Funktionen, welche zwei `date_time`-Angaben erwartet:
+
+1. `_Bool before(date_time a, date_time b)`: gibt `true` zurück, wenn `a` _vor_ `b` liegt; sonst `false`
+1. `_Bool after(date_time a, date_time b)`: gibt `true` zurück, wenn `a` _nach_ `b` liegt; sonst `false`
+1. `_Bool equal(date_time a, date_time b)`: gibt `true` zurück, wenn `a` und `b` gleich sind, sonst `false`
+
+Vergleiche die Angaben in absteigender Grössenordnung:
+
+1. Jahr
+2. Monat
+3. Tag
+4. Stunde
+5. Minute
+6. Sekunde
+
+Tipp: Die Funktion `after` kann mithilfe von `before` und `equal` sehr einfach implementiet werden.
+
+Erweitere die `main`-Funktion, sodass alle Funktionen mit beiden möglichen Ergebnissen demonstriert werden.
+
+```plain
+$ ./datetime
+[...]
+is 2025-11-25 11:24:59 before 1993-03-19 23:45:12? no
+is 1993-03-19 23:45:12 before 2025-11-25 11:24:59? yes
+is 2025-11-25 11:24:59 after 1993-03-19 23:45:12? yes
+is 1993-03-19 23:45:12 after 2025-11-25 11:24:59? no
+```
+
+### :yellow_circle: Aufgabe 9: Validierungsfunktionen
+
+Schreibe folgende Validierungsfunktionen, welche prüfen, ob alle Attribute der Struktur im definierten Wertebereich liegen:
+
+1. `_Bool is_valid_date(date d)`
+1. `_Bool is_valid_time(time d)`
+1. `_Bool is_valid_date_time(date_time d)`
+
+Für die Funktion `is_valid_date` muss für Datumsangaben im Februar überprüft werden, ob es sich beim jeweiligen Jahr um ein Schaltjahr handelt. (Je nach dem beträgt die Obergrenze 28 oder 29.) Schreibe heirzu eine Funktion `_Bool is_leap_year(int year)`.
+
+Demonstriere die Verwendung dieser Funktionen in der `main`-Funktion, wobei für jede Funktion jeweils ein positives und negatives Beispiel erstellt werden soll.
+
+### :red_circle: Aufgabe 10: Zeitdifferenz in Sekunden
+
+Schreibe eine Funktion `int time_diff(time a, time b)`, welche die Differenz der beiden Zeitangaben in Sekunden zurückgibt. Hierzu muss zuerst ermittelt werden, welche Zeitangabe früher bzw. später als die andere ist.
+
+Demonstriere die Verwendung dieser Funktion in der `main`-Funktion.
+
+### :black_circle: Aufgabe 11: Datumsdifferenz in Tagen
+
+Schreibe eine Funktion `int date_diff(date a, date b)`, welche die Differenz der beiden Datumsangaben in Tagen zurückgibt. Hierzu muss zunächst ermittelt werden, welche Datumsangabe früher bzw. später als die andere ist. Anschliessend lässt sich die Differenz in Tagen mithilfe einer Schleife ermitteln, welche die Tage hochzählt und jeweils nach Ende Monat (d.h. nach 28, 29, 30, 31 Tagen; je nach Monat und Schaltjahr) bzw. nach Ende Jahr den Monats- bzw. Jahressprung vollzieht.
+
+Demonstriere die Verwendung dieser Funktion in der `main`-Funktion.
+
+### :black_circle: Aufgabe 12: Parsen von Datum und Uhrzeit
+
+Schreibe die folgenden Funktionen zum Parsen von Datum und Uhrzeit:
+
+- `date parse(char d[])`
+- `time parse(char t[])`
+
+Die Funktionen sollen eine Zeichenkette wie `"2025-11-25"` bzw. `"11:24:59"` entgegennehmen und eine entsprechende Struktur zurückgeben.
+
+Demonstriere die Verwendung dieser Funktionen in der `main`-Funktion.
