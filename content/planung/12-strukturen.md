@@ -1,6 +1,6 @@
 +++
 date = '2025-11-22T21:30:43+01:00'
-title = 'Block 12: Strukturen'
+title = 'Block 12: Strukturen (1/2)'
 weight = 23
 +++
 

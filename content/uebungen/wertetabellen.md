@@ -64,3 +64,79 @@ Kopiere und ergänze die Tabelle mit den Werten der Ausdrücke im Spaltentitel f
 | Iteration | `i` | `number` | `number % 2` | `result` |
 |----------:|----:|---------:|-------------:|---------:|
 |          1|     |          |              |          |
+
+## Aufgabe 3: Tage, Stunden, Minuten, Sekunden
+
+Betrachte die folgende Struktur und Funktion:
+
+```c
+typedef struct {
+    short days;
+    short hours;
+    short minutes;
+    short seconds;
+} duration;
+
+duration dhms(int seconds)
+{
+    int day_in_seconds = 24 * 60 * 60;
+    int hour_in_seconds = 60 * 60;
+    int minute_in_seconds = 60;
+    int days = 0, hours = 0, minutes = 0;
+
+    // point A
+
+    days = seconds / day_in_seconds;
+    seconds -= day_in_seconds * days;
+
+    // point B
+
+    hours = seconds / hour_in_seconds;
+    seconds -= hour_in_seconds * hours;
+
+    // point C
+
+    minutes = seconds / minute_in_seconds;
+    seconds -= minute_in_seconds * minutes;
+
+    // point D
+
+    duration d = { days, hours, minutes, seconds };
+    return d;
+}
+```
+
+Kopiere und ergänze die Tabelle mit den Werten der Ausdrücke im Spaltentitel, wenn die Funktion `dhms` mit dem Argument `98765` aufgerufen wird:
+
+| Stelle | `seconds` | `minutes` | `hours` | `days` |
+|--------|----------:|----------:|--------:|-------:|
+| `point A`|         |           |         |        |
+| `point B`|         |           |         |        |
+| `point C`|         |           |         |        |
+| `point D`|         |           |         |        |
+
+## Aufgabe 4: String umdrehen
+
+Betrachte die folgende Funktion:
+
+```c
+void reverse(char word[], int length)
+{
+    for (int i = 0, j = length - 1; i < j; i++, j--) {
+        char swap = word[i];
+        // point A
+        word[i] = word[j];
+        word[j] = swap;
+        // point B
+    }
+}
+```
+
+Kopiere und ergänze die Tabelle mit den Werten der Ausdrücke im Spaltentitel, wenn die Funktion `reverse` mit den Argumenten `"Anblick"` und `7` aufgerufen wird:
+
+| Iteration | Stelle   | `i` | `j` | `word[i]` | `word[j]` | `swap` | `word` |
+|----------:|----------|----:|----:|-----------|-----------|--------|--------|
+|          1| `point A`|     |     |           |           |        |        |
+|          1| `point B`|     |     |           |           |        |        |
+|          2| `point A`|     |     |           |           |        |        |
+|          2| `point B`|     |     |           |           |        |        |
