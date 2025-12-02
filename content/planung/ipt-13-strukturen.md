@@ -1,14 +1,14 @@
 +++
-date = '2025-11-25T07:46:59+01:00'
-title = 'IPT 1.1, Block 12: Strukturen'
-weight = 24
+date = '2025-12-02T08:12:21+01:00'
+title = 'IPT 1.1, Block 13: Strukturen'
+weight = 26
 +++
 
-Im zwölften IPT-Block bearbeiten wir Übungen zu Strukturen.
+Im dreizehnten IPT-Block bearbeiten wir weiter Übungen zu Strukturen.
 
 ## Ziel
 
-Sie haben Gelegenheit anhand verschiedener Aufgabnestellungen Strukturen zu erstellen und Logik zu implementieren, die mit diesen Strukturen interagiert.
+Sie haben weiter Gelegenheit anhand verschiedener Aufgabnestellungen Strukturen zu erstellen und Logik zu implementieren, die mit diesen Strukturen interagiert.
 
 ## Ablauf
 
