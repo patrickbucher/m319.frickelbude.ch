@@ -1,0 +1,23 @@
+# Kombinierte Übungen
+
+- Algorithmen
+    - binäre Suche im sortierten Array
+    - Bubble Sort
+    - Primzahlen finden
+    - Primfaktor-Zerlegung
+- Strings
+    - Buchstaben zählen (Histogramm)
+    - Wörter kapitalisieren
+    - Strings umbrechen
+    - Passwörter generieren
+- Funktionen
+    - Fakultät berechnen
+    - Fibonacci-Zahlen
+    - CRC-Prüfung
+    - IP-Adressen: zwei IP-Adressen und Subnetmask gegeben
+- Rechentrainer
+    - Struktur für Rechenaufgabe (Operanden, Operator, Resultat)
+    - Funktionen zum zufälligen Generieren von Aufgaben
+    - interaktive Ein- und Ausgabe
+- Lohnabrechnung
+    - Strukturen für Abzüge (Sätze und Beträge)
