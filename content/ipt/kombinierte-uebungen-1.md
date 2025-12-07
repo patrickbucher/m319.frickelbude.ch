@@ -1,16 +1,16 @@
 +++
 date = '2025-10-12T17:59:38+02:00'
-title = 'Kombinierte Übungen'
+title = 'Kombinierte Übungen 1'
 weight = 6
 +++
 
-Lege für die folgenden Übungen ein neues Verzeichnis namens `combined` an:
+Lege für die folgenden Übungen ein neues Verzeichnis namens `combined1` an:
 
-    mkdir combined
+    mkdir combined1
 
 Wechsle das aktuelle Arbeitsverzeichnis in den soeben erstellten Ordner:
 
-    cd combined
+    cd combined1
 
 Lege in diesem Ordner ein Git-Repository an:
 
