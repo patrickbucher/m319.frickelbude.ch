@@ -81,8 +81,8 @@ TODO
 
 - Fakultät berechnen
 - Fibonacci-Zahlen berechnen
+- Summe und Produkt als Rekursion
 - Euklid
-- IP-Adressen und Subnetmaske: Gehört eine IP-Adresse in das Netz? Struktur mit IP, Netzwerk-Adresse und Subnetmask
 
 ## Teil 3: Schleifen und Algorithmen
 
@@ -92,3 +92,10 @@ TODO
 - Bubble Sort
 - Primzahlen finden
 - Primfaktor-Zerlegung
+
+## Teil 4: IP-Adressen und Bitweise-Operationen
+
+1. IP-Adresse als Datenstruktur bestehend aus vier `unsigned char`-Feldern
+2. Validierung von Subnetz-Maske: alle 1-Bits müssen links sein, alle 0-Bits rechts
+3. Umwandlung von IP-Adresse in `unsigned int`
+4. Überprüfung, ob zwei IP-Adressen einander "sehen" können anhand subnet mask
