@@ -2,7 +2,6 @@
 date = '2025-12-07T16:35:25+01:00'
 title = 'Kombinierte Übungen 2'
 weight = 11
-draft = false
 +++
 
 Lege für die folgenden Übungen ein neues Verzeichnis namens `combined2` an:
@@ -26,7 +25,7 @@ Bearbeite so die folgenden Aufgaben. Es können alle bisher behandelten Konstruk
 
 ## Teil 1: Text und Zeichenketten
 
-Im ersten Teil geht es um Zeichenketten (engl. Strings), welche in C als Arrays vom Datentyp `char` repräsentiert werden. Diese Arrays sind null-terminiert, d.h. das Ende eines Strings ist durch ein Element mit dem `0` bzw. `'\0'` angezeigt. Dadurch haben Arrays, die Strings repräsentieren, ein Element mehr als die Anzahl der Zeichen, die sie abbilden.
+Im ersten Teil geht es um Zeichenketten (engl. Strings), welche in C als Arrays vom Datentyp `char` repräsentiert werden. Diese Arrays sind null-terminiert, d.h. das Ende eines Strings ist durch ein Element mit dem Zeichen `0` bzw. `'\0'` angezeigt. Dadurch haben Arrays, die Strings repräsentieren, ein Element mehr als die Anzahl der Zeichen, die sie abbilden.
 
 Für drei der vier folgenden Aufgaben sollen längere Texteingaben verarbeitet werden. Verwende hierzu folgendes Grundgerüst (`echo.c`):
 
@@ -143,7 +142,7 @@ char randomAlphanumeric()
 Tipp: Es gibt verschiedene Ansätze, wie aus der Zufallszahl `i` ein Zeichen aus dem Bereich A-Z, a-z und 0-9 ermittelt werden kann:
 
 - Aufwändig und einfach: Lege alle Zeichen in einem Array ab. Berechne den Zeichenindex nun mithilfe der Variablen `i`, dem Modulooperator `%` und der Länge des Zeichenarrays.
-- Elegant: Berechne zuerst die Anzahl der möglichen zeichen. Verwende anschliessend den Modulooperator `%`, um den Wert der Zahl `i` in den passenden Bereich von 0 bis zur Anzahl der Zeichen herunterzubrechen. Mache nun die Fallunterscheidung nach folgenden Intervallen:
+- Elegant: Berechne zuerst die Anzahl der möglichen Zeichen. Verwende anschliessend den Modulooperator `%`, um den Wert der Zahl `i` in den passenden Bereich von 0 bis zur Anzahl der Zeichen herunterzubrechen. Mache nun die Fallunterscheidung nach folgenden Intervallen:
     - `[0,25]`: Grossbuchstabe (`'A' + x`)
     - `[26,51]`: Kleinbuchstabe (`'a' + x - 26`)
     - `[52,61]`: Ziffer (`'0' + x - 52`)
@@ -244,7 +243,7 @@ Schreibe hierzu eine Funktion mit dem Prototyp `factorial(int n)`.
 
 ### :yellow_circle: Aufgabe 6: Fibonacci-Zahlen berechnen
 
-Die Fibonacci-Reihe lautet 1, 1, 2, 3, 5, 8 usw. Jedes Element der Folge ist als Summe seiner beider Vorgänger definiert. Die ersten beiden Elemente haben den Wert 0.
+Die Fibonacci-Reihe lautet 1, 1, 2, 3, 5, 8 usw. Jedes Element der Folge ist als Summe seiner beiden Vorgänger definiert (z.B. `8 = 5 + 3`). Die ersten beiden Elemente haben den Wert 1.
 
 - Basisfall 1: `n == 0`
 - Basisfall 2: `n == 1`
@@ -294,15 +293,23 @@ Ist der Basisfall erreicht, entsprechen beide Zahlen `a` und `b` dem ggT. Im rek
 
 So werden die Zahlen `a` und `b` kleiner, bis sie schliesslich gleich sind.
 
-Schreibe ein Programm `gcd.c`, welches zwei positive natürliche Zahlen als Kommandozeilenargumente entgegennimmt, den ggT davon berechnet und diesen ausgibt:
+Beispiel:
+
+```math
+$$ ggT(12, 8) = ggT(12-8, 8) $$
+$$ ggT(4, 8) = ggT(8-4, 4) $$
+$$ ggT(4, 4) = 4 $$
+```
+
+Schreibe ein Programm `gcd.c` (gcd: _greatest common divisor_), welches zwei positive natürliche Zahlen als Kommandozeilenargumente entgegennimmt, den ggT davon berechnet und diesen ausgibt:
 
 ```plain
 ./gcd 12 9
-ggT(12, 9) = 3
+gcd(12, 9) = 3
 ./gcd 24 18
-ggT(24, 18) = 6
+gcd(24, 18) = 6
 ./gcd 169 39
-ggT(169, 39) = 13
+gcd(169, 39) = 13
 ./gcd 2048 768
-ggT(2048, 768) = 256
+gcd(2048, 768) = 256
 ```
