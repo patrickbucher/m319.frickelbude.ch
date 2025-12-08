@@ -24,7 +24,7 @@ Sichere nach jeder Aufgabe deine Lösung (z.B. `some-exercise.c`):
 
 Bearbeite so die folgenden Aufgaben. Es können alle bisher behandelten Konstrukte zum Einsatz kommen.
 
-## Teil 1: Zeichenketten
+## Teil 1: Text und Zeichenketten
 
 Im ersten Teil geht es um Zeichenketten (engl. Strings), welche in C als Arrays vom Datentyp `char` repräsentiert werden. Diese Arrays sind null-terminiert, d.h. das Ende eines Strings ist durch ein Element mit dem `0` bzw. `'\0'` angezeigt. Dadurch haben Arrays, die Strings repräsentieren, ein Element mehr als die Anzahl der Zeichen, die sie abbilden.
 
@@ -197,7 +197,7 @@ Y ============
 Z
 ```
 
-Tipps:
+Vorgehen:
 
 - Erstelle ein Array der Länge 26 und initialisiere alle Werte mit 0.
 - Für jedes eingelesene Zeichen muss geprüft werden, ob es im Intervall `['A','Z']`, im Intervall `['a','z']` oder ausserhalb liegt.
@@ -208,25 +208,101 @@ Tipps:
 
 ## Teil 2: Funktionen und Rekursion
 
-TODO
+In den folgenden Aufgaben soll eine mächtige Technik für Funktionen angewendet werden: die Rekursion, bei der sich eine Funktion selber aufruft.
 
-- Fakultät berechnen
-- Fibonacci-Zahlen berechnen
-- Summe und Produkt als Rekursion
-- Euklid
+Damit ein endloses Aufrufen derselben Funktion verhindert werden kann, unterscheidet man bei rekursiven Funktionen anhand deren Parameter zwischen zwei Fällen:
 
-## Teil 3: Schleifen und Algorithmen
+1. der Basisfall, der das Ergebnis statisch definiert und das Ende der Rekursion signalisiert
+2. der rekursive Fall, der das Ergebnis als Ausdruck rekursiver Funktionsaufrufe definiert
 
-TODO
+Die folgenden Aufgaben können zwar auch mit Schleifen gelöst werden, eine rekursive Lösung ist jedoch meist eleganter und soll darum hier gewählt werden.
 
-- Binäre Suche
-- Bubble Sort
-- Primzahlen finden
-- Primfaktor-Zerlegung
+### :green_circle: Aufgabe 5: Fakultät berechnen
 
-## Teil 4: IP-Adressen und Bitweise-Operationen
+Die Rechenoperation _Fakultät_ (engl. _factorial_) ist folgendermassen für positive natürliche Zahlen _rekursiv_ definiert:
 
-1. IP-Adresse als Datenstruktur bestehend aus vier `unsigned char`-Feldern
-2. Validierung von Subnetz-Maske: alle 1-Bits müssen links sein, alle 0-Bits rechts
-3. Umwandlung von IP-Adresse in `unsigned int`
-4. Überprüfung, ob zwei IP-Adressen einander "sehen" können anhand subnet mask
+```math
+$$ 0! = 1 $$
+$$ n! = n \times (n-1)! $$
+```
+
+- Basisfall: `n == 0`
+- rekursiver Fall: `n > 0`
+
+Schreibe ein Programm `factorial.c`, welches eine Zahl als Kommandozeilenargument akzeptiert und für diese Zahl die Fakultät ausrechnet und ausgibt:
+
+```plain
+./factorial 3
+6
+./factorial 5
+120
+./factorial 9
+362880
+```
+
+Schreibe hierzu eine Funktion mit dem Prototyp `factorial(int n)`.
+
+### :yellow_circle: Aufgabe 6: Fibonacci-Zahlen berechnen
+
+Die Fibonacci-Reihe lautet 1, 1, 2, 3, 5, 8 usw. Jedes Element der Folge ist als Summe seiner beider Vorgänger definiert. Die ersten beiden Elemente haben den Wert 0.
+
+- Basisfall 1: `n == 0`
+- Basisfall 2: `n == 1`
+- rekursiver Fall: `n > 1`
+
+Schreibe ein Programm `fibonacci.c`, welches eine Zahl `n` als Kommandozeilenargument akzeptiert und die `n`-te Fibonacci-Zahl rekursiv berechnet und ausgibt:
+
+```plain
+./fibonacci 10
+89
+./fibonacci 20
+10946
+./fibonacci 40
+165580141
+```
+
+### :yellow_circle: Aufgabe 7: Summe und Produkt berechnen
+
+Schreibe ein Programm `sumprod.c`, welches eine Zahl `n` als Kommandozeilenargument akzeptiert und für die Zahlenfolge `[1,n]` die Summe und das Produkt berechnet und ausgibt. Die Berechnungen sollen mithilfe zweier rekursiver Funktion `sum` und `prod` erfolgen:
+
+- Basisfall: `n == 1`
+- rekursiver Fall: `n > 1`
+
+```plain
+./sumprod 3
+sum:      6     prod:      6
+./sumprod 4
+sum:     10     prod:     24
+./sumprod 5
+sum:     15     prod:    120
+```
+
+Tipp: Die Summe einer Zahl ist die Zahl mit der Summe der Zahl minus 1 addiert. Das Produkt einer Zahl ist die Zahl mit dem Produkt der Zahl minus 1 multipliziert.
+
+### :red_circle: Aufgabe 8: Grösster Gemeinsamer Teiler
+
+Der _grösste gemeinsame Teiler_ (ggT) zweier Zahlen `a` und `b` ist die grösste Zahl, durch sich diese beiden Zahlen restlos teilen lassen. Dieser kann mithilfe des Algorithmus von Euklid berechnet werden:
+
+- Basisfall: `a == b`
+- rekursiver Fall 1: `a > b`
+- rekursiver Fall 2: `a < b`
+
+Ist der Basisfall erreicht, entsprechen beide Zahlen `a` und `b` dem ggT. Im rekursiven Fall kann der ggT folgendermassen gefunden werden:
+
+1. die kleinere Zahl wird von der grösseren Zahl subtrahiert
+2. der ggT dieser Differenz und der kleineren der beiden Zahlen kann rekursiv berechnet werden
+
+So werden die Zahlen `a` und `b` kleiner, bis sie schliesslich gleich sind.
+
+Schreibe ein Programm `gcd.c`, welches zwei positive natürliche Zahlen als Kommandozeilenargumente entgegennimmt, den ggT davon berechnet und diesen ausgibt:
+
+```plain
+./gcd 12 9
+ggT(12, 9) = 3
+./gcd 24 18
+ggT(24, 18) = 6
+./gcd 169 39
+ggT(169, 39) = 13
+./gcd 2048 768
+ggT(2048, 768) = 256
+```
