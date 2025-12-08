@@ -8,7 +8,7 @@ Im dreizehnten IPT-Block bearbeiten wir weiter Übungen zu Strukturen.
 
 ## Ziel
 
-Sie haben weiter Gelegenheit anhand verschiedener Aufgabnestellungen Strukturen zu erstellen und Logik zu implementieren, die mit diesen Strukturen interagiert.
+Sie haben weiter Gelegenheit anhand verschiedener Aufgabenstellungen Strukturen zu erstellen und Logik zu implementieren, die mit diesen Strukturen interagiert.
 
 ## Ablauf
 

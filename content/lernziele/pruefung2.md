@@ -28,6 +28,7 @@ Das Erreichen der [Lernziele zur ersten Prüfung](/lernziele/pruefung1) wird fü
 3. Sie können die Begriffe _formale Parameter_, _tatsächliche Parameter_ und _Argumente_ definieren und voneinander unterscheiden.
 4. Sie können Funktionen für eine gegebene Problemstellung als reine Funktion (zur Verwendung als Ausdruck), als Prozedur (mit Nebeneffekten) oder als eine Mischung davon (Rückgabewert und Seiteneffekt) umsetzen.
 5. Sie können vordefinierte Funktionen anhand deren Signatur und Dokumentation zum Lösen vorgegebener Probleme korrekt aufrufen und sinvoll verwenden.
+6. Sie können rekursive Funktionen anhand des definierten Basisfalls und rekursiven Falls implementieren.
 
 ## Strukturen
 

@@ -1,6 +1,6 @@
 +++
 date = '2025-10-14T08:27:33+02:00'
-title = 'IPT 1.1, Block 6: kombinierte Übungen'
+title = 'IPT 1.1, Block 6: kombinierte Übungen (1)'
 weight = 12
 +++
 
