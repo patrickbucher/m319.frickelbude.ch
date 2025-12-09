@@ -15,6 +15,7 @@ Sie haben weitere Übungsgelegenheit anhand verschiedener kombinierter Aufgaben.
 ### Lektionen 1-4
 
 1. [5 min.] Administratives
+1. [5 min.] Hinweis zu [Lernzielen](/lernziele/pruefung2) (Rekursion)
 1. Rest: Arbeit an den [Übungen](/ipt/kombinierte-uebungen-2)
     - währenddessen: persönliche Besprechungen
         - Hausaufgaben
