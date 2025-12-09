@@ -100,7 +100,7 @@ triangle A=(1.0, 1.0), B=(4,0, 3.0), C=(2.0, 8.0), U=16.06
 
 ### :yellow_circle: Aufgabe 4: Rechteck in Dreiecke aufteilen
 
-Schreibe eine Funktion `split_rectangle`, welche ein Rechteck als Parameter erwartet und ein Array von zwei (rechtwinkligen) Dreiecken zurückgibt. Diese Dreiecke entstehen durch eine Teilung des Rechtecks vom Punkt unten links zum Punkt oben rechts.
+Schreibe eine Funktion `split_rectangle`, welche ein Rechteck und ein (noch leeres) Array von zwei (rechtwinkligen) Dreiecken als Parameter entgegennimmt. (Das Array ist ein sogenannter Ausgabe-Parameter. C-Funktionen können keine Arrays zurückgeben.) Diese Dreiecke entstehen durch eine Teilung des Rechtecks vom Punkt unten links zum Punkt oben rechts.
 
 ![Das Rechteck wird von unten links nach oben rechts in zwei Dreiecke geteilt](/img/rect-split.svg)
 
