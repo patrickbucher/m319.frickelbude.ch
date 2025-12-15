@@ -1,12 +1,3 @@
-## Teil 3: Schleifen und Algorithmen
-
-TODO
-
-- Binäre Suche
-- Bubble Sort
-- Primzahlen finden
-- Primfaktor-Zerlegung
-
 ## Teil 4: IP-Adressen und Bitweise-Operationen
 
 1. IP-Adresse als Datenstruktur bestehend aus vier `unsigned char`-Feldern
@@ -17,18 +8,9 @@ TODO
 # Kombinierte Übungen
 
 - Algorithmen
-    - binäre Suche im sortierten Array
-    - Bubble Sort
     - Primzahlen finden
     - Primfaktor-Zerlegung
-- Strings
-    - Buchstaben zählen (Histogramm)
-    - Wörter kapitalisieren
-    - Strings umbrechen
-    - Passwörter generieren
 - Funktionen
-    - Fakultät berechnen
-    - Fibonacci-Zahlen
     - CRC-Prüfung
     - IP-Adressen: zwei IP-Adressen und Subnetmask gegeben
 - Rechentrainer

@@ -313,3 +313,100 @@ gcd(169, 39) = 13
 ./gcd 2048 768
 gcd(2048, 768) = 256
 ```
+
+## Teil 3: Algorithmen
+
+Im dritten Teil betrachten wir uns einige einfache Algorithmen, die gemäss Anleitung implementiert werden sollen.
+
+### :yellow_circle: Aufgabe 9: Lineare Suche
+
+Schreibe eine Funktion mit dem Prototyp `int find(int needle, int haystack[], int n)`, welche das Element `needle` im Array `haystack` der Länge `n` sucht. Die Funktion soll den Index des ersten Elements zurückgeben, das `needle` entspricht. Kann `needle` nicht in `haystack` gefunden werden, soll die Funktion `-1` zurückgeben.
+
+Schreibe auch ein C-Programm namens `linear-search.c` dazu, welches die Funktionsweise von `contains` mithilfe einiger vordefinierter Arrays demonstriert:
+
+```c
+int numbers[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+int n = sizeof(numbers) / sizeof(numbers[0]));
+printf("%d\n", find(5, numbers, n)); // sollte 4 ausgeben
+printf("%d\n", find(0, numbers, n)); // sollte -1 ausgeben
+```
+
+### :red_circle: Aufgabe 10: Binäre Suche
+
+Will man in einem _sortierten_ Array suchen, kann die Suche effizienter mit einer sogenannten _binären Suche_ implementiert werden. Der Algorithmus funktioniert folgendermassen:
+
+1. Initialisiere zwei Variablen für die Unter- und Obergrenze der Suche:
+    1. `lower = 0`
+    1. `upper = n - 1`
+2. Berechne den Index des mittleren Elements: `i = (lower + upper) / 2`
+3. Fallunterscheidung:
+    - Ist das mittlere Element _grösser_ als das gesuchte Element, suche im unteren Teil des Arrays.
+        - `lower` bleibt bestehen
+        - `upper` wird auf `i` gesetzt
+    - Ist das mittlere Element _kleiner_ als das gesuchte Element, suche im oberen Teil des Arrays.
+        - `lower` wird auf `i` gesetzt
+        - `upper` bleibt bestehen
+4. Fahre bei Schritt 2 fort.
+
+Implementiere hierzu eine funktion `binary_search` mit der gleichen Signatur wie `find`. Übernehme das Programm von der vorherigen Aufgabe um die Funktionsweise der binären Suche zu demonstrieren.
+
+### :yellow_circle: Aufgabe 11: Arrayelemente austauschen
+
+Schreibe eine Funktion `void swap(int numbers[], int n, int i, int j)` welche im Array `numbers` der Länge `n` die Elemente an Index `i` und `j` miteinander vertauscht.
+
+Tipp: Verwende eine dritte Variable `temp`, um den einen Wert abzuspeichern, bevor er überschrieben wird. Pseudocode:
+
+    temp = numbers[i]
+    numbers[i] = numbers[j]
+    numbers[j] = temp
+
+Schreibe anschliessend ein Demoprogramm namens `swap.c` mit folgendem Code:
+
+```c
+int numbers[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+int n = sizeof(numbers) / sizeof(numbers[0]);
+swap(numbers, n, 0, 8);
+for (int i = 0; i < n; n++) {
+    printf("numbers[%d] = %d\n", i, numbers[i]);
+}
+```
+
+Die Ausgabe sollte folgendermassen aussehen:
+
+    numbers[0] = 9
+    numbers[1] = 2
+    numbers[2] = 3
+    numbers[4] = 4
+    numbers[5] = 5
+    numbers[5] = 6
+    numbers[6] = 7
+    numbers[7] = 8
+    numbers[8] = 1
+
+### :red_circle: Aufgabe 12: Bubble Sort
+
+Der _Bubble Sort_ ist einer der einfachsten aber auch ineffizientesten Sortieralgorithmen. Er funktioniert folgendermassen:
+
+- Gegeben ist ein Array der Länge `n`.
+- Zähle in einer äusseren Schleife eine Variable `i` von `0` bis `i < n` hoch.
+- Zähle in einer inneren Schleife eine Variable `j` von `1` bis `j < n` hoch.
+- Vergleiche in der inneren Schleife die Elemente an Stelle `j-1` mit `j`.
+    - Ist das Element an Stelle `j-1` kleiner als dasjenige an Stelle `j`, vertausche die beiden Werte mithilfe der `swap` Funktion aus der vorherigen Aufgabe.
+
+Schreibe eine Funktion `void bubble_sort(int numbers[], int n)`, welche diesen Algorithmus implementiert.
+
+Schreibe dazu ein Programm `bubble_sort.c`. Kopiere hierzu den Code aus der vorherigen Aufgabe, damit du bereits die `swap`-Funktion zur Verfügung hast. Ersetze das Hauptprogramm nun durch folgende Logik:
+
+```c
+int numbers[] = {5, 6, 4, 7, 3, 8, 2, 9, 1};
+int n = sizeof(numbers) / sizeof(numbers[0]);
+bubble_sort(numbers, n);
+for (int i = 0; i < n; i++) {
+    printf("%d ", numbers[i]);
+}
+putchar('\n');
+```
+
+Die Ausgabe sollte folgendermassen aussehen:
+
+    1 2 3 4 5 6 7 8 9
