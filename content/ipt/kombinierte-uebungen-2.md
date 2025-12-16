@@ -322,7 +322,7 @@ Im dritten Teil betrachten wir uns einige einfache Algorithmen, die gemäss Anle
 
 Schreibe eine Funktion mit dem Prototyp `int find(int needle, int haystack[], int n)`, welche das Element `needle` im Array `haystack` der Länge `n` sucht. Die Funktion soll den Index des ersten Elements zurückgeben, das `needle` entspricht. Kann `needle` nicht in `haystack` gefunden werden, soll die Funktion `-1` zurückgeben.
 
-Schreibe auch ein C-Programm namens `linear-search.c` dazu, welches die Funktionsweise von `contains` mithilfe einiger vordefinierter Arrays demonstriert:
+Schreibe auch ein C-Programm namens `linear-search.c` dazu, welches die Funktionsweise von `find` mithilfe einiger vordefinierter Arrays demonstriert, beispielsweise:
 
 ```c
 int numbers[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
@@ -333,20 +333,21 @@ printf("%d\n", find(0, numbers, n)); // sollte -1 ausgeben
 
 ### :red_circle: Aufgabe 10: Binäre Suche
 
-Will man in einem _sortierten_ Array suchen, kann die Suche effizienter mit einer sogenannten _binären Suche_ implementiert werden. Der Algorithmus funktioniert folgendermassen:
+Will man in einem _aufsteigend sortierten_ Array suchen, kann das Auffinden einzelner Elemente effizienter mit einer sogenannten _binären Suche_ implementiert werden. Der Algorithmus funktioniert folgendermassen:
 
 1. Initialisiere zwei Variablen für die Unter- und Obergrenze der Suche:
     1. `lower = 0`
     1. `upper = n - 1`
 2. Berechne den Index des mittleren Elements: `i = (lower + upper) / 2`
 3. Fallunterscheidung:
-    - Ist das mittlere Element _grösser_ als das gesuchte Element, suche im unteren Teil des Arrays.
+    - Entspricht das mittlere Element dem gesuchten Element, ist die Suche abgeschlossen. Der Index soll als Lösung zurückgegeben werden.
+    - Ist das mittlere Element _grösser_ als das gesuchte Element, suche im _unteren_ Teil des Arrays weiter.
         - `lower` bleibt bestehen
         - `upper` wird auf `i` gesetzt
-    - Ist das mittlere Element _kleiner_ als das gesuchte Element, suche im oberen Teil des Arrays.
+    - Ist das mittlere Element _kleiner_ als das gesuchte Element, suche im _oberen_ Teil des Arrays weiter.
         - `lower` wird auf `i` gesetzt
         - `upper` bleibt bestehen
-4. Fahre bei Schritt 2 fort.
+4. Fahre bei Schritt 2 fort, bis entweder das Element gefunden worden ist, oder der Bereich `upper - lower` auf `0` geschrumpft ist und es nichts mehr zu durchsuchen gibt.
 
 Implementiere hierzu eine funktion `binary_search` mit der gleichen Signatur wie `find`. Übernehme das Programm von der vorherigen Aufgabe um die Funktionsweise der binären Suche zu demonstrieren.
 
@@ -391,7 +392,7 @@ Der _Bubble Sort_ ist einer der einfachsten aber auch ineffizientesten Sortieral
 - Zähle in einer äusseren Schleife eine Variable `i` von `0` bis `i < n` hoch.
 - Zähle in einer inneren Schleife eine Variable `j` von `1` bis `j < n` hoch.
 - Vergleiche in der inneren Schleife die Elemente an Stelle `j-1` mit `j`.
-    - Ist das Element an Stelle `j-1` kleiner als dasjenige an Stelle `j`, vertausche die beiden Werte mithilfe der `swap` Funktion aus der vorherigen Aufgabe.
+    - Ist das Element an Stelle `j-1` kleiner als dasjenige an Stelle `j`, vertausche die beiden Werte mithilfe der `swap`-Funktion aus der vorherigen Aufgabe.
 
 Schreibe eine Funktion `void bubble_sort(int numbers[], int n)`, welche diesen Algorithmus implementiert.
 
