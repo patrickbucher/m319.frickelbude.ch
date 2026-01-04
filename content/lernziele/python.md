@@ -4,7 +4,7 @@ title = 'Python'
 weight = 3
 +++
 
-## Variablen und Formatierte Ausgabe
+## Variablen und formatierte Ausgabe
 
 1. Sie können Variablen primitiver Datentypen (Zahlen, Zeichenketten, Wahrheitswerte) initialisieren.
 1. Sie können formatierte Ausgaben mithilfe von `print` und f-Strings erzeugen.
@@ -14,3 +14,4 @@ weight = 3
 1. Sie können Literalen, Operatoren und Variablen zu Ausdrücken kombinieren.
 1. Sie können die arithmetischen (`+`, `-`, `*`, `/`, `//`, `%`, `**`), logischen (`and`, `or`, `not`), Vergleichs- (`==`, `!=`, `>`, `>=`, `<`, `<=`), Arrayindex- (`[]`) und deren Kurzschreibweisen (`+=`, `*=` usw.) anwenden.
 1. Sie können die Evaluationsreihenfolge von Operatoren mithilfe von Klammern beeinflussen und kennen die wichtigsten Grundregeln des Operatorvorrangs (Punkt vor Strich, Und vor Oder).
+1. Sie können Typkonversionen mit `bool()`, `str()`, `int()` und `float()` vornehmen.

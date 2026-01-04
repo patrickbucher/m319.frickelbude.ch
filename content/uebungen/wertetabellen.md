@@ -1,7 +1,7 @@
 +++
 date = '2025-11-22T21:07:33+01:00'
 title = 'Wertetabellen'
-weight = 99
+weight = 9
 +++
 
 ## Aufgabe 1: Palindrom
