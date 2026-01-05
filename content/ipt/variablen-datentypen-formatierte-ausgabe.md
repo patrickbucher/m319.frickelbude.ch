@@ -45,14 +45,14 @@ Für dieses Programm wird die Header-Datei `limits.h` benötigt. Schreibe ein Pr
 
 Auf einer Lohnabrechnung werden neben dem Bruttolohn auch zahlreiche Abzüge und der Nettolohn (Bruttolohn minus Abzüge) angezeigt. Schreibe ein Programm `payslip.c`, welches die folgende Lohnabrechnung darstellt:
 
-    Nettolohn:     7500.00
+    Bruttolohn:    7500.00
     AHV:           -652.50
     IV:            -105.00
     EO:             -37.50
     ALV:            -82.50
     NBU:            -54.75
     PK:             -66.75
-    Bruttolohn:    6501.00
+    Nettolohn:     6501.00
 
 Gehe folgendermassen vor:
 
