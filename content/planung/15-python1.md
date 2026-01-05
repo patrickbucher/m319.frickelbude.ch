@@ -16,11 +16,11 @@ Sie können Variablen initialisieren, mit Operatoren zu Ausdrücken kombinieren 
 
 - [5 min.] Administratives
 - [20 min.] Theorie: Einführung in Python
-- [25 min.] Arbeit an Übungen
+- [25 min.] Arbeit an [Übungen](/uebungen/python)
 
 ### Lektion 2
 
-- [45 min.] Selbständige Weiterarbeit (Python-Aufgaben, IPT-Prüfungsvorbereitung)
+- [45 min.] Selbständige Weiterarbeit (Python-Übungen, IPT-Prüfungsvorbereitung)
     - zum Schluss: Fragerunde
 
 ### Hausaufgabe

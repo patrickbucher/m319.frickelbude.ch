@@ -12,6 +12,6 @@ weight = 3
 ## Operatoren und Ausdrücke
 
 1. Sie können Literalen, Operatoren und Variablen zu Ausdrücken kombinieren.
-1. Sie können die arithmetischen (`+`, `-`, `*`, `/`, `//`, `%`, `**`), logischen (`and`, `or`, `not`), Vergleichs- (`==`, `!=`, `>`, `>=`, `<`, `<=`), Arrayindex- (`[]`) und deren Kurzschreibweisen (`+=`, `*=` usw.) anwenden.
+1. Sie können die arithmetischen (`+`, `-`, `*`, `/`, `//`, `%`, `**`), logischen (`and`, `or`, `not`), Vergleichsoperatoren (`==`, `!=`, `>`, `>=`, `<`, `<=`) sowie den Arrayindexoperator (`[]`) und die Kurzschreibweisen (`+=`, `*=` usw.) anwenden.
 1. Sie können die Evaluationsreihenfolge von Operatoren mithilfe von Klammern beeinflussen und kennen die wichtigsten Grundregeln des Operatorvorrangs (Punkt vor Strich, Und vor Oder).
 1. Sie können Typkonversionen mit `bool()`, `str()`, `int()` und `float()` vornehmen.
