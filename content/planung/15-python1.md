@@ -15,8 +15,8 @@ Sie können Variablen initialisieren, mit Operatoren zu Ausdrücken kombinieren 
 ### Lektion 1
 
 - [5 min.] Administratives
-- [20 min.] Theorie: Einführung in Python
-- [25 min.] Arbeit an [Übungen](/uebungen/python)
+- [25 min.] Theorie: Einführung in Python
+- [20 min.] Arbeit an [Übungen](/uebungen/python)
 
 ### Lektion 2
 
