@@ -298,3 +298,35 @@ Wenn die Debian-Umgebung nicht mehr funktioniert, kann sie mit folgendem Befehl 
 ```powershell
 wsl --unregister Debian
 ```
+
+## GitHub
+
+Erstelle ein SSH-Schlüsselpaar mit folgendem Befehl, wobei du `VORNAME` und `NACHNAME` durch eine Angaben ersetzt.
+
+```bash
+ssh-keygen -t ed25519 -C "VORNAME_NACHNAME@sluz.ch"
+```
+
+Bestätige die anschliessenden Fragen durch dreimaliges Betätigen der Enter-Taste.
+
+Führe nun folgenden Befehl aus:
+
+```bash
+cat .ssh/id_ed25519.pub
+```
+
+Dadurch wird eine Zeile ausgegeben, die ungefähr folgendermassen aussieht:
+
+```plain
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA8BOvlna4M8OSWq+85W2E24y1fC3v55xPvFbJ9+XTtv VORNAME_NACHNAME@sluz.ch
+```
+
+Markiere diese Zeile und mache einen Rechtsklick, wodurch der markierte Text in die Zwischenablage kopiert wird.
+
+Besuche im Browser folgenden Link: [Add new SSH Key](https://github.com/settings/ssh/new)
+
+Kopiere den Inhalt aus der Zwischenablage in das Textfeld, das mit _Key_ betitelt ist. Als _Title_ kannst du beispielsweise "WSL" eingeben. Das ganze sollte anschliessend ungefähr folgendermassen aussehen:
+
+![Der auf GitHub hinterlegte Public Key](/img/github-pubkey.png)
+
+Lokale Repositories können nun per SSH mit GitHub synchronisiert werden.

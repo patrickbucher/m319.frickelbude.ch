@@ -150,7 +150,7 @@ Dein Body-Mass-Index: 22.07
 Die Formel dazu lautet:
 
 ```math
-$$ \text{BMI}=\frac{\text{Gewicht_{\text{kg}}}}{\text{Grösse_{\text{cm}}}^2} $$
+$$ \text{BMI}=\frac{\text{Gewicht}}{\text{Grösse}^2} $$
 ```
 
 Eine Interaktive Eingabe wird mit der Funktion `input` bewerkstelligt, welche als Argument eine Aufforderung (Prompt) entgegennimmt und die vom Benutzer getätigte Eingabe als String zurückgibt. Beispiel:
