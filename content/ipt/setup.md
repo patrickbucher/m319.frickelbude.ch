@@ -50,6 +50,40 @@ Damit wäre Debian unter WSL vorerst fertig eingerichtet.
 
 Weitere Installationshinweise finden sich auf der [WSL-Installationsseite](https://learn.microsoft.com/de-ch/windows/wsl/install) von Microsoft.
 
+### Benuterpasswort zurücksetzen
+
+Falls du dein persönliches Passwort vergessen hast, kannst du es folgendermassen zurücksetzen:
+
+Öffne die PowerShell unter Windows. Gib folgenden Befehl ein um herauszufinden, wie deine WSL-VM heisst:
+
+```powershell
+wsl --list --all
+```
+
+Es sollte eine Ausgabe wie `Debian` (oder `Ubuntu`) erscheinen.
+
+Öffne nun diese WSL-VM mit Administrator- bzw. `root`-Rechten, wozu du die ermittelte Distribution mit `-d` angeben musst:
+
+```powershell
+wsl -u root -d Debian
+```
+
+Nun bist du als Benutzer `root` auf der WSL-VM eingeloggt und hast Administratoren-Rechte.
+
+Als nächstes musst du herausfinden, wie dein persönlicher Nutzer heisst:
+
+```bash
+ls /home
+```
+
+Für diesen Benutzernamen, z.B. `patrick`, kannst du das Passwort nun folgendermassen zurücksetzen:
+
+```bash
+passwd patrick
+```
+
+Du kannst nun ein neues Passwort wählen, das du zweimal gleich eingeben musst.
+
 ## Pakete installieren
 
 Als nächstes müssen einige Software-Pakete installiert werden. Dies sind:
