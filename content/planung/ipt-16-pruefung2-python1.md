@@ -4,11 +4,11 @@ title = 'IPT 1.1, Block 16: Prüfung & Python'
 weight = 31
 +++
 
-Im sechzehnten IPT-Block findet die zweite Modulprüfung statt. Anschliessend bearbeiten wir Übungen zu Python und sichern diese per Git auf GitHub.
+Im sechzehnten IPT-Block findet die zweite Modulprüfung statt. Anschliessend bearbeiten wir Übungen zu Python und sichern diese per Git und SSH auf GitHub.
 
 ## Ziel
 
-Sie haben die zweite Modulprüfung abgelegt, Python verwendet und die Ergebnisse auf GitHub gesichert.
+Sie haben die zweite Modulprüfung abgelegt, einmal Python verwendet und die Ergebnisse auf GitHub gesichert.
 
 ## Ablauf
 

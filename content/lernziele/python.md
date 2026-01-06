@@ -4,6 +4,11 @@ title = 'Python'
 weight = 3
 +++
 
+## Grundgerüst
+
+1. Sie können Teile der Standard Library mittels `import` verfügbar machen.
+1. Sie können auf Kommandozeilenargumente (`sys.argv`) zugreifen und diese verarbeiten.
+
 ## Variablen und formatierte Ausgabe
 
 1. Sie können Variablen primitiver Datentypen (Zahlen, Zeichenketten, Wahrheitswerte) initialisieren.

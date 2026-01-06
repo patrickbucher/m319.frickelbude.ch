@@ -4,7 +4,7 @@ title = 'Python'
 weight = 12
 +++
 
-Für die folgenden Übungen wird ein Python-Interpreter benötigt. Dieser sollte auf der WSL-Umgebung bereits installiert sein und lässt sich andernfalls mit dem Befehl `sudo apt install -y python3` installieren. Für Windows kann die aktuelle Version von Python als Installationspaket [heruntergeladen] und installiert werden.
+Für die folgenden Übungen wird ein Python-Interpreter benötigt. Dieser sollte auf der WSL-Umgebung bereits installiert sein und lässt sich andernfalls mit dem Befehl `sudo apt install -y python3` installieren. Für Windows kann die aktuelle Version von Python als Installationspaket [heruntergeladen](https://www.python.org/ftp/python/pymanager/python-manager-25.2.msix) und installiert werden.
 
 ## Aufgabe 0: Grundgerüst
 
@@ -110,7 +110,7 @@ Du benötigst die Konstante `math.pi`, wozu du `math` importieren musst.
 
 ## Aufgabe 3: Hypothenuse berechnen
 
-Schreibe ein Programm `hypot.py`, welches die Längen der beiden Katheten a und b als Kommendozeilenargumente entgegenmimmt und die Länge der Hypothenuse c berechnet und auf zwei Nachkommastellen genau ausgibt:
+Schreibe ein Programm `hypot.py`, welches die Längen der beiden Katheten a und b als Kommendozeilenargumente entgegenmimmt, die Länge der Hypothenuse c berechnet und auf zwei Nachkommastellen genau ausgibt:
 
 ```plain
 $ ./hypot.py 3 4

@@ -301,15 +301,15 @@ wsl --unregister Debian
 
 ## GitHub
 
-Erstelle ein SSH-Schlüsselpaar mit folgendem Befehl, wobei du `VORNAME` und `NACHNAME` durch eine Angaben ersetzt.
+Erstelle ein SSH-Schlüsselpaar mit folgendem Befehl, wobei du `vorname` und `nachname` durch deine Angaben ersetzt:
 
 ```bash
-ssh-keygen -t ed25519 -C "VORNAME_NACHNAME@sluz.ch"
+ssh-keygen -t ed25519 -C "vorname_nachname@sluz.ch"
 ```
 
 Bestätige die anschliessenden Fragen durch dreimaliges Betätigen der Enter-Taste.
 
-Führe nun folgenden Befehl aus:
+Führe nun folgenden Befehl aus, welcher den öffentlichen Schlüsseltei ausgibt:
 
 ```bash
 cat .ssh/id_ed25519.pub
@@ -318,15 +318,17 @@ cat .ssh/id_ed25519.pub
 Dadurch wird eine Zeile ausgegeben, die ungefähr folgendermassen aussieht:
 
 ```plain
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA8BOvlna4M8OSWq+85W2E24y1fC3v55xPvFbJ9+XTtv VORNAME_NACHNAME@sluz.ch
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA8BOvlna4M8OSWq+85W2E24y1fC3v55xPvFbJ9+XTtv vorname_nachname@sluz.ch
 ```
 
 Markiere diese Zeile und mache einen Rechtsklick, wodurch der markierte Text in die Zwischenablage kopiert wird.
 
-Besuche im Browser folgenden Link: [Add new SSH Key](https://github.com/settings/ssh/new)
+Logge dich im Browser auf GitHub ein und besuche folgenden Link: [Add new SSH Key](https://github.com/settings/ssh/new)
 
 Kopiere den Inhalt aus der Zwischenablage in das Textfeld, das mit _Key_ betitelt ist. Als _Title_ kannst du beispielsweise "WSL" eingeben. Das ganze sollte anschliessend ungefähr folgendermassen aussehen:
 
 ![Der auf GitHub hinterlegte Public Key](/img/github-pubkey.png)
 
-Lokale Repositories können nun per SSH mit GitHub synchronisiert werden.
+Füge den Schlüssel per Klick auf die Schaltfläche _Add SSH key_ deinem Konto hinzu.
+
+Repositories können nun per SSH geklont und mit GitHub synchronisiert werden.
