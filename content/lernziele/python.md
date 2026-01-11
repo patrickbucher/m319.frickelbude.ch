@@ -40,7 +40,7 @@ weight = 3
 
 1. Sie können leere Listen und Listen mit Werten initialisieren.
 1. Sie können die Länge einer Liste mit `len()` ermitteln.
-1. Sie können auf eine beliebige Stelle lesend und schreibend in der Liste zugreifen.
+1. Sie können mit dem Index-Operator `[]` auf eine beliebige Stelle lesend und schreibend in der Liste zugreifen.
 1. Sie können der Liste Elemente mit der `append()`-Methode anfügen.
 
 ## Schleifen
