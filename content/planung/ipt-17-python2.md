@@ -15,7 +15,7 @@ Sie haben eine weitere Übungsgelegenheit und eine Rückmeldung zu ihrer Prüfun
 ### Lektionen 1 & 2
 
 1. [5 min.] Administratives
-1. [Rest] Weiterarbeit an den Übungen
+1. [Rest] Weiterarbeit an den [Übungen](/ipt/python)
     - gleichzeitig: Einzelgespräche (Prüfungen, Übungen)
 
 ### Hausaufgaben
