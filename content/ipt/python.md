@@ -209,7 +209,7 @@ CHF 80.00
 $ ./cur-conv.py 100.00 EUR
 CHF 93.00
 $ ./cur-conv.py 100.00 GBP
-CHF 108.00
+CHF 107.00
 ```
 
 Du kannst die folgenden Wechselkurse verwenden:
