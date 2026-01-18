@@ -51,3 +51,15 @@ weight = 3
 1. Sie können Schleifen mit `break` vorzeitig beenden.
 1. Sie können einen Schleifendurchlauf mit `continue` vorzeitig beenden.
 1. Sie können verschachtelte Schleifen für eine gegebene Problemstellung formulieren und bei Bedarf vorzeitig zum Abbruch bringen.
+
+## Funktionen
+
+1. Sie können Funktionen mit `def` definieren.
+1. Sie können Funktionen für eine gegebene Problemstellung als reine Funktion (zur Verwendung als Ausdruck), als Prozedur (mit Nebeneffekten) oder als eine Mischung davon (Rückgabewert und Seiteneffekt) umsetzen.
+
+## Klassen/Objekte
+
+1. Sie können Klassen mit dem `class`-Schlüsselwort definieren.
+1. Sie können einen Konstruktor `__init__` definieren, damit Argumente entgegennehmen und diese unter `self` auf der Instanz abspeichern.
+1. Sie können auf die Felder einer Klasse bzw. eines konkreten Objekts zugreien.
+1. Sie können zu einer Klasse Methoden mithilfe von `def` definieren und umsetzen.
