@@ -580,3 +580,69 @@ S2 S3 S4 S5 S6 S7 S8 S9 SX SJ SQ SK SA
 ```
 
 Tipp: Schreibe zwei verschachtelte `for`-Schleifen; eine äussere für die Zeilen/Farben und eine innere für die Spalten/Werte.
+
+## Aufgabe 23: Tage, Stunden, Minuten, Sekunden
+
+Schreibe eine Funktion `dhms(seconds)`, welche eine Anzahl Sekunden erwartet, diese in Tage, Stunden, Minuten und Sekunden umrechnet und als eine Zeichenkette der folgenden Form ausgibt.
+
+Schreibe dazu ein Testprogramm `dhms.py`, welches die Sekunden als Kommandozeilenargument entgegennimmt und folgendermassen verarbeitet:
+
+```plain
+$ ./dhms.py 3600
+1h
+$ ./dhms.py 300
+5m
+$ ./dhms.py 4529
+1h15m29s
+$ ./dhms.py 86430
+1d30s
+```
+
+Es sollen immer nur die relevanten Angaben (`!= 0`) ausgegeben werden.
+
+## Aufgabe 24: Minimum, Maximum, Mean
+
+Schreibe die folgenden Funktionen:
+
+1. `min(numbers)`: gibt die kleinste Zahl in der Liste `numbers` zurück
+1. `max(numbers)`: gibt die grösste Zahl in der Liste `numbers` zurück
+1. `sum(numbers)`: gibt die Summe der Zahlen in der Liste `numbers` zurück
+1. `mean(numbers)`: gibt das arithmetische Mittel der Liste `numbers` zurück
+
+Die Funktion `mean` soll den Durchschnitt mithilfe der Funktion `sum` berechnen.
+
+Schreibe dazu ein Programm `min-max-mean.py`, welches die Zahlen aus `sys.argv` per Slicing-Syntax an verschiedenen Funktionen übergibt:
+
+```plain
+./min-max-mean.py 4 6 12 9 3
+min:    3
+max:    12 
+sum:    34
+mean:   6.8
+```
+
+## Aufgabe 25: Brüche
+
+Schreibe ein Programm namens `fractions.py`, welches mit Brüchen umgehen kann.
+
+Erstelle zuerst eine Klasse namens `Fracion`, welche über den Konstruktor zwei Argumente `numerator` (Zähler) und `denominator` (Nenner) erwartet und als Eigenschaften abspeichert.
+
+Implementiere dazu die folgenden Methoden:
+
+- `calculate()`: führt die Division von Zähler (Dividend) und Nenner (Divisor) durch und gibt den Quotient als Fliesskommazahl zurück.
+- `add(fraction)`: addiert den Bruch mit demjenigen aus dem Argument
+- `subtract(fraction)`: subtrahiert den Bruch mit demjenigen aus dem Argument
+- `multiply(fraction)`: subtrahiert den Bruch mit demjenigen aus dem Argument
+- `divide(fraction)`: subtrahiert den Bruch mit demjenigen aus dem Argument
+
+Für die Operationen `add` und `subtract` müssen die Brüche zuerst auf den gleichen Nenner gebracht werden, was mithilfe des _kleinsten gemeinsamen Vielfachen_ (kgV) gemacht werden kann.
+
+### Zusatzaufgabe: Brüche kürzen
+
+Ergänze die Klasse `Fractions` um eine Methode `shorten()`, welche den grössten gemeinsamen Teiler ([ggT](/ipt/kombinierte-uebungen-2/#red_circle-aufgabe-8-grösster-gemeinsamer-teiler)) von Zähler und Nenner ermittelt und beide durch diese Zahl dividiert.
+
+Erweitere `add`, `subtract` usw., sodass sie die Brüche automatisch kürzen.
+
+### Zusatzaufgabe: Neue Instanzen statt Modifikation
+
+Passe die Operationen `add`, `subtract` usw. so an, dass sie nicht das bestehende Objekt verändern, sondern ein neues Objekt als Ergebnis der Berechnung zurückgeben.
