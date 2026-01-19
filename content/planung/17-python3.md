@@ -4,7 +4,7 @@ title = 'Block 17: Python 3'
 weight = 34
 +++
 
-Im siebzehnten (und letzten) Block befassen wir uns mit Funktionen und Klssen/Objekten.
+Im siebzehnten (und letzten) Block befassen wir uns mit Funktionen und Klassen/Objekten.
 
 ## Ziel
 
