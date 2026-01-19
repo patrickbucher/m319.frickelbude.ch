@@ -12,7 +12,7 @@ Sie können Funktionen und Klassen implementieren und verwenden.
 
 ## Ablauf
 
-### Lektinen 1 & 2
+### Lektionen 1 & 2
 
 - [5 min.] Administratives
 - [25 min.] Theorie
