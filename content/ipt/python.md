@@ -443,6 +443,8 @@ $ ./series.py 9 3
 9 18 27
 ```
 
+Tipp: `print("hello", end=" ")` schliesst die Ausgabe mit einem Leerzeichen statt mit einem Zeilenumbruch ab.
+
 ## Aufgabe 16: Rechenr mit mehreren Operanden
 
 Schreibe ein Programm namens `calculator.py`, welches neben den vier Grundrechenarten Addition, Subtraktion, Multiplikation und Division auch die Potenzierung unterstützt. Das Programm nimmt als erstes Argument die Rechenoperation (`+`, `-`, `x`, `:`, `^`) und als beliebig viele weitere Argumente die Operanden entgegen. Das Programm soll die ausgewählte Berechnung durchführen und das Resultat ausgeben:
